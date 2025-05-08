@@ -1,1 +1,1 @@
---domain test
+print("Hello World")
