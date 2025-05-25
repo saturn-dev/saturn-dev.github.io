@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Setting</title>
+</head>
+<body>
+  <h1>Toggle Lua Setting</h1>
+  <label>
+    <input type="checkbox" id="toggle" onchange="toggleSetting()"> Toggle
+  </label>
+  <p id="status"></p>
+
+  <script>
+    function toggleSetting() {
+      fetch('toggle.php', { method: 'POST' })
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('status').textContent = data;
+        });
+    }
+  </script>
+</body>
+</html>
