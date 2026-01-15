@@ -285,15 +285,7 @@ input {
     min-width: 0;
    flex: 1 1 0;
 }
-.card:hover {
-  background-color: #00ffa233;
-    box-shadow: 0 20px 40px rgba(0, 255, 160, 0.3);
 
-}
-.card:hover img {
-  transform: scale(2) rotate(3deg);
-  z-index: 5;
-}
 }
 
 
@@ -308,15 +300,7 @@ input {
    flex: 1 1 0;
 }
   
-.card:hover {
-  background-color: #00ffa233;
-    box-shadow: 0 20px 40px rgba(0, 255, 160, 0.3);
 
-}
-.card:hover img {
-  transform: scale(2) rotate(3deg);
-  z-index: 5;
-}
 
     .tabs,
   .controls,
@@ -353,20 +337,7 @@ input {
     grid-template-columns: repeat(4, 1fr);
   }
 
-.card:hover img {
-  transform: scale(1.7) rotate(3deg);
-  z-index: 2;
-}
 
-.card:hover {
-  background-color: #00ffa233;
-    box-shadow: 0 20px 40px rgba(0, 255, 160, 0.3);
-
-}
-.card:hover img {
-  transform: scale(2) rotate(3deg);
-  z-index: 5;
-}
 
   .tab {
     padding: 12px 0;
@@ -395,15 +366,7 @@ input {
         min-width: 120px;  
         padding: 12px 12px; 
     }
-  .card:hover {
-    background-color: var(--panel) !important; 
-    box-shadow: none !important;
-  }
 
-  .card:hover img {
-    transform: none !important;
-    z-index: auto !important;
-  }
 
 
         .tabs,
@@ -472,16 +435,6 @@ input {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 14px;
-  }
-
-  .card:hover {
-    background-color: var(--panel) !important; 
-    box-shadow: none !important;
-  }
-
-  .card:hover img {
-    transform: none !important;
-    z-index: auto !important;
   }
 
 

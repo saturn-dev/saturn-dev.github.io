@@ -1214,14 +1214,6 @@ body::before {
     font-size: 17px;
   }
 
-  .card:hover {
-  background-color: #00ffa233;
-
-}
-.card:hover img {
-  transform: scale(1) rotate(3deg);
-  z-index: 5;
-}
 
     .menu-btn {
     display: block;
