@@ -957,13 +957,28 @@ li {
   gap: 80px;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1170px) {
   .footerclass {
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
 
+  .landing .container {
+    transform: scale(1.2);
+  }
+.menu-btn {
+  transform: scale(1.2);
+}
+.faq-card-header-text {
+  font-size: 25px;
+}
+  .time {
+    transform: scale(1.2);
+  }
+.description {
+  font-size: 1.5rem;
+}
   .footer-intro {
     display: flex;          
     flex-direction: column; 
@@ -1047,7 +1062,6 @@ body::before {
   position: relative;
   z-index: 5;
   background-color: var(--bg);
-
   background:
     radial-gradient(
       circle at 65% 45%,
