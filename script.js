@@ -89,7 +89,7 @@ ${p.badge ? `<span class="badge">${p.badge}</span>` : ""}
     const qcBtn = card.querySelector(".qc-btn");
     qcBtn.onclick = () => {
       if (p.qc) {
-        qcImage.src = p.qc;
+     qcImage.src = "/products/qc/" + p.qc.split('/').pop();
         qcModal.style.display = "flex";
       } else {
         showNotification(
