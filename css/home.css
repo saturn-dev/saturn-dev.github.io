@@ -866,12 +866,13 @@ li {
 }
 
 .join-btn {
-  background-color: var(--accent);
+  background-color: #00462c;
   padding: 10px 16px;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
   width: 220px;
   font-size: 14px;
   margin-bottom: 16px;
