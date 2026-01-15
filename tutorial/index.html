@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>deepinmycloset | Tutorial</title>
+  <link rel="icon" type="image/png" href="/icons.png"/>
+  <link rel="stylesheet" href="/css/home.css"/>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="deepinmycloset - Kakobuy Rep Spreadsheet">
+  <meta property="og:description" content="deepinmycloset - Kakobuy, simplified. Discover quality rep finds without the hassle, all in one place.">
+  <meta property="og:image" content="/banner.png">
+</head>
+<body>
+<div id="notification-container"></div>
+<div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="navbar">
+  <div class="nav-inner">
+    <a href="/"><div class="logo">deepinmycloset</div></a>
+
+    <ul class="nav-links">
+      <li><a href="/spreadsheet">Spreadsheet</a></li>
+      <li><a href="/tutorial">Tutorial</a></li>
+      <li><a href="/updates">Updates</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+    </ul>
+    <button class="menu-btn" id="menuOpen">MENU</button>
+  </div>
+</nav>
+
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <span>MENU</span>
+    <button id="menuClose">[ CLOSE ]</button>
+  </div>
+
+  <ul class="menu-list">
+      <li><a href="/spreadsheet">Spreadsheet</a></li>
+      <li><a href="/tutorial">Tutorial</a></li>
+      <li><a href="/updates">Updates</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+
+<style>
+.nav-links li:nth-child(2) a {
+  color: var(--accent);
+}
+
+.steps-wrapper {
+  width: 100%;
+}
+
+.steps-nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+}
+
+.step-button {
+  flex: 1;
+  padding: 16px 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.25s ease, background 0.25s ease;
+}
+
+.step-button.is-active {
+  color: var(--accent);
+  background: var(--panel-2);
+}
+
+.step-button.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+
+.step-button:hover {
+  color: var(--text);
+}
+
+.steps-content {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: var(--panel-2);
+  padding: 64px 80px;
+  height: auto;
+}
+
+.step-panel {
+  display: none;
+  animation: stepFade 0.35s ease;
+}
+
+.step-panel.is-active {
+  display: block;
+}
+
+.step-panel h2 {
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.step-panel p {
+  color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@keyframes stepFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-nav {
+    max-width: 100%;
+  }
+
+  .step-button {
+    font-size: 12px;
+    padding: 14px 0;
+  }
+
+  .steps-content {
+    padding: 32px 20px;
+  }
+}
+
+
+.step-card {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  max-width: 1200px;
+  margin: 0 auto 120px;
+  min-height: fit-content;
+  display: flex;
+  gap: 10px;
+  padding: 64px;
+
+  background: var(--panel);
+  border: 1px solid var(--border);
+
+  transform: translateY(40px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.step-card.is-active {
+  transform: translateY(0);
+}
+
+.step-left {
+  flex: 1;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.step-index {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--accent);
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.step-left h3 {
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.step-left p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 460px;
+}
+
+.step-right {
+  flex: 1;
+}
+
+.step-right img {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--border);
+}
+.step-header h3 {
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 900px) {
+  .step-card {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 24px;
+    top: 40px;
+    height: 600px;
+  }
+}
+
+
+
+</style>
+
+
+  <h1 class="header">TUTORIAL</h1>
+  <p class="description">everything you need to know before using Kakobuy.</p>
+
+<div class="steps-wrapper">
+
+  <div class="steps-nav">
+    <button class="step-button is-active" data-step="signup">Signing Up</button>
+    <button class="step-button" data-step="buying">Buying</button>
+    <button class="step-button" data-step="shipping">Shipping</button>
+  </div>
+
+  <div class="steps-content">
+
+    <!-- SIGNUP PANEL -->
+    <div class="step-panel is-active" id="signup">
+      <section class="steps-scroll">
+
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">1</span>
+              <h3>COUPONS</h3>
+            </div>
+            <p>
+              Sign up using the button below. Enter your email and create a strong password you’ll remember. After signing up, you’ll receive $400+ USD in shipping coupons!
+            </p>
+            <a href="https://ikako.vip/r/deepinmycloset" target="_blank" class="promo-btn">FREE COUPONS</a>
+          </div>
+          <div class="step-right">
+            <img src="/img/tutorial/signup.png" alt="Step 1">
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">2</span>
+              <h3>Language & Currency</h3>
+            </div>
+            <p>
+              After signing up, go to the top bar and open settings. Change the language to your preferred language and set the currency to your preferred currency, then click <strong>Confirm</strong>.
+            </p>
+          </div>
+          <div class="step-right">
+            <img src="/img/tutorial/language.png" alt="Step 2">
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- BUYING PANEL -->
+    <div class="step-panel" id="buying">
+      <section class="steps-scroll">
+
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">1</span>
+              <h3>Browse Products</h3>
+            </div>
+            <p>
+         After you’ve found the product you want from the spreadsheet, click on Buy on Kakobuy. Make sure to review the product details, like the qc photos and price, before proceeding to ensure everything is correct for your order.            </p>
+          </div>
+          <div class="step-right">
+            <img src="/img/tutorial/buyonkako.png" alt="Step 1 Buying">
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">2</span>
+              <h3>Purchasing</h3>
+            </div>
+            <p>
+              When you find a product you like, select the options (size, color, etc.) and click <strong>buy now or add to cart</strong>. Once wanting to purchase click buy now and select what payment method (most popular; paypal, apple pay, google pay, etc).
+            </p>
+          </div>
+          <div class="step-right">
+            <img src="/img/tutorial/buying.png" alt="Step 2 Buying">
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">3</span>
+              <h3>Seller Shipping</h3>
+            </div>
+            <p>
+              Most sellers ship in about 2–3 days, but always check if the item is a preorder. Some sellers ship overnight. Once it arrives at the warehouse, you’ll get free QC photos of your item.
+            </p>
+          </div>
+          <div class="step-right">
+            <img style="border: none;" src="/img/tutorial/sellershipped.png" alt="Step 3 seller shipped">
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">4</span>
+              <h3>Warehouse</h3>
+            </div>
+            <p>
+              Once your product arrives, you’ll receive free QC (quality check) photos. You can then choose to keep the item or request a return/exchange within a 5-day window. In the meantime, KakoBuy will store your product for free.
+            </p>
+          </div>
+          <div class="step-right">
+            <img style="border: none;" src="/img/tutorial/warehouse.png" alt="Step 4 Warehouse">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SHIPPING PANEL -->
+    <div class="step-panel" id="shipping">
+      <section class="steps-scroll">
+
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">1</span>
+              <h3>Creating Parcel</h3>
+            </div>
+            <p>
+              Once all of your products are stored in the warehouse, you can create a parcel. From there, you can select all the products you want to include in that shipment. For value-added services, I would use moister-barrier bag, and corner protection.
+            </p>
+          </div>
+          <div class="step-right">
+            <img src="/img/tutorial/createparcel.png" alt="Step 1 Shipping">
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">2</span>
+              <h3>Shipping Lines USA</h3>
+            </div>
+            <p>
+             I use UPS (tax extra) for fast delivery in 8–10 days, but it requires a 45% tariff deposit (for usa). Duty-Free Air is my <strong>recommendation—tax-free</strong> and takes 2–3 weeks, much cheaper. Cargo Boat takes over 4 months, but is the cheapest option. And about seizing mainly in the USA it is <strong>very very rare</strong> to get seized, I personally never seen it happen to anyone, you don't need to worry.           </p>
+            </p>
+          </div>
+          <div class="step-right">
+            <img src="/img/tutorial/shipping.png" alt="Step 2 Shipping">
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-left">
+            <div class="step-header">
+              <span class="step-index">3</span>
+              <h3>Tracking parcel / delivery</h3>
+            </div>
+            <p>
+              Once your parcel is shipped, you’ll receive a tracking number. Enter it on 17track.net for faster updates. When your parcel arrives, feel free to share your in-hand haul on the Discord!
+            </p>
+          </div>
+          <div class="step-right">
+            <img src="/img/tutorial/deliver.png" alt="Step 3 Shipping">
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </div>
+</div>
+
+
+  <section class="help-section">
+    <div class="overlay"></div>
+
+<div class="card-container">
+  <div class="left-card">
+    <h2>Join Our Discord!</h2>
+    <p>Join the deepinmycloset Discord! Chat with the community, share QCs and hauls, suggest new features, join giveaways, and stay up to date with the latest announcements and updates!</p>
+    <div class="action-row">
+    <div class="invite-box">
+      <code>discord.gg/KKTNRQbKDE</code>
+      <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy-icon lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+    </div>
+    <a href="https://discord.gg/KKTNRQbKDE" target="_blank" class="join-btn">Join Our Discord <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+  </div>
+      </div>
+
+  <div class="right-card">
+    <svg width="60px" height="60px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+      <g>
+          <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="var(--accent)" fill-rule="nonzero"></path>
+      </g>
+  </svg>     
+    <h3>24/7 Support</h3>
+    <p>Need help with KakoBuy or something else? Get support from the deepinmycloset community anytime!</p>
+  </div>
+</div>
+  </section>
+
+</div>
+
+ <script>
+const copyIcon = document.getElementById('copy-icon');
+    const checkIconSVG = `<svg xmlns="http://www.w3.org/2000/svg" color="var(--text)" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>`;
+
+    copyIcon.addEventListener('click', () => {
+      navigator.clipboard.writeText('discord.gg/KKTNRQbKDE').then(() => {
+        copyIcon.outerHTML = checkIconSVG;
+        showNotification('Copied!', 'deepinmycloset Discord invite copied to clipboard.', 5000, '#4ADE80')
+      });
+    });
+
+  
+    </script>
+
+
+<script>
+  const stepButtons = document.querySelectorAll(".step-button");
+  const stepPanels = document.querySelectorAll(".step-panel");
+
+  stepButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      stepButtons.forEach(b => b.classList.remove("is-active"));
+      stepPanels.forEach(p => p.classList.remove("is-active"));
+
+      btn.classList.add("is-active");
+      document.getElementById(btn.dataset.step).classList.add("is-active");
+    });
+  });
+</script>
+
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-intro">
+      <div class="footer-logo">
+        <img src="/icons.png" alt="Logo" class="brand-logo">
+      </div>
+<div class="socials">
+  <a href="https://discord.gg/KKTNRQbKDE" target="_blank" class="social-btn discord">
+    <img src="/img/discord.png" alt="Discord">
+  </a>
+
+  <a href="https://www.tiktok.com/@_deepinmycloset" target="_blank" class="social-btn tiktok">
+    <img src="/img/tiktok.png" alt="TikTok">
+  </a>
+</div>
+<div class="footerclass">
+  <div class="footer-disclaimer">
+    <p>deepinmycloset.com does not sell any physical products.</p>
+    <p>
+      This site is simply a curated spreadsheet of links from Taobao and Weidian,
+      made to help buyers find reliable listings and avoid scams.
+      deepinmycloset does not support or endorse the sale of counterfeit goods.
+    </p>
+  </div>
+
+  <div class="footer-nav-wrapper">
+    <div class="footer-nav">
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/spreadsheet/">Spreadsheet</a></li>
+          <li><a href="/tutorial">Tutorial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/updates">Updates</a></li>
+          <li><a href="https://discord.gg/KKTNRQbKDE">Discord</a></li>
+          <li><a href="https://ikako.vip/r/deepinmycloset">KakoBuy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="footer-meta">
+<span>deepinmycloset © <span class="current-year">2026</span></span>
+  </div>
+</footer>
+
+  <script src="/script.js"></script>
+
+</body>
+</html>

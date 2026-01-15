@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>deepinmycloset | Spreadsheet</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="deepinmycloset - Kakobuy Rep Spreadsheet">
+  <meta property="og:description" content="deepinmycloset - Kakobuy, simplified. Discover quality rep finds without the hassle, all in one place.">
+  <meta property="og:image" content="/banner.png">
+  <link rel="icon" type="image/png" href="/icons.png"/>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<div id="notification-container"></div>
+<div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="navbar">
+  <div class="nav-inner">
+    <a href="/"><div class="logo">deepinmycloset</div></a>
+
+    <ul class="nav-links">
+      <li><a href="/spreadsheet">Spreadsheet</a></li>
+      <li><a href="/tutorial">Tutorial</a></li>
+      <li><a href="/updates">Updates</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+    </ul>
+    <button class="menu-btn" id="menuOpen">MENU</button>
+  </div>
+</nav>
+
+
+
+<style>
+  .nav-links li:first-child a {
+  color: var(--accent);
+}
+.title {
+  text-transform: uppercase;
+}
+</style>
+
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <span>MENU</span>
+    <button id="menuClose">[ CLOSE ]</button>
+  </div>
+
+  <ul class="menu-list">
+      <li><a href="/spreadsheet">Spreadsheet</a></li>
+      <li><a href="/tutorial">Tutorial</a></li>
+      <li><a href="/updates">Updates</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+  <!-- Tabs -->
+  <div class="tabs" id="tabs"></div>
+
+  <!-- Search -->
+  <div class="controls">
+    <input id="searchInput" placeholder="Search products..." />
+    <select id="sortSelect">
+      <option value="default">Sort by: Default</option>
+      <option value="low">Price: Low → High</option>
+      <option value="high">Price: High → Low</option>
+    </select>
+  </div>
+
+  <!-- Products -->
+  <div class="grid" id="productGrid"></div>
+
+  <!-- QC -->
+  <div class="qc-modal" id="qcModal">
+    <span class="close" id="qcClose">×</span>
+    <img id="qcImage">
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
