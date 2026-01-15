@@ -1035,6 +1035,24 @@ li {
 
   }
 
+  .action-row {
+    transform: scale(1.2);
+  }
+.footer-disclaimer {
+  min-width: 600px; 
+  transform: scale(1.1)
+}
+
+.footer-nav {
+    transform: scale(1.2)
+
+}
+
+.socials {
+      transform: scale(1.4)
+
+}
+
 body::before {
   content: none !important;    
   background: none !important;
@@ -1214,6 +1232,14 @@ body::before {
     font-size: 17px;
   }
 
+  .card:hover {
+  background-color: #00ffa233;
+
+}
+.card:hover img {
+  transform: scale(1) rotate(3deg);
+  z-index: 5;
+}
 
     .menu-btn {
     display: block;
