@@ -209,6 +209,7 @@ body::before {
   overflow: hidden;
   transition: all 0.3s ease;
   transform-origin: top center;
+  border-radius: 10px;
 }
 
 .btn-spreadsheet:hover {
@@ -445,7 +446,7 @@ body::before {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  
+  border-radius: 10px;
   transform: scale(0.88);
   opacity: 0;
 
@@ -714,6 +715,8 @@ body::before {
   background: var(--panel);
   border: 1px solid var(--border);
   padding: 20px 24px;
+    border-radius: 10px;
+
 }
 .tags {
   display: flex;
@@ -807,6 +810,7 @@ li {
   max-width: 1100px;
   margin: auto;
   padding: 25px;
+  
 }
 
 #copy-icon {
@@ -818,11 +822,13 @@ li {
 .right-card {
   padding: 40px;
   color: var(--text);
+  
 }
 
 .left-card {
   flex: 1;
   background-color: var(--panel);
+    border-radius: 10px 0px 0px 10px;
 }
 
 .right-card {
@@ -833,6 +839,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+      border-radius: 0px 10px 10px 0px;
 }
 
 .left-card h2 {
@@ -858,6 +865,7 @@ li {
   width: 220px;
   font-size: 14px;
   margin-bottom: 16px;
+  border-radius: 10px;
 }
 
 .invite-box code {
@@ -878,6 +886,7 @@ li {
   margin-bottom: 16px;
   color: var(--text);
   text-decoration: none;
+  border-radius: 10px;
 }
 .discord-icon {
   width: 24px;
@@ -1074,7 +1083,11 @@ body::before {
   z-index: 0;  
 }
 
-
+.navbar {
+  border-radius: 0px;
+  min-width: 100%;
+  top: 0;
+}
 
 .landing {
   position: relative;
@@ -1232,14 +1245,6 @@ body::before {
     font-size: 17px;
   }
 
-  .card:hover {
-  background-color: #00ffa233;
-
-}
-.card:hover img {
-  transform: scale(1) rotate(3deg);
-  z-index: 5;
-}
 
     .menu-btn {
     display: block;

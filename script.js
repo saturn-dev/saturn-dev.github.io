@@ -35,19 +35,32 @@ function createTabs() {
     const tab = document.createElement("div");
     tab.className = "tab" + (cat === "ALL" ? " active" : "");
     tab.textContent = cat;
+
     tab.onclick = () => {
-      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".tab").forEach(t =>
+        t.classList.remove("active")
+      );
+
       tab.classList.add("active");
       currentCategory = cat;
+
+      updateSearchPlaceholder();
       renderProducts();
     };
+
     tabsEl.appendChild(tab);
   });
 }
 
+
 function updateSearchPlaceholder() {
-  searchInput.placeholder = `Search ${data.products.length} products`;
+  let count = data.products.filter(p =>
+    currentCategory === "ALL" || p.category === currentCategory
+  ).length;
+
+  searchInput.placeholder = `Search ${count} products`;
 }
+
 
 function kakobuyLink(raw) {
   return `https://www.kakobuy.com/item/details?url=${encodeURIComponent(raw)}&affcode=deepinmycloset`;

@@ -90,6 +90,7 @@ select {
   color: var(--text);
   height: 70px;
   text-transform: uppercase;
+    border-radius: 10px;
 }
 
 select {
@@ -164,6 +165,7 @@ input {
   font-size: 11px;
     z-index: 6;
         margin-top: auto;
+          border-radius: 5px;
 }
 
 .title {
@@ -209,6 +211,7 @@ input {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin: 0;
   bottom: 0px;
+    border-radius: 10px;
 }
 
 .qc-btn {
@@ -217,6 +220,7 @@ input {
   border: 1px solid var(--accent);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   z-index: 1;  
+    border-radius: 10px;
 }
 
 
@@ -257,6 +261,7 @@ input {
   max-width: 90%;
   max-height: 90%;
   border: 1px solid var(--border);
+  border-radius: 10px;
 }
 
 .qc-modal .close {
@@ -267,7 +272,6 @@ input {
   cursor: pointer;
 }
 
-/* ANIMATION */
 @keyframes fadeIn {
   from {
     opacity: 0;

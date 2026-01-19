@@ -10,6 +10,15 @@
   <meta property="og:description" content="deepinmycloset - Kakobuy, simplified. Discover quality rep finds without the hassle, all in one place.">
   <meta property="og:image" content="/banner.png">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5WN7F6ZJ3Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5WN7F6ZJ3Z');
+</script>
 <body>
 <div id="notification-container"></div>
 <div class="menu-overlay" id="menuOverlay"></div>
@@ -26,7 +35,6 @@
     <button class="menu-btn" id="menuOpen">MENU</button>
   </div>
 </nav>
-
 <nav class="side-menu" id="sideMenu">
   <div class="menu-header">
     <span>MENU</span>
@@ -41,6 +49,256 @@
   </ul>
 </nav>
 
+<!-- SPECIAL OFFER POPUP -->
+<div class="offer-overlay" id="offerOverlay">
+  <div class="offer-popup">
+    <span class="offer-badge">SPECIAL OFFER</span>
+    <h2>You’ve got a deal waiting 👀</h2>
+    <p>
+      Use code <span class="offer-code">DEEPINMYCLOSET</span> on
+      <strong>KakoBuy</strong> and get <strong>FREE $15 off</strong>
+      your first haul.
+    </p>
+    <p style="color: #969696; font-size: 13px;">*stacks with the $400+ in coupons you get by signing up*</p>
+    <div class="offer-actions">
+      <a
+        href="https://ikako.vip/r/deepinmycloset"
+        target="_blank"
+        class="offer-btn primary"
+        id="offerSignup"
+      >
+        Sign up
+      </a>
+<button class="offer-btn secondary locked" id="offerLater">
+  Later (5)
+  <span class="glow-frame"></span>
+</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.offer-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.offer-btn.locked {
+  pointer-events: none;
+  opacity: 0.6;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-btn.locked .glow-frame {
+  position: absolute;
+  inset: -1px;
+  border-radius: 12px;
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(0,255,160,0.6),
+    transparent 80%
+  );
+  animation: glowSlide 4s linear forwards;
+}
+
+@keyframes glowSlide {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+
+.offer-btn.unlocked {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.offer-btn.unlocked .glow-frame {
+  display: none;
+}
+
+
+.offer-popup {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  max-width: 420px;
+  width: calc(100% - 40px);
+  text-align: center;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+  animation: popIn 0.35s ease;
+}
+
+.offer-badge {
+  display: inline-block;
+  background: rgba(0,255,160,0.15);
+  color: var(--accent);
+  border: 1px solid rgba(0,255,160,0.3);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.offer-popup h2 {
+  color: var(--text);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.offer-popup p {
+  color: var(--text-secondary);
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+.offer-code {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.offer-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.offer-btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+.offer-btn.primary {
+  background: var(--accent);
+  color: #000;
+  text-decoration: none;
+}
+
+.offer-btn.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 20px rgba(0,255,160,0.4);
+}
+
+.offer-btn.secondary {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+.offer-btn.secondary:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+</style>
+
+<script>
+const OVERLAY = document.getElementById("offerOverlay");
+const SIGNUP = document.getElementById("offerSignup");
+const LATER = document.getElementById("offerLater");
+
+const DISMISSED_KEY = "offerDismissed";
+const REMIND_KEY = "offerRemindAt";
+
+function lockScroll(lock) {
+  document.body.style.overflowY = lock ? "hidden" : "";
+}
+
+function shouldShowOffer() {
+  if (localStorage.getItem(DISMISSED_KEY)) return false;
+
+  const remindAt = localStorage.getItem(REMIND_KEY);
+  if (!remindAt) return true;
+
+  return Date.now() > parseInt(remindAt, 10);
+}
+
+/* =========================
+   SHOW POPUP (ONLY IF NEEDED)
+========================= */
+if (shouldShowOffer()) {
+  setTimeout(() => {
+    OVERLAY.style.display = "flex";
+    lockScroll(true);
+    startLaterTimer();
+  }, 800);
+} else {
+  // Ensure scroll is NEVER stuck on refresh
+  lockScroll(false);
+}
+
+/* =========================
+   SIGN UP CLICK
+========================= */
+SIGNUP.addEventListener("click", () => {
+  localStorage.setItem(DISMISSED_KEY, "true");
+  OVERLAY.style.display = "none";
+  lockScroll(false);
+});
+
+/* =========================
+   LATER TIMER LOGIC
+========================= */
+function startLaterTimer() {
+  let countdown = 5;
+
+  LATER.classList.add("locked");
+  LATER.textContent = `Later (${countdown})`;
+
+  const timer = setInterval(() => {
+    countdown--;
+    LATER.textContent = countdown > 0 ? `Later (${countdown})` : "Later";
+
+    if (countdown <= 0) {
+      clearInterval(timer);
+      LATER.classList.remove("locked");
+      LATER.classList.add("unlocked");
+    }
+  }, 1000);
+}
+
+/* =========================
+   LATER CLICK
+========================= */
+LATER.addEventListener("click", () => {
+  if (LATER.classList.contains("locked")) return;
+
+  const tomorrow = Date.now() + 24 * 60 * 60 * 1000;
+  localStorage.setItem(REMIND_KEY, tomorrow.toString());
+
+  OVERLAY.style.display = "none";
+  lockScroll(false);
+});
+
+</script>
 
 
 
@@ -284,33 +542,44 @@ promoFrames.forEach(frame => observer.observe(frame));
 
 const releases = [
   {
-    title: "v0.4",
+    title: "v0.5",
     tags: ["NEWEST"],
-    date: "2026-1-13",
+    date: "2026-1-18",
     changes: [
-      "Website release! 🎉",
-      "Added a bunch of new products",
-      "Accessories tab",
-      "MISC tab",
-      "QC checker feature"
+      "Added rounded corners to the UI",
+      "Updated the navbar",
+      "Fixed minor bugs",
+      "Shows the correct amount of product on each tab",
+      "--------------------------",
+      "Supreme FW20 Backpack",
+"Vivienne Westwood Card Holder",
+"Comme Des Garcons Bag",
+"Vivienne Westwood Belt",
+"Balenciaga BB Belt",
+"Acne Studios Wool Scarf",
+"Supreme Last Supper Belt",
+"Chrome Hearts Boxers",
+"Supreme Stickers",
+"ERD Rapper Belt",
+"Chrome Hearts Wallet Chains",
+"Supreme Skateboard Decks",
+"Chrome Hearts Pen",
+"Takashi Murakami Pillows",
+"Chrome Hearts Stay Fast Longsleeve",
+"Chrome Hearts Love You Longsleeve",
+"Givenchy Tysons"
     ]
   },
   {
-    title: "v0.3",
+    title: "v0.4",
     tags: [],
-    date: "2025-12-31",
+    date: "2026-1-13",
     changes: [
-      "ERD Mussolini Sweater",
-      "ERD 'Remember When' Hoodie",
-      "ERD 'Benny's Video' Hoodie",
-      "Balenciaga Be Kind Hoodie",
-      "Raf Simons aw00 'Confusion' Hoodie",
-      "Number (N)ine Tribal Zip-up",
-      "ERD 'War' Hoodie",
-      "ERD Straight Leg Corduroy Pants",
-      "ERD Ripped Bootcut Jeans",
-      "Balenciaga Triple Waist Sweats",
-      "Satoshi Nakamoto Old Skool Vans"
+      "Website release! 🎉",
+      "Added a bunch of new products 100+",
+      "Accessories tab",
+      "MISC tab",
+      "QC checker feature"
     ]
   }
 ];

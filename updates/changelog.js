@@ -2,8 +2,37 @@ const timeline = document.getElementById("timeline");
 
 const releases = [
   {
-    title: "v0.4",
+    title: "v0.5",
     tags: ["NEWEST"],
+    date: "2026-1-18",
+    changes: [
+      "Added rounded corners to the UI",
+      "Updated the navbar",
+      "Fixed minor bugs",
+      "Shows the correct amount of product on each tab",
+      "--------------------------",
+      "Supreme FW20 Backpack",
+"Vivienne Westwood Card Holder",
+"Comme Des Garcons Bag",
+"Vivienne Westwood Belt",
+"Balenciaga BB Belt",
+"Acne Studios Wool Scarf",
+"Supreme Last Supper Belt",
+"Chrome Hearts Boxers",
+"Supreme Stickers",
+"ERD Rapper Belt",
+"Chrome Hearts Wallet Chains",
+"Supreme Skateboard Decks",
+"Chrome Hearts Pen",
+"Takashi Murakami Pillows",
+"Chrome Hearts Stay Fast Longsleeve",
+"Chrome Hearts Love You Longsleeve",
+"Givenchy Tysons"
+    ]
+  },
+  {
+    title: "v0.4",
+    tags: [],
     date: "2026-1-13",
     changes: [
       "Website release! 🎉",
