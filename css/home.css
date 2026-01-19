@@ -1049,7 +1049,7 @@ li {
   }
 .footer-disclaimer {
   min-width: 600px; 
-  transform: scale(1.1)
+  transform: scale(1.05)
 }
 
 .footer-nav {
@@ -1088,6 +1088,8 @@ body::before {
   min-width: 100%;
   top: 0;
 }
+
+
 
 .offer-popup {
   transform: scale(1.4);
