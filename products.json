@@ -373,11 +373,11 @@
 },
 {
   "name": "Satoshi Nakamoto Old Skool Vans",
-  "price": 41.19,
+  "price": 52.6,
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/satoshi-nakamoto-old-skool-vans.png",
-  "link": "https://weidian.com/item.html?itemId=7644670615&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemId=7670250870"
 },
 {
   "name": "Balenciaga Birkenstock Mule",
@@ -520,11 +520,11 @@
 },
 {
   "name": "LV Timbs",
-  "price": 74.46,
+  "price": 91.5,
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/lv-timbs.png",
-  "link": "https://weidian.com/item.html?itemId=7389166166&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemID=7670178804"
 },
 {
   "name": "CDG Airforce 1",
@@ -591,26 +591,27 @@
 },
 {
   "name": "Rick Owens Ramones",
-  "price": 90.8,
+  "price": 72.83,
   "category": "SHOES",
+  "badge": "BEST",
   "image": "products/rick-owens-ramones.png",
-  "link": "https://weidian.com/item.html?itemID=7650193745"
+  "link": "https://weidian.com/item.html?itemID=7667379635"
 },
 {
   "name": "Rick Owens Vans",
-  "price": 68.38,
+  "price": 72.83,
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/rick-owens-vans.png",
-  "link": "https://shop1268847658.v.weidian.com/item.html?itemId=6502982488&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemID=7667379635"
 },
 {
   "name": "Rick Owens Geobasket",
-  "price": 90.8,
+  "price": 72.83,
   "category": "SHOES",
   "badge": "GOOD",
   "image": "products/rick-owens-geobasket.png",
-  "link": "https://shop1268847658.v.weidian.com/item.html?itemId=6502982488&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemID=7667379635"
 },
 {
   "name": "Balenciaga Fur Slides",
@@ -639,17 +640,17 @@
 },
 {
   "name": "Balenciaga Stomper Boots",
-  "price": 66.86,
+  "price": 82.16,
   "category": "SHOES",
   "image": "products/balenciaga-stomper-boots.png",
-  "link": "https://shop1676081342.v.weidian.com/item.html?itemId=7565899156&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemID=7667252451"
 },
 {
   "name": "Balenciaga Bulldozer Boots",
-  "price": 66.86,
+  "price": 82.16,
   "category": "SHOES",
   "image": "products/balenciaga-bulldozer-boots.png",
-  "link": "https://shop1676081342.v.weidian.com/item.html?itemId=7565899156&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemID=7667252451"
 },
 {
   "name": "Balenciaga Strike Boots",
@@ -850,11 +851,11 @@
 },
 {
   "name": "Chrome Hearts Embroidered Sweater",
-  "price": 49.84,
+  "price": 61.25,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/chrome-hearts-embroidered-sweater.png",
-  "link": "https://weidian.com/item.html?itemId=7547363233&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemID=7670161146"
 },
 {
   "name": "Raf Simons 03Ss “Penelope” Hoodie",
@@ -1112,10 +1113,10 @@
 },
 {
   "name": "Number (N)ine Double Skull Zip-up",
-  "price": 36.73,
+  "price": 49.02,
   "category": "HOODIES",
   "image": "products/number-nine-double-skull-zip-up.png",
-  "link": "https://detail.tmall.com/item.htm?id=811387802141"
+  "link": "https://weidian.com/item.html?itemID=7658120000"
 },
 {
   "name": "Number (N)ine 03ss Lion Hoodie",
@@ -1134,10 +1135,10 @@
 },
 {
   "name": "Number (N)ine 'F*CK YOU' Zip-up",
-  "price": 41.72,
+  "price": 46.5,
   "category": "HOODIES",
   "image": "products/number-nine-fuck-you-zip-up.png",
-  "link": "https://detail.tmall.com/item.htm?id=969429369406",
+  "link": "https://weidian.com/item.html?itemID=7669303070",
   "qc": "products/qc/number-nine-fuck-you-zip-up.png"
 },
 {
@@ -1227,10 +1228,10 @@
 },
 {
   "name": "Balenciaga Be Different Hoodie",
-  "price": 49.51,
+  "price": 60.69,
   "category": "HOODIES",
   "image": "products/balenciaga-be-different-hoodie.png",
-  "link": "https://weidian.com/item.html?itemId=5743711885&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemID=7667260127"
 },
 {
   "name": "Balenciaga Purple Bebe Hoodie",
@@ -1265,11 +1266,11 @@
 },
 {
   "name": "Chrome Hearts Knit",
-  "price": 31.26,
+  "price": 41.74,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/chrome-hearts-knit.png",
-  "link": "https://item.taobao.com/item.htm?id=990778858337"
+  "link": "https://weidian.com/item.html?itemID=7667241543"
 },
 {
   "name": "ERD Ripped Bootcut Jeans",
@@ -1604,11 +1605,11 @@
 },
 {
   "name": "Acne Studios 2023M Scribble Jeans",
-  "price": 42.06,
+  "price": 55.72,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/acne-studios-2023m-scribble-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=893645001152"
+  "link": "https://weidian.com/item.html?itemId=7669842026"
 },
 {
   "name": "Acne Studios 2021M Penicillin Jeans",
@@ -1620,18 +1621,18 @@
 },
 {
   "name": "Acne Studios 2021M Raw Denim Jeans",
-  "price": 31.17,
+  "price": 41.63,
   "category": "PANTS",
   "image": "products/acne-studios-2021m-raw-denim-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=894575895201"
+  "link": "https://weidian.com/item.html?itemId=7666773197"
 },
 {
   "name": "Acne 1981M Ink-Splashed Jeans",
-  "price": 48.42,
+  "price": 63.22,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/acne-1981m-ink-splashed-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=799544942560"
+  "link": "https://weidian.com/item.html?itemId=7669843682"
 },
 {
   "name": "Acne Studios 2021M Jeans",
@@ -1665,11 +1666,11 @@
 },
 {
   "name": "Black Anonymous Club Sweats",
-  "price": 42.33,
+  "price": 51.01,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/black-anonymous-club-sweats.png",
-  "link": "https://detail.tmall.com/item.htm?id=853042180310",
+  "link": "https://weidian.com/item.html?itemID=7670167020",
   "qc": "products/qc/black-anonymous-club-sweats.png"
 },
 {
@@ -2317,6 +2318,71 @@
   "category": "SHOES",
   "image": "products/givenchy-tysons.png",
   "link": "https://weidian.com/item.html?itemID=7650205709"
+},
+{
+  "name": "ERD Don Van Vliet Longsleeve",
+  "price": 33.43,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-don-van-vliet-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7670139508"
+},
+{
+  "name": "ERD Teen just wanted love Longsleeve",
+  "price": 32.74,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-teen-just-wanted-love-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7667159513"
+},
+{
+  "name": "ERD Thrilling Raglan Sweater",
+  "price": 26.82,
+  "category": "SHIRTS",
+  "image": "products/erd-thrilling-raglan-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7670137530"
+},
+{
+  "name": "Telfar Longsleeve",
+  "price": 22.92,
+  "category": "SHIRTS",
+  "image": "products/telfar-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7667218695"
+},
+{
+  "name": "ERD Reminiscing Sweater",
+  "price": 52.28,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-reminiscing-sweater.png",
+  "link": "https://weidian.com/item.html?itemID=7667244339"
+},
+{
+  "name": "Vetements Antwerpen Reconstructed Hoodie",
+  "price": 69.09,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/vetements-antwerpen-reconstructed-hoodie.png",
+  "link": "https://weidian.com/item.html?itemID=7670210540"
+},
+{
+  "name": "Balenciaga Half Leopard-print Shirt",
+  "price": 47.9,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/balenciaga-half-leopard-print-shirt.png",
+  "link": "https://weidian.com/item.html?itemID=7667265543"
+},
+{
+  "name": "Ne-net Scarf",
+  "price": 4.9,
+  "category": "MISC",
+  "badge": "BEST",
+  "image": "products/ne-net-scarf.png",
+  "link": "https://item.taobao.com/item.htm?id=869262432351"
 }
+
+
+
   ]
 }
