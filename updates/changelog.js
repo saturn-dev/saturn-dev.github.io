@@ -2,8 +2,22 @@ const timeline = document.getElementById("timeline");
 
 const releases = [
   {
-    title: "v0.5",
+    title: "v0.6",
     tags: ["NEWEST"],
+    date: "2026-1-29",
+    changes: [
+      "Updated the sites colors",
+      "Added a Cart feature, saves locally",
+      "Revamped the navbar | new site logo | new menu tab",
+      "Optimized the spreadsheet, products load as you scroll",
+      "Updated the landing page with a clickable item gallery with purchasing",
+      "Updated the qc button and layout",
+      "Videos page delayed for later update"
+    ]
+  },
+  {
+    title: "v0.5",
+    tags: [],
     date: "2026-1-18",
     changes: [
       "Added rounded corners to the UI",
