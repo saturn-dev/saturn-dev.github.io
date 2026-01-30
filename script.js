@@ -4,6 +4,7 @@ let visibleCount = 0;
 let chunkSize = 0;
 let filteredProducts = [];
 let isLoading = false;
+let searchTimeout = null;
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 function saveCart() {
@@ -167,8 +168,13 @@ function updateOtherTotals() {
   });
 }
 sortSelect.addEventListener("change", () => renderProducts(true));
-searchInput.addEventListener("input", () => renderProducts(true));
-// ------------------ PRODUCT RENDERING ------------------
+searchInput.addEventListener("input", () => {
+  clearTimeout(searchTimeout);
+
+  searchTimeout = setTimeout(() => {
+    renderProducts(true);
+  }, 400);
+});// ------------------ PRODUCT RENDERING ------------------
 function renderProducts(reset = true) {
   if (reset) {
     grid.innerHTML = "";
@@ -185,13 +191,15 @@ function renderProducts(reset = true) {
 
   const loader = document.getElementById("infiniteLoader");
 
-  // 🔥 CATEGORY TABS: render everything instantly
-  if (currentCategory !== "ALL") {
-    loader.classList.add("hidden");
-    filteredProducts.forEach(renderCard);
-    visibleCount = filteredProducts.length;
-    return;
-  }
+const isSearching = searchInput.value.trim().length > 0;
+
+// 🔥 CATEGORY TABS OR SEARCH: render everything instantly
+if (currentCategory !== "ALL" || isSearching) {
+  loader.classList.add("hidden");
+  filteredProducts.forEach(renderCard);
+  visibleCount = filteredProducts.length;
+  return;
+}
 
   // 🔥 ALL TAB: infinite scroll logic
   chunkSize = Math.max(1, Math.ceil(filteredProducts.length * 0.25));
