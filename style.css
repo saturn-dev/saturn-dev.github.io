@@ -1,6 +1,10 @@
 @import url('css/navbar.css');
 @import url('css/main.css');
 @import url('css/navbar.css');
+
+html, body {
+  touch-action: manipulation;
+}
 :root {
   --bg: #0d1117;
   --panel: #161b25;
