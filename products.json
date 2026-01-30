@@ -2683,6 +2683,86 @@
   "image": "products/erd-tee-2.png",
   "link": "https://item.taobao.com/item.htm?id=929563507655",
   "qc": "products/qc/erd-tee-2.png"
+},
+{
+  "name": "Chrome Hearts Geobaskets",
+  "price": 88.3,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/chrome-hearts-geobaskets.png",
+  "link": "https://weidian.com/item.html?itemID=7650013413"
+},
+{
+  "name": "Chrome Hearts Rick Owens Dunks",
+  "price": 88.3,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/chrome-hearts-rick-owens-dunks.png",
+  "link": "https://weidian.com/item.html?itemID=7650013413"
+},
+{
+  "name": "Rick Owens Dunks",
+  "price": 88.3,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/rick-owens-dunks.png",
+  "link": "https://weidian.com/item.html?itemID=7650013413"
+},
+{
+  "name": "Rick Owens Megatooth Boots",
+  "price": 80.29,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/rick-owens-megatooth-boots.png",
+  "link": "https://weidian.com/item.html?itemID=7653057364"
+},
+{
+  "name": "Lanvin Curbs",
+  "price": 78.58,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/lanvin-curbs.png",
+  "link": "https://weidian.com/item.html?itemID=7653065434"
+},
+{
+  "name": "Off-White Jordan 5s",
+  "price": 60.03,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/off-white-jordan-5s.png",
+  "link": "https://weidian.com/item.html?itemID=7653160326"
+},
+{
+  "name": "Jordan 4s",
+  "price": 60.65,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/jordan-4s.png",
+  "link": "https://weidian.com/item.html?itemID=7650093261"
+},
+{
+  "name": "Balenciaga Blue Skater Zip-up Hoodie",
+  "price": 39.29,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/balenciaga-blue-skater-zip-up.png",
+  "link": "https://weidian.com/item.html?itemID=7653150556"
+},
+{
+  "name": "Balenciaga Blue Skater Sweatpants",
+  "price": 39.29,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/balenciaga-blue-skater-sweatpants.png",
+  "link": "https://weidian.com/item.html?itemID=7653150556"
+},
+{
+  "name": "Nettspend Tour Tee",
+  "price": 16.26,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/nettspend-tour-tee.png",
+  "link": "https://weidian.com/item.html?itemID=7653146774"
 }
 
 
