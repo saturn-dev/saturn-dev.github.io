@@ -1243,11 +1243,11 @@
 },
 {
   "name": "Supreme Leopard Thermal Zip Up",
-  "price": 37.32,
+  "price": 41.16,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/supreme-leopard-thermal-zip-up.png",
-  "link": "https://detail.1688.com/offer/960081523721.html"
+  "link": "https://weidian.com/item.html?itemID=7683837436"
 },
 {
   "name": "Kapital Surf Hoodie",
@@ -2383,11 +2383,11 @@
 },
 {
   "name": "Number Nine 01SS Hoodie",
-  "price": 39.67,
+  "price": 47.61,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/number-nine-01ss-hoodie.png",
-  "link": "https://item.taobao.com/item.htm?id=1017388726264"
+  "link": "https://weidian.com/item.html?itemID=7680900759"
 },
 {
   "name": "Forgetraven Longsleeve",
@@ -2677,11 +2677,11 @@
 },
 {
   "name": "ERD Tee",
-  "price": 31.83,
+  "price": 37.9,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/erd-tee-2.png",
-  "link": "https://item.taobao.com/item.htm?id=929563507655",
+  "link": "https://weidian.com/item.html?itemID=7680208985",
   "qc": "products/qc/erd-tee-2.png"
 },
 {
@@ -2779,9 +2779,200 @@
   "badge": "BEST",
   "image": "products/rick-owens-ripped-denim-ramones-high.png",
   "link": "https://weidian.com/item.html?itemID=7650170401"
+},
+{
+  "name": "ERD Bully Longsleeve",
+  "price": 43.66,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-bully-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7680843509",
+  "qc": "products/qc/erd-bully-longsleeve.png"
+},
+{
+  "name": "ERD Longsleeve",
+  "price": 49.73,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7683904378"
+},
+{
+  "name": "Saint Laurent Malibu Sweater",
+  "price": 18.69,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/saint-laurent-malibu-sweater.png",
+  "link": "https://weidian.com/item.html?itemID=7680853409",
+  "qc": "products/qc/saint-laurent-malibu-sweater.png"
+},
+{
+  "name": "Ralph Lauren Knit",
+  "price": 68.85,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/ralph-lauren-knit.png",
+  "link": "https://weidian.com/item.html?itemID=7683941772",
+  "qc": "products/qc/ralph-lauren-knit.png"
+},
+{
+  "name": "Maison Margiela Kiss Shirt",
+  "price": 30.57,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/maison-margiela-kiss-shirt.png",
+  "link": "https://weidian.com/item.html?itemID=7683702114",
+  "qc": "products/qc/maison-margiela-kiss-shirt.png"
+},
+{
+  "name": "CDG Longsleeve",
+  "price": 29.94,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/cdg-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7680892807",
+  "qc": "products/qc/cdg-longsleeve.png"
+},
+{
+  "name": "ERD Assemblance Thermal",
+  "price": 37.87,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-assemblance-thermal.png",
+  "link": "https://weidian.com/item.html?itemID=7683922086"
+},
+{
+  "name": "ERD Sleep Sound Sweater",
+  "price": 52.48,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-sleep-sound-sweater.png",
+  "link": "https://weidian.com/item.html?itemID=7683888738"
+},
+{
+  "name": "Junya Watanabe Longsleeve",
+  "price": 15.27,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/junya-watanabe-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7680902841",
+  "qc": "products/qc/junya-watanabe-longsleeve.png"
+},
+{
+  "name": "Derschutze Blossom Longsleeve",
+  "price": 21.52,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/derschutze-blossom-sleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7683855208",
+  "qc": "products/qc/derschutze-blossom-sleeve.png"
+},
+{
+  "name": "Maison Margiela Sweater",
+  "price": 16.47,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/maison-margiela-sweater.png",
+  "link": "https://weidian.com/item.html?itemID=7683937828",
+  "qc": "products/qc/maison-margiela-sweater.png"
+},
+{
+  "name": "CDG PLAY Longsleeve",
+  "price": 10.86,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/cdg-play-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7680938113",
+  "qc": "products/qc/cdg-play-longsleeve.png"
+},
+{
+  "name": "Acne Studios Layered Longsleeve",
+  "price": 31.62,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/acne-studios-layered-longsleeve.png",
+  "link": "https://weidian.com/item.html?itemID=7680884993",
+  "qc": "products/qc/acne-studios-layered-longsleeve.png"
+},
+{
+  "name": "Supreme Back Logo Hoodie",
+  "price": 23.31,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/supreme-back-logo-hoodie.png",
+  "link": "https://weidian.com/item.html?itemID=7683087586"
+},
+{
+  "name": "Rick Owens Cardigan Zip-up",
+  "price": 44.59,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/rick-owens-cardigan-zip-up.png",
+  "link": "https://weidian.com/item.html?itemID=7680898917"
+},
+{
+  "name": "VETEMENTS Deconstructed Zip Up",
+  "price": 45.61,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/vetements-deconstructed-zip-up.png",
+  "link": "https://weidian.com/item.html?itemID=7680934149",
+  "qc": "products/qc/vetements-deconstructed-zip-up.png"
+},
+{
+  "name": "Acne Studios Hoodie",
+  "price": 64.18,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/acne-studios-hoodie.png",
+  "link": "https://weidian.com/item.html?itemID=7680388341",
+  "qc": "products/qc/acne-studios-hoodie.png"
+},
+{
+  "name": "Wasted Youth Hoodie",
+  "price": 49.28,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/wasted-youth-hoodie.png",
+  "link": "https://weidian.com/item.html?itemID=7683908030",
+  "qc": "products/qc/wasted-youth-hoodie.png"
+},
+{
+  "name": "Mowalola Zip-up",
+  "price": 46.97,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/mowalola-zip-up.png",
+  "link": "https://weidian.com/item.html?itemID=7683900190",
+  "qc": "products/qc/mowalola-zip-up.png"
+},
+{
+  "name": "Balenciaga LIBERTY Hoodie",
+  "price": 76.61,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/balenciaga-liberty-hoodie.png",
+  "link": "https://weidian.com/item.html?itemID=7680934159",
+  "qc": "products/qc/balenciaga-liberty-hoodie.png"
+},
+{
+  "name": "No E Mosen Jeans",
+  "price": 68.31,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/no-e-mosen-jeans.png",
+  "link": "https://weidian.com/item.html?itemID=7680912691",
+  "qc": "products/qc/no-e-mosen-jeans.png"
+},
+{
+  "name": "No Faith Studios Ripped Jeans",
+  "price": 64.26,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/no-faith-studios-ripped-jeans.png",
+  "link": "https://weidian.com/item.html?itemID=7680853439",
+  "qc": "products/qc/no-faith-studios-ripped-jeans.png"
 }
-
-
 
 
 
