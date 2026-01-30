@@ -532,6 +532,10 @@ input {
     display: flex;
   }
 
+  .btn {
+    font-size: 12px;
+  }
+
   #sortSelect,
   .cart-btn,
   .nav-links {

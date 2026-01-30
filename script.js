@@ -174,7 +174,9 @@ searchInput.addEventListener("input", () => {
   searchTimeout = setTimeout(() => {
     renderProducts(true);
   }, 400);
-});// ------------------ PRODUCT RENDERING ------------------
+});
+
+// ------------------ PRODUCT RENDERING ------------------
 function renderProducts(reset = true) {
   if (reset) {
     grid.innerHTML = "";
