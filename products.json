@@ -3590,6 +3590,42 @@
   "image": "products/number-nine-fender-hoodie.png",
   "link": "https://weidian.com/item.html?itemID=7686236454", 
   "qc": "products/qc/number-nine-fender-hoodie.png"
+},
+{
+  "name": "ERD Gun Girl Sweater",
+  "price": 45.34,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-gun-girl-sweater.png",
+  "link": "https://item.taobao.com/item.htm?id=979597307271", 
+  "qc": "products/qc/erd-gun-girl-sweater.png"
+},
+{
+  "name": "ERD Gun Girl Hoodie",
+  "price": 32.45,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/erd-gun-girl-hoodie.png",
+  "link": "https://weidian.com/item.html?itemID=7683698113", 
+  "qc": "products/qc/erd-gun-girl-hoodie.png"
+},
+{
+  "name": "Raf Simons 'Virginia Creeper' Sweatshirt",
+  "price": 61.6,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/raf-simons-virginia-creeper-sweatshirt-2.png",
+  "link": "https://item.taobao.com/item.htm?id=994217483421", 
+  "qc": "products/qc/raf-simons-virginia-creeper-sweatshirt-2.png"
+},
+{
+  "name": "ERD Dream Sweater",
+  "price": 26.53,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/erd-dream-sweater.png",
+  "link": "https://weidian.com/item.html?itemID=7686711626", 
+  "qc": "products/qc/erd-dream-sweater.png"
 }
 
 
