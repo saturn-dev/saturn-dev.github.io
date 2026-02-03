@@ -671,7 +671,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/balenciaga-alaska-ski-boots.png",
-  "link": "https://weidian.com/item.html?itemID=7667133718"
+  "link": "https://weidian.com/item.html?itemID=7667133718",
+  "qc": "products/qc/balenciaga-alaska-ski-boots.png"
 },
 {
   "name": "Balenciaga Runners",
@@ -1305,11 +1306,12 @@
 },
 {
   "name": "Gucci Demna Horsebit Jeans",
-  "price": 62.8,
+  "price": 48.51,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/gucci-demna-horsebit-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=1000766846017"
+  "link": "https://weidian.com/item.html?itemID=7687523848",
+  "qc": "products/qc/gucci-demna-horsebit-jeans.png"
 },
 {
   "name": "Project Grailz Triple Waist Sweatpants",
@@ -3626,6 +3628,40 @@
   "image": "products/erd-dream-sweater.png",
   "link": "https://weidian.com/item.html?itemID=7686711626", 
   "qc": "products/qc/erd-dream-sweater.png"
+},
+{
+  "name": "Balenciaga Soccer Shirt",
+  "price": 26.23,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/balenciaga-soccer-shirt.png",
+  "link": "https://weidian.com/item.html?itemID=7446547400", 
+  "qc": "products/qc/balenciaga-soccer-shirt.png"
+},
+{
+  "name": "Balenciaga Alaska Faux Ski Boots",
+  "price": 107.56,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/balenciaga-alaska-faux-ski-boots.png",
+  "link": "https://weidian.com/item.html?itemID=7667133718"
+},
+{
+  "name": "Gucci Demna Horsebit Jeans",
+  "price": 48.51,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/gucci-demna-horsebit-jeans-2.png",
+  "link": "https://weidian.com/item.html?itemID=7687523848"
+},
+{
+  "name": "Vetements Bro Sweatpants",
+  "price": 59.54,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/vetements-bro-sweatpants.png",
+  "link": "https://weidian.com/item.html?itemID=7684471531",
+  "qc": "products/qc/vetements-bro-sweatpants.png"
 }
 
 
