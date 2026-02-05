@@ -136,13 +136,7 @@ body::before {
   min-width: 700px;
 }
 
-.logo-alt,
-.hero-title,
-.hero-description,
-.btn-spreadsheet {
-  opacity: 0;
-  transform: translateY(20px) scale(0.95);
-}
+
 
 .loaded .logo-alt {
   animation: logoIn 0.3s ease forwards;
