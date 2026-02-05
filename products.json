@@ -3662,6 +3662,32 @@
   "image": "products/vetements-bro-sweatpants.png",
   "link": "https://weidian.com/item.html?itemID=7684471531",
   "qc": "products/qc/vetements-bro-sweatpants.png"
+},
+{
+  "name": "Undercover 85s",
+  "price": 131.69,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/undercover-85s.png",
+  "link": "https://weidian.com/item.html?itemID=7689563944"
+},
+{
+  "name": "CDG x Vans",
+  "price": 44.93,
+  "category": "SHOES",
+  "badge": "BEST",
+  "image": "products/cdg-x-vans.png",
+  "link": "https://weidian.com/item.html?itemID=7686331073",
+  "qc": "products/qc/cdg-x-vans.png"
+},
+{
+  "name": "Balenciaga x Polo Zip-up",
+  "price": 53.33,
+  "category": "HOODIES",
+  "badge": "BEST",
+  "image": "products/balenciaga-x-polo-zip-up.png",
+  "link": "https://item.taobao.com/item.htm?id=739437047658",
+  "qc": "products/qc/balenciaga-x-polo-zip-up.png"
 }
 
 
