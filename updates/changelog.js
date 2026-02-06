@@ -1,9 +1,23 @@
 const timeline = document.getElementById("timeline");
 
 const releases = [
+   {
+    title: "v0.7 Valentines",
+    tags: ["NEWEST"],
+    date: "2026-2-5",
+    changes: [
+      "Updated the sites colors",
+      "Fixed minor bugs",
+      "Added chinese new year banner",
+      "ADDED OVER 150+ NEW PRODUCTS!",
+      "Optimized the images",
+      "Added more QC",
+      "Videos page still delayed for later update v0.8"
+    ]
+  },
   {
     title: "v0.6",
-    tags: ["NEWEST"],
+    tags: [],
     date: "2026-1-29",
     changes: [
       "Updated the sites colors",

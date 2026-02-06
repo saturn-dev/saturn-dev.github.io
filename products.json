@@ -24,7 +24,8 @@
       "category": "HOODIES",
       "badge": "BEST",
       "image": "products/rafconfusion.png",
-      "link": "https://item.taobao.com/item.htm?id=1007958282281"
+      "link": "https://item.taobao.com/item.htm?id=1007958282281",
+      "qc": "products/qc/rafconfusion.png"
     },
 {
   "name": "Balenciaga Be Kind Hoodie",
@@ -80,7 +81,8 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/hysteric-glamour-medicine-hoodie.png",
-  "link": "https://item.taobao.com/item.htm?id=979779926494"
+  "link": "https://item.taobao.com/item.htm?id=979779926494",
+  "qc": "products/qc/hysteric-glamour-medicine-hoodie.png"
 },
 {
   "name": "Balenciaga Red Skater Zip-up Hoodie",
@@ -105,7 +107,8 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/raf-simons-virginia-creeper-longsleeve.png",
-  "link": "https://item.taobao.com/item.htm?id=1002636084712"
+  "link": "https://item.taobao.com/item.htm?id=1002636084712",
+  "qc": "products/qc/raf-simons-virginia-creeper-longsleeve.png"
 },
 {
   "name": "ERD Le Rosey Sweater",
@@ -136,7 +139,8 @@
   "price": 55.51,
   "category": "HOODIES",
   "image": "products/balenciaga-soccer-zip-up-black.png",
-  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7650132815"
+  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7650132815",
+  "qc": "products/qc/balenciaga-soccer-zip-up-black.png"
 },
 {
   "name": "Supreme x True Religion Zip Up",
@@ -144,7 +148,8 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/supreme-x-true-religion-zip-up.png",
-  "link": "https://detail.tmall.com/item.htm?id=794377449438"
+  "link": "https://detail.tmall.com/item.htm?id=794377449438",
+  "qc": "products/qc/supreme-x-true-religion-zip-up.png"
 },
 {
   "name": "Vetements Grey Gun Club Hoodie",
@@ -1640,7 +1645,8 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/acne-1981m-ink-splashed-jeans.png",
-  "link": "https://weidian.com/item.html?itemId=7669843682"
+  "link": "https://weidian.com/item.html?itemId=7669843682",
+  "qc": "products/qc/acne-1981m-ink-splashed-jeans.png"
 },
 {
   "name": "Acne Studios 2021M Jeans",

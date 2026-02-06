@@ -8,36 +8,50 @@ html, body {
 }
 body {
   margin: 0;
-  background: var(--panel);
+  background-color: var(--panel);
   scroll-behavior: smooth;
 }
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(to right, #00ffa24b 1px, transparent 1px),
-    linear-gradient(to bottom, #00ffa24b 1px, transparent 1px);
-  background-size: 50px 50px;
-  z-index: -10 !important;
-  pointer-events: none;
-  -webkit-mask-image: radial-gradient(
-    circle 150px at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    black 60%,
-    transparent 100%
-  );
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: cover;
-  mask-image: radial-gradient(
-    circle 200px at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    black 60%,
-    transparent 100%
-  );
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: cover;
+.announcement-bar {
+  position: relative;    
+  isolation: isolate;     
+  width: 100%;
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  z-index: 9999;       
 }
+
+
+.announcement-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+  position: relative;
+  z-index: 1;
+}
+
+.announcement-group {
+  display: flex;
+  gap: 40px;
+  padding: 6px 0;
+  flex-shrink: 0;           
+}
+
+.announcement-group span {
+  color: var(--text);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
 
 .biggrid {
   position: absolute;
@@ -46,10 +60,10 @@ body::before {
   filter: blur(1px);
   background: linear-gradient(
       to right,
-      rgba(0, 255, 162, 0.13) 1px,
+      var(--pillbackground) 1px,
       transparent 1.5px
     ),
-    linear-gradient(to bottom, rgba(0, 255, 162, 0.13) 1px, transparent 1.5px);
+    linear-gradient(to bottom, var(--pillbackground) 1px, transparent 1.5px);
   background-size: 90px 90px;
 
   pointer-events: none;
@@ -66,7 +80,7 @@ body::before {
 }
 
 .navbar {
-  background-color: rgba(10, 12, 16, 0.575);
+  background-color: var(--overlay);
   backdrop-filter: blur(40px);
   border-bottom: solid 1px var(--border);
   position: sticky;
@@ -138,22 +152,7 @@ body::before {
 
 
 
-.loaded .logo-alt {
-  animation: logoIn 0.3s ease forwards;
-}
 
-.loaded .hero-title {
-  animation: titleIn 0.7s ease 0.4s forwards;
-}
-
-.loaded .hero-description {
-  animation: descIn 0.6s ease 0.5s forwards;
-}
-
-.loaded .btn-spreadsheet {
-  transform-origin: top left;
-  animation: pullDown 0.7s cubic-bezier(.2,.9,.3,1) 0.6s forwards;
-}
 
 .logo-alt {
   width: 120px;
@@ -193,10 +192,10 @@ body::before {
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
-  background: linear-gradient(135deg, #00ffa0, #00b874);
+  background: linear-gradient(135deg, var(--accent), var(--accentdark));
   color: var(--bg);
   box-shadow:
-    0 0 140px rgba(0, 255, 162, 0.801)
+    0 0 140px var(--accentrgb)
   }
 
 
@@ -235,8 +234,8 @@ body::before {
   font-size: 12px;
   font-weight: 500;
   color: var(--accent);
-  background: rgba(0, 255, 160, 0.1);
-  border: 1px solid rgba(0, 255, 160, 0.35);
+  background: var(--pillbackground);
+  border: 1px solid var(--pillborder);
   border-radius: 999px;
   margin-bottom: 15px;
   opacity: 0;
@@ -255,7 +254,7 @@ body::before {
 .product-showcase-horizontal {
   display: none !important;
   background-color: var(--panel-2);
-  border-top: 1px solid #00ffa244;
+  border-top: 1px solid var(--accentdarker);
 }
 
 
@@ -362,7 +361,6 @@ body::before {
 }
 
 .updates {
-  background-color: var(--bg);
   width: 100%;
   height: fit-content;
   position: relative;
@@ -472,7 +470,7 @@ body::before {
   height: 420px;
   margin: 60px auto;
   padding: 60px;
-  background: radial-gradient(circle at top, #002417 0%, #000000 70%);
+  background: radial-gradient(circle at top, var(--accent) -300%, var(--panel) 70%);
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -487,17 +485,7 @@ body::before {
   will-change: transform, opacity;
 }
 
-.promo-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    circle at center,
-    transparent 40%,
-    rgba(0, 255, 162, 0.082)
-  );
-  pointer-events: none;
-}
+
 
 .promo-frame.in-view {
   transform: scale(1);
@@ -744,7 +732,7 @@ body::before {
 }
 
 .card {
-  background: var(--panel);
+  background: var(--panel-2);
   border: 1px solid var(--border);
   padding: 20px 24px;
     border-radius: 10px;
@@ -1014,22 +1002,22 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #00ffa0;
+  border-top: 1px solid var(--accentdarker);
   background: repeating-linear-gradient(
       90deg,
-      rgba(0, 255, 162, 0.13) 0px,
-      rgba(0, 255, 162, 0.13) 2px,
+      var(--pillbackground) 0px,
+      var(--pillbackground) 2px,
       transparent 2px,
       transparent 120px
     ),
     repeating-linear-gradient(
       0deg,
-      rgba(0, 255, 162, 0.13) 0px,
-      rgba(0, 255, 162, 0.13) 2px,
+      var(--pillbackground) 0px,
+      var(--pillbackground) 2px,
       transparent 2px,
       transparent 120px
     ),
-    radial-gradient(circle at center, #002417, var(--bg) 60%);
+    radial-gradient(circle at center, var(--accentdarker), var(--bg) 60%);
   overflow: hidden;
 }
 
@@ -1167,9 +1155,9 @@ body::before {
 
 .offer-badge {
   display: inline-block;
-  background: rgba(0,255,160,0.15);
+  background: var(--pillbackground);
   color: var(--accent);
-  border: 1px solid rgba(0,255,160,0.3);
+  border: 1px solid var(--pillborder);
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 12px;
@@ -1220,7 +1208,7 @@ body::before {
 
 .offer-btn.primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 0 20px rgba(0,255,160,0.4);
+  box-shadow: 0 0 20px var(--accent);
 }
 
 .offer-btn.secondary {
@@ -1276,7 +1264,7 @@ body::before {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  animation-duration: 550s;
+  animation-duration: 90s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -1334,11 +1322,11 @@ body::before {
 
 .product-card:hover {
   transform: translateY(-10px) scale(1.025);
-  border-color: rgba(0, 255, 162, 0.45);
+  border-color: var(--pillborder);
   box-shadow:
     0 30px 70px rgba(0, 0, 0, 0.7),
-    0 0 0 1px rgba(0, 255, 162, 0.15),
-    0 0 50px rgba(0, 255, 162, 0.15);
+    0 0 0 1px var(--pillborder),
+    0 0 50px var(--pillborder);
 }
 
 .product-card img {
@@ -1435,9 +1423,11 @@ body::before {
 
 .product-card-horizontal:hover {
   transform: translateY(-5px) scale(1.05);
-  border-color: rgba(0, 255, 162, 0.45);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 255, 162, 0.15), 0 0 30px rgba(0, 255, 162, 0.15);
-}
+  border-color: var(--pillborder);
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.7),
+    0 0 0 1px var(--pillborder),
+    0 0 50px var(--pillborder);}
 
 .product-card-horizontal img {
   width: 100%;
@@ -1540,7 +1530,7 @@ body::before {
 
 .product-showcase-horizontal {
   display: flex !important;
-  background: repeating-linear-gradient(90deg, rgba(0, 255, 162, 0.13) 0px, rgba(0, 255, 162, 0.13) 2px, transparent 2px, transparent 120px), repeating-linear-gradient(0deg, rgba(0, 255, 162, 0.13) 0px, rgba(0, 255, 162, 0.13) 2px, transparent 2px, transparent 120px), radial-gradient(circle at center, #002417, var(--bg) 60%);
+  background: repeating-linear-gradient(90deg, var(--pillbackground) 0px, var(--pillbackground) 2px, transparent 2px, transparent 120px), repeating-linear-gradient(0deg, var(--pillbackground) 0px, var(--pillbackground) 2px, transparent 2px, transparent 120px), radial-gradient(circle at center, var(--accentdarker), var(--bg) 60%);
 }
 .description {
   font-size: 14px;
@@ -1866,9 +1856,9 @@ display: flex;
 .glow {
   background: linear-gradient(
     90deg,
-    #00ffa0,
-    #00a367,
-    #00ffa0
+    var(--accent),
+    var(--accentdark),
+    var(--accent)
   );
   background-size: 200% 200%;
 
@@ -1877,7 +1867,7 @@ display: flex;
   color: transparent;
 
   text-shadow:
-    0 0 100px rgba(0, 255, 162, 0.932);
+    0 0 100px var(--accentrgb);
 font-weight: 800;
 }
 

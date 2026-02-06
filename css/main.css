@@ -11,7 +11,7 @@ select:focus-visible {
 input:focus-visible,
 select:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 255, 160, 0.35);
+  box-shadow: 0 0 0 2px var(--pillborder);
 }
 
 ::selection {
@@ -25,17 +25,6 @@ select:focus-visible {
 }
 
 
-:root {
-  --bg: #0d1117;
-  --panel: #161b25;
-  --panel-2: #1f2632;
-  --border: #252d3a;
-  --accent: #00ffa0;
-  --text: #e6e6e6;
-  --text-secondary: #bfc5cd;
-  --muted: #6e7681;
-  --overlay: rgba(0, 0, 0, 0.75);
-}
 
 
 

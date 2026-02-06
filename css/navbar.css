@@ -1,13 +1,4 @@
-:root {
-  --bg: #0a0c10;
-  --panel: #101318;
-  --panel-2: #161c23;
-  --border: #1c232c;
-  --accent: #00ffa0;
-  --text: #e6e6e6;
-  --muted: #8b97a4;
-  --overlay: rgba(0,0,0,0.85);
-}
+
 
 .navbar {
   top: 0;
@@ -120,7 +111,6 @@ li a svg {
   background: none;
   border-radius: 10px;
 
-  fill: #5865f2;
   font-size: 13px;
   font-weight: 600;
 
@@ -145,7 +135,7 @@ li a svg {
 }
 
 .cart-button:hover {
-  background: #131824;
+  background: var(--panel);
 }
 
 .cart-button:active {
@@ -222,7 +212,7 @@ transition: background 0.25s ease, color 0.25s ease;
   margin: 0 auto;
   margin-top: 10px;
 
-  background: linear-gradient(180deg, #00ffa0, #00c77e);
+  background: linear-gradient(180deg, var(--accent), var(--accentdark));
   border-radius: 10px;
 
   color: var(--panel);
@@ -254,16 +244,23 @@ transition: background 0.25s ease, color 0.25s ease;
   right: 0;
   bottom: 0;
 
-  height: 84vh;
+  height: 100vh;          
+  max-height: 90vh;
+
   background: linear-gradient(to top, var(--panel), var(--panel-2));
   border-radius: 22px 22px 0 0;
 
-  transform: translateY(100%); /* FULLY HIDDEN */
+  transform: translateY(100%);
   transition: transform .35s cubic-bezier(.22,.61,.36,1);
   z-index: 999;
 
   touch-action: none;
   will-change: transform;
+
+  /* optional but recommended */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .drawer.open {

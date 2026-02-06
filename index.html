@@ -25,9 +25,50 @@
 
   gtag('config', 'G-5WN7F6ZJ3Z');
 </script>
+
 <body>
+
+
 <div id="notification-container"></div>
-<div class="menu-overlay" id="menuOverlay"></div>
+
+<div class="announcement-bar">
+  <div class="announcement-track" id="announcementTrack">
+    <div class="announcement-group" id="announcementGroup">
+     <span></span>
+      <span>CHINESE NEW YEAR FEB 14–21</span>
+      <span>•</span>
+      <span>ORDER NOW TO AVOID SHIPPING DELAYS</span>
+      <span>•</span>
+    </div>
+  </div>
+</div>
+<script>
+window.addEventListener("load", () => {
+  const track = document.getElementById("announcementTrack");
+  const group = document.getElementById("announcementGroup");
+
+  function fillBanner() {
+    // reset track to original group
+    track.innerHTML = "";
+    track.appendChild(group);
+
+    const groupWidth = group.offsetWidth;
+    const screenWidth = window.innerWidth;
+
+    // how many copies we need to fill screen * 2 for seamless loop
+    const copiesNeeded = Math.ceil((screenWidth * 2) / groupWidth);
+
+    for (let i = 0; i < copiesNeeded; i++) {
+      const clone = group.cloneNode(true);
+      track.appendChild(clone);
+    }
+  }
+
+  fillBanner();
+  window.addEventListener("resize", fillBanner);
+});
+</script>
+
 <nav class="navbar">
   <div class="nav-inner">
     <a href="/" class="logo-img">
@@ -233,92 +274,93 @@
   const drawer = document.getElementById("drawer");
   const overlay = document.getElementById("drawerOverlay");
   const handle = drawer?.querySelector(".drawer-handle");
-
   if (!drawer || !overlay || !handle) return;
 
-  const vh = () => window.innerHeight;
+  const PEEK_HEIGHT = 0.55;   
+  const SNAP_OPEN = 0.25;     
+  const SNAP_CLOSE = 0.75;  
 
-  let minY = 0;
-  let maxY = 0;
-  let currentY = 0;
+  let vh = window.innerHeight;
+  let current = 1;    
   let startY = 0;
-  let startTranslate = 0;
+  let startPos = 0;
   let dragging = false;
 
-  function updateLimits() {
-    minY = vh() * 0.45; 
-    maxY = 0;
+  const setVH = () => vh = window.innerHeight;
+  window.addEventListener("resize", setVH);
+
+
+  function setPosition(progress, tween = true) {
+    current = progress;
+    if (tween) drawer.style.transition = "transform .35s cubic-bezier(.22,1,.36,1)";
+    else drawer.style.transition = "none";
+
+    const translate = progress * vh;
+    drawer.style.transform = `translateY(${translate}px)`;
   }
 
-  updateLimits();
-  window.addEventListener("resize", updateLimits);
-
-  function setTranslate(y) {
-    currentY = y;
-    drawer.style.transform = `translateY(${y}px)`;
-  }
-
-  function openDrawer() {
+  function openPeek() {
     drawer.classList.add("open");
     overlay.classList.add("active");
-    drawer.style.transition = "";
-    setTranslate(minY);
+    setPosition(1 - PEEK_HEIGHT);
+  }
+
+  function openFull() {
+    drawer.classList.add("open","full");
+    overlay.classList.add("active");
+    setPosition(0);
   }
 
   function closeDrawer() {
-    drawer.classList.remove("open", "full");
+    drawer.classList.remove("open","full");
     overlay.classList.remove("active");
-    drawer.style.transition = "";
-    drawer.style.transform = "translateY(100%)";
-    currentY = minY;
+    setPosition(1);
   }
 
-  window.openDrawer = openDrawer;
+  window.openDrawer = openPeek;
   window.closeDrawer = closeDrawer;
 
   overlay.addEventListener("click", closeDrawer);
 
-  handle.addEventListener("pointerdown", (e) => {
+
+  handle.addEventListener("pointerdown", e => {
     dragging = true;
     startY = e.clientY;
-    startTranslate = currentY || minY;
-
+    startPos = current;
     drawer.style.transition = "none";
     handle.setPointerCapture(e.pointerId);
   });
 
-  handle.addEventListener("pointermove", (e) => {
+  handle.addEventListener("pointermove", e => {
     if (!dragging) return;
 
-    const delta = e.clientY - startY;
-    const nextY = Math.min(
-      Math.max(startTranslate + delta, maxY),
-      minY
-    );
+    const delta = (e.clientY - startY) / vh;
+    let next = startPos + delta;
 
-    setTranslate(nextY);
+    next = Math.max(0, Math.min(1, next)); 
+    setPosition(next, false);
   });
 
   handle.addEventListener("pointerup", () => {
     if (!dragging) return;
     dragging = false;
-    drawer.style.transition = "";
 
-    if (currentY < minY * 0.4) {
-      drawer.classList.add("full");
-      setTranslate(maxY);
+    if (current < SNAP_OPEN) {
+      openFull();
+    } else if (current > SNAP_CLOSE) {
+      closeDrawer();
     } else {
-      drawer.classList.remove("full");
-      setTranslate(minY);
+      openPeek();
     }
   });
 
   handle.addEventListener("pointercancel", () => {
     dragging = false;
-    drawer.style.transition = "";
-    setTranslate(minY);
+    openPeek();
   });
+
 })();
+
 </script>
 
 <script>
@@ -740,81 +782,17 @@ promoFrames.forEach(frame => observer.observe(frame));
 
 const releases = [
   {
-    title: "v0.6",
+    title: "v0.7 Valentines",
     tags: ["NEWEST"],
-    date: "2026-1-29",
+    date: "2026-2-5",
     changes: [
       "Updated the sites colors",
-      "Added a Cart feature, saves locally",
-      "Revamped the navbar | new site logo | new menu tab",
-      "Optimized the spreadsheet, products load as you scroll",
-      "Updated the landing page with a clickable item gallery with purchasing",
-      "Updated the qc button and layout",
-      "Videos page delayed for later update",
-      "-------------------------------------",
-      "Number Nine 01SS Hoodie",
-"Forgetraven Longsleeve",
-"Peaceinwar x ihatestars Hoodie",
-"Peaceinwar Soldier Hoodie",
-"Peaceinwar Winter War Hoodie",
-"Peaceinwar EU Sweats",
-"Forgetraven Tee",
-"Peaceinwar Cherry Blossom Hoodie",
-"Peaceinwar War Peace Hoodie",
-"Peaceinwar Skull Sweats",
-"Peaceinwar yin yang Hoodie",
-"Peaceinwar Patriot Hoodie",
-"Peaceinwar Sweden Hoodie",
-"Droland Miller Ken Carson Tour Hoodie",
-"Chrome Hearts USA Tee",
-"ERD Tee",
-"Burberry London Tee",
-"Balenciaga Britney Tee",
-"Typography Tee",
-"ERD El Pico Tee",
-"ERD Self Termination Tee",
-"Soloist Tee",
-"Vivienne Westwood Tee",
-"Supreme x Coogi Tee",
-"CDG Logo Tee",
-"Givenchy Tees",
-"Tears of Dreams Ketamine Jersey",
-"ERD 25SS Tee",
-"Acne Studios 1996 Tee",
-"VETEMENTS Target Tee",
-"VETEMENTS 11 Inch Gun Club Tee",
-"ERD Logo Tee",
-"ERD Logo Tee",
-"ERD Tee"
-    ]
-  },
-  {
-    title: "v0.5",
-    tags: [],
-    date: "2026-1-18",
-    changes: [
-      "Added rounded corners to the UI",
-      "Updated the navbar",
       "Fixed minor bugs",
-      "Shows the correct amount of product on each tab",
-      "--------------------------",
-      "Supreme FW20 Backpack",
-"Vivienne Westwood Card Holder",
-"Comme Des Garcons Bag",
-"Vivienne Westwood Belt",
-"Balenciaga BB Belt",
-"Acne Studios Wool Scarf",
-"Supreme Last Supper Belt",
-"Chrome Hearts Boxers",
-"Supreme Stickers",
-"ERD Rapper Belt",
-"Chrome Hearts Wallet Chains",
-"Supreme Skateboard Decks",
-"Chrome Hearts Pen",
-"Takashi Murakami Pillows",
-"Chrome Hearts Stay Fast Longsleeve",
-"Chrome Hearts Love You Longsleeve",
-"Givenchy Tysons"
+      "Added chinese new year banner",
+      "ADDED OVER 150+ NEW PRODUCTS!",
+      "Optimized the images",
+      "Added more QC",
+      "Videos page still delayed for later update v0.8"
     ]
   }
 ];
@@ -879,46 +857,7 @@ setInterval(render, 1000 * 60 * 60);
 
 
   <script>
-const LANE_COUNT = 6;      
-const ACTIVE_LANES = new Set();
-const RAIN_CONTAINER_ID = "productRain";
-const MAX_ON_SCREEN = 12;
-const SPAWN_INTERVAL = 850;
 
-let PRODUCT_IMAGES = [];
-const ACTIVE_IMAGES = new Set();
-let rainInterval = null;
-
-function rand(min, max) {
-  return Math.random() * (max - min) + min;
-}
-async function fetchProductImages() {
-  try {
-    const response = await fetch("/products/");
-    const text = await response.text();
-
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(text, "text/html");
-
-    return [...doc.querySelectorAll(
-      'a[href$=".png"], a[href$=".jpg"], a[href$=".jpeg"], a[href$=".webp"]'
-    )]
-      .map(a => a.getAttribute("href"))
-      .filter(Boolean)
-      .map(href => {
-        let decoded = decodeURIComponent(href);  
-        decoded = decoded.replace(/\\/g, "/"); 
-        const filename = decoded.split("/").pop(); 
-
-        return `/products/${filename}`;
-      })
-      .filter(path => !path.toLowerCase().includes("/qc/"));
-
-  } catch (err) {
-    console.error("Product rain fetch failed:", err);
-    return [];
-  }
-}
 
 
 

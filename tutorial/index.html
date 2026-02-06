@@ -688,91 +688,91 @@ const copyIcon = document.getElementById('copy-icon');
   const drawer = document.getElementById("drawer");
   const overlay = document.getElementById("drawerOverlay");
   const handle = drawer?.querySelector(".drawer-handle");
-
   if (!drawer || !overlay || !handle) return;
 
-  const vh = () => window.innerHeight;
+  const PEEK_HEIGHT = 0.55;   
+  const SNAP_OPEN = 0.25;     
+  const SNAP_CLOSE = 0.75;  
 
-  let minY = 0;
-  let maxY = 0;
-  let currentY = 0;
+  let vh = window.innerHeight;
+  let current = 1;    
   let startY = 0;
-  let startTranslate = 0;
+  let startPos = 0;
   let dragging = false;
 
-  function updateLimits() {
-    minY = vh() * 0.45; 
-    maxY = 0;
+  const setVH = () => vh = window.innerHeight;
+  window.addEventListener("resize", setVH);
+
+
+  function setPosition(progress, tween = true) {
+    current = progress;
+    if (tween) drawer.style.transition = "transform .35s cubic-bezier(.22,1,.36,1)";
+    else drawer.style.transition = "none";
+
+    const translate = progress * vh;
+    drawer.style.transform = `translateY(${translate}px)`;
   }
 
-  updateLimits();
-  window.addEventListener("resize", updateLimits);
-
-  function setTranslate(y) {
-    currentY = y;
-    drawer.style.transform = `translateY(${y}px)`;
-  }
-
-  function openDrawer() {
+  function openPeek() {
     drawer.classList.add("open");
     overlay.classList.add("active");
-    drawer.style.transition = "";
-    setTranslate(minY);
+    setPosition(1 - PEEK_HEIGHT);
+  }
+
+  function openFull() {
+    drawer.classList.add("open","full");
+    overlay.classList.add("active");
+    setPosition(0);
   }
 
   function closeDrawer() {
-    drawer.classList.remove("open", "full");
+    drawer.classList.remove("open","full");
     overlay.classList.remove("active");
-    drawer.style.transition = "";
-    drawer.style.transform = "translateY(100%)";
-    currentY = minY;
+    setPosition(1);
   }
 
-  window.openDrawer = openDrawer;
+  window.openDrawer = openPeek;
   window.closeDrawer = closeDrawer;
 
   overlay.addEventListener("click", closeDrawer);
 
-  handle.addEventListener("pointerdown", (e) => {
+
+  handle.addEventListener("pointerdown", e => {
     dragging = true;
     startY = e.clientY;
-    startTranslate = currentY || minY;
-
+    startPos = current;
     drawer.style.transition = "none";
     handle.setPointerCapture(e.pointerId);
   });
 
-  handle.addEventListener("pointermove", (e) => {
+  handle.addEventListener("pointermove", e => {
     if (!dragging) return;
 
-    const delta = e.clientY - startY;
-    const nextY = Math.min(
-      Math.max(startTranslate + delta, maxY),
-      minY
-    );
+    const delta = (e.clientY - startY) / vh;
+    let next = startPos + delta;
 
-    setTranslate(nextY);
+    next = Math.max(0, Math.min(1, next)); 
+    setPosition(next, false);
   });
 
   handle.addEventListener("pointerup", () => {
     if (!dragging) return;
     dragging = false;
-    drawer.style.transition = "";
 
-    if (currentY < minY * 0.4) {
-      drawer.classList.add("full");
-      setTranslate(maxY);
+    if (current < SNAP_OPEN) {
+      openFull();
+    } else if (current > SNAP_CLOSE) {
+      closeDrawer();
     } else {
-      drawer.classList.remove("full");
-      setTranslate(minY);
+      openPeek();
     }
   });
 
   handle.addEventListener("pointercancel", () => {
     dragging = false;
-    drawer.style.transition = "";
-    setTranslate(minY);
+    openPeek();
   });
+
 })();
 </script>
 </body>
