@@ -195,10 +195,40 @@ body {
   background: linear-gradient(135deg, var(--accent), var(--accentdark));
   color: var(--bg);
   box-shadow:
-    0 0 140px var(--accentrgb)
+    0 0 140px var(--accentrgb);
+      position: relative;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
   }
 
+  
+.btn-spreadsheet:hover {
+  transform: scale(1.07);
+  box-shadow: 
+    0 0 180px var(--accentrgb),
+    0 10px 40px rgba(0,0,0,.35);
+}
 
+.btn-spreadsheet::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -120%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.35),
+    transparent
+  );
+  transform: rotate(25deg);
+  transition: all .6s ease;
+}
+
+.btn-spreadsheet:hover::before {
+  left: 130%;
+}
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;

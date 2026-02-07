@@ -850,7 +850,7 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/chrome-hearts-sinister-matty-boy-thermal.png",
-  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7650153983",
+  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7689106369",
   "qc": "products/qc/chrome-hearts-sinister-matty-boy-thermal.png"
 },
 {
@@ -3694,6 +3694,15 @@
   "image": "products/balenciaga-x-polo-zip-up.png",
   "link": "https://item.taobao.com/item.htm?id=739437047658",
   "qc": "products/qc/balenciaga-x-polo-zip-up.png"
+},
+{
+  "name": "ALYX Backpack",
+  "price": 37.93,
+  "category": "MISC",
+  "badge": "BEST",
+  "image": "products/alyx-backpack.png",
+  "link": "https://weidian.com/item.html?itemID=7688966011",
+  "qc": "products/qc/alyx-backpack.png"
 }
 
 
