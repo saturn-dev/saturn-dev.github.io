@@ -308,7 +308,7 @@ qcModal.style.display = "flex";
 
   } catch (err) {
     console.error(err);
-    showNotification('Error.', 'QC images missing', 4000, '#e53535');
+    showNotification('Error.', 'error: migrating update for qcs, slowly rolling out, v0.8 update 24-48hrs!', 4000, '#e53535');
   }
 };
 
