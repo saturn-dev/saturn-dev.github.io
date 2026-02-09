@@ -30,7 +30,58 @@ body {
   position: relative;
   z-index: 1;
 }
+.god-rays {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  margin-bottom: -500px;
+  --stripes: repeating-linear-gradient(
+    100deg,
+    var(--ray-dark1) 0%,
+    var(--ray-dark1) 7%,
+    var(--ray-transparent) 10%,
+    var(--ray-transparent) 12%,
+    var(--ray-dark1) 16%
+  );
 
+  --rays: repeating-linear-gradient(
+    100deg,
+    var(--ray-light1) 10%,
+    var(--ray-light2) 15%,
+    var(--ray-light1) 20%,
+    var(--ray-dark2) 25%,
+    var(--ray-light1) 30%
+  );
+
+  background-image: var(--stripes), var(--rays);
+  background-size: 300%, 200%;
+  background-position: 50% 50%, 50% 50%;
+  animation: fadeIn 2s ease;
+  mask-image: radial-gradient(ellipse at 100% 0%, rgba(255, 255, 255, 0) 40%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at 100% 0%, white 40%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.god-rays::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--stripes), var(--rays);
+    background-size: 200%, 100%;
+    animation: god-rays 40s linear infinite;
+    background-attachment: fixed;
+    mix-blend-mode: difference;
+}
+@keyframes god-rays {
+    0% {
+        background-position: 0% 0%, 0% 0%;
+    }
+    100% {
+        background-position: 200% 200%, 100% 100%;
+    }
+  }
 .announcement-group {
   display: flex;
   gap: 40px;

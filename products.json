@@ -1373,11 +1373,12 @@
 },
 {
   "name": "Balenciaga Double Waisted Trackpants",
-  "price": 56.93,
+  "price": 77.83,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/balenciaga-double-waisted-trackpants.png",
-  "link": "https://detail.tmall.com/item.htm?id=845771656045"
+  "link": "https://weidian.com/item.html?itemID=7693085086",
+  "qc": "products/qc/balenciaga-double-waisted-trackpants.png"
 },
 {
   "name": "Balenciaga Double Knee Jeans",
@@ -1640,7 +1641,7 @@
   "link": "https://weidian.com/item.html?itemId=7666773197"
 },
 {
-  "name": "Acne 1981M Ink-Splashed Jeans",
+  "name": "Acne 1981M Oil Spill Jeans",
   "price": 63.22,
   "category": "PANTS",
   "badge": "BEST",
@@ -2914,7 +2915,8 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/supreme-back-logo-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7683087586"
+  "link": "https://weidian.com/item.html?itemID=7683087586",
+  "qc": "products/qc/supreme-back-logo-hoodie.png"
 },
 {
   "name": "Rick Owens Cardigan Zip-up",
@@ -3703,6 +3705,60 @@
   "image": "products/alyx-backpack.png",
   "link": "https://weidian.com/item.html?itemID=7688966011",
   "qc": "products/qc/alyx-backpack.png"
+},
+{
+  "name": "ERD Patch Jeans",
+  "price": 51.21,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/erd-patch-jeans.png",
+  "link": "https://item.taobao.com/item.htm?id=861089158360",
+  "qc": "products/qc/erd-patch-jeans.png"
+},
+{
+  "name": "Chrome Hearts Vest",
+  "price": 77.12,
+  "category": "SHIRTS",
+  "badge": "BEST",
+  "image": "products/chrome-hearts-vest.png",
+  "link": "https://item.taobao.com/item.htm?id=861089158360",
+  "qc": "products/qc/chrome-hearts-vest.png"
+},
+{
+  "name": "Acne Studios Sweatpants",
+  "price": 52.17,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/acne-studios-sweatpants.png",
+  "link": "https://weidian.com/item.html?itemID=7690085353",
+  "qc": "products/qc/acne-studios-sweatpants.png"
+},
+{
+  "name": "Acne Studios Double Waisted Sweatpants",
+  "price": 73.73,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/acne-studios-double-waisted-sweatpants.png",
+  "link": "https://weidian.com/item.html?itemID=7690144555",
+  "qc": "products/qc/acne-studios-double-waisted-sweatpants.png"
+},
+{
+  "name": "Balenciaga Blue Lost Tapes",
+  "price": 63.33,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/balenciaga-blue-lost-tapes.png",
+  "link": "https://weidian.com/item.html?itemID=7690168289",
+  "qc": "products/qc/balenciaga-blue-lost-tapes.png"
+},
+{
+  "name": "Rick Owens Bela Sweatpants",
+  "price": 47.69,
+  "category": "PANTS",
+  "badge": "BEST",
+  "image": "products/rick-owens-bela-sweatpants.png",
+  "link": "https://weidian.com/item.html?itemID=7690205601",
+  "qc": "products/qc/rick-owens-bela-sweatpants.png"
 }
 
 
