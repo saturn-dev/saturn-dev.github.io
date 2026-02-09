@@ -8,7 +8,7 @@
       "badge": "BEST",
       "image": "products/warerdhoodie.png",
       "link": "https://shop1865721389.v.weidian.com/item.html?itemID=7650020513",
-      "qc": "products/qc/erdwarhoodie.png"
+      "qc": "warerdhoodie"
     },
     {
       "name": "Number (N)ine Tribal",
@@ -16,7 +16,8 @@
       "category": "HOODIES",
       "badge": "BEST",
       "image": "products/nntribal.png",
-      "link": "https://item.taobao.com/item.htm?id=963595648417"
+      "link": "https://item.taobao.com/item.htm?id=963595648417",
+      "qc": "nntribal"
     },
     {
       "name": "Raf Simons aw00 'Confusion' Hoodie",
@@ -25,14 +26,15 @@
       "badge": "BEST",
       "image": "products/rafconfusion.png",
       "link": "https://item.taobao.com/item.htm?id=1007958282281",
-      "qc": "products/qc/rafconfusion.png"
+      "qc": "rafconfusion"
     },
 {
   "name": "Balenciaga Be Kind Hoodie",
   "price": 52.28,
   "category": "HOODIES",
   "image": "products/balenciaga-be-kind-hoodie.png",
-  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7650189715"
+  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7650189715",
+  "qc": "balenciaga-be-kind-hoodie"
 },
 {
   "name": "ERD 'Benny's Video' Hoodie",
@@ -40,7 +42,7 @@
   "category": "HOODIES",
   "image": "products/erd-bennys-video-hoodie.png",
   "link": "https://weidian.com/item.html?itemId=7626165647&vc_cps_track=1459920903_0_0",
-  "qc": "products/qc/bennysvideo.png"
+  "qc": "bennysvideo"
 },
 {
   "name": "ERD 'Remember When' Hoodie",
@@ -48,7 +50,7 @@
   "category": "HOODIES",
   "image": "products/erd-remember-when-hoodie.png",
   "link": "https://item.taobao.com/item.htm?id=992329958431",
-  "qc": "products/qc/erd-remember-when-hoodie.png"
+  "qc": "erd-remember-when-hoodie"
 },
 {
   "name": "ERD Mussolini Sweater",
@@ -57,7 +59,7 @@
   "badge": "BEST",
   "image": "products/erd-mussolini-sweater.png",
   "link": "https://item.taobao.com/item.htm?id=987629045690",
-  "qc": "products/qc/erd-mussolini-sweater.png"
+  "qc": "erd-mussolini-sweater"
 },
 {
   "name": "Balenciaga Incognito Zip-up",
@@ -73,7 +75,7 @@
   "category": "HOODIES",
   "image": "products/dior-06ss-boy-about-home-hoodie.png",
   "link": "https://weidian.com/item.html?itemID=7656889620",
-  "qc": "products/qc/dior-06ss-boy-about-home-hoodie.png"
+  "qc": "dior-06ss-boy-about-home-hoodie"
 },
 {
   "name": "Hysteric Glamour Medicine Hoodie",
@@ -82,7 +84,7 @@
   "badge": "BEST",
   "image": "products/hysteric-glamour-medicine-hoodie.png",
   "link": "https://item.taobao.com/item.htm?id=979779926494",
-  "qc": "products/qc/hysteric-glamour-medicine-hoodie.png"
+  "qc": "hysteric-glamour-medicine-hoodie"
 },
 {
   "name": "Balenciaga Red Skater Zip-up Hoodie",
@@ -91,7 +93,7 @@
   "badge": "BEST",
   "image": "products/balenciaga-red-skater-zip-up.png",
   "link": "https://weidian.com/item.html?itemId=7621148302&vc_cps_track=1459920903_0_0",
-  "qc": "products/qc/balenciaga-red-skater-zip-up.png"
+  "qc": "balenciaga-red-skater-zip-up"
 },
 {
   "name": "Raf Simons Virginia Creeper Hoodie",
@@ -99,7 +101,8 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/raf-simons-virginia-creeper-hoodie.png",
-  "link": "https://item.taobao.com/item.htm?id=1003479480743"
+  "link": "https://item.taobao.com/item.htm?id=1003479480743",
+  "qc": "raf-simons-virginia-creeper-hoodie"
 },
 {
   "name": "Raf Simons Virginia Creeper longsleeve",
@@ -108,7 +111,7 @@
   "badge": "BEST",
   "image": "products/raf-simons-virginia-creeper-longsleeve.png",
   "link": "https://item.taobao.com/item.htm?id=1002636084712",
-  "qc": "products/qc/raf-simons-virginia-creeper-longsleeve.png"
+  "qc": "raf-simons-virginia-creeper-longsleeve"
 },
 {
   "name": "ERD Le Rosey Sweater",
@@ -116,23 +119,23 @@
   "category": "SHIRTS",
   "image": "products/erd-le-rosey-sweater.png",
   "link": "https://weidian.com/item.html?itemId=7511642150&vc_cps_track=1459920903_0_0",
-  "qc": "products/qc/erd-le-rosey-sweater.png"
+  "qc": "erd-le-rosey-sweater"
 },
 {
   "name": "Supreme Box Logo Hoodie",
-  "price": 51.59,
+  "price": 67.21,
   "category": "HOODIES",
   "image": "products/supreme-box-logo-hoodie.png",
-  "link": "https://item.taobao.com/item.htm?id=867141129614",
-  "qc": "products/qc/supreme-box-logo-hoodie.png"
+  "link": "https://weidian.com/item.html?itemId=7693600408",
+  "qc": "supreme-box-logo-hoodie"
 },
 {
   "name": "ERD Exposed Christina Hoodie",
-  "price": 55.1,
+  "price": 72.62,
   "category": "HOODIES",
   "image": "products/erd-exposed-christina-hoodie.png",
-  "link": "https://detail.tmall.com/item.htm?id=841318181551",
-  "qc": "products/qc/erd-exposed-christina-hoodie.png"
+  "link": "https://weidian.com/item.html?itemId=7690612423",
+  "qc": "erd-exposed-christina-hoodie"
 },
 {
   "name": "Balenciaga Soccer Zip Up Black",
@@ -149,7 +152,7 @@
   "badge": "BEST",
   "image": "products/supreme-x-true-religion-zip-up.png",
   "link": "https://detail.tmall.com/item.htm?id=794377449438",
-  "qc": "products/qc/supreme-x-true-religion-zip-up.png"
+  "qc": "supreme-x-true-religion-zip-up"
 },
 {
   "name": "Vetements Grey Gun Club Hoodie",
@@ -157,7 +160,8 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/vetements-grey-gun-club-hoodie.png",
-  "link": "https://shop1865721389.v.weidian.com/item.html?itemID=7656820398"
+  "link": "https://shop1865721389.v.weidian.com/item.html?itemID=7656820398",
+  "qc": "vetements-grey-gun-club-hoodie"
 },
 {
   "name": "Balenciaga Ripped Hoodie",
@@ -172,7 +176,8 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/balenciaga-paris-tourist-hoodie.png",
-  "link": "https://item.taobao.com/item.htm?id=737088869292"
+  "link": "https://item.taobao.com/item.htm?id=737088869292",
+  "qc": "balenciaga-paris-tourist-hoodie"
 },
 {
   "name": "Raf Simons 'Virginia Creeper' Sweatshirt",
@@ -181,14 +186,15 @@
   "badge": "BEST",
   "image": "products/raf-simons-virginia-creeper-sweatshirt.png",
   "link": "https://item.taobao.com/item.htm?id=994217483421",
-  "qc": "products/qc/raf-simons-virginia-creeper-sweatshirt.png"
+  "qc": "raf-simons-virginia-creeper-sweatshirt"
 },
 {
   "name": "Balenciaga x Adidas Hoodie",
   "price": 68.5,
   "category": "HOODIES",
   "image": "products/balenciaga-x-adidas-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7656812482"
+  "link": "https://weidian.com/item.html?itemID=7656812482",
+  "qc": "balenciaga-x-adidas-hoodie"
 },
 {
   "name": "Vetements TFD Reversible Bomber",
@@ -197,7 +203,7 @@
   "badge": "BEST",
   "image": "products/vetements-tfd-reversible-bomber.png",
   "link": "https://detail.tmall.com/item.htm?id=844347785615",
-  "qc": "products/qc/vetements-tfd-reversible-bomber.png"
+  "qc": "vetements-tfd-reversible-bomber"
 },
 {
   "name": "Vetements Europe Hoodie",
@@ -206,14 +212,15 @@
   "badge": "BEST",
   "image": "products/vetements-europe-hoodie.png",
   "link": "https://weidian.com/item.html?itemID=7653874025",
-  "qc": "products/qc/vetements-europe-hoodie.png"
+  "qc": "vetements-europe-hoodie"
 },
 {
   "name": "Acne Studios Logo Longsleeves",
   "price": 35,
   "category": "SHIRTS",
   "image": "products/acne-studios-logo-longsleeves.png",
-  "link": "https://weidian.com/item.html?itemID=7653075148"
+  "link": "https://weidian.com/item.html?itemID=7653075148",
+  "qc": "acne-studios-logo-longsleeves"
 },
 {
   "name": "Supreme x Maison Margiela Tee",
@@ -221,14 +228,16 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/supreme-x-maison-margiela-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7656828510"
+  "link": "https://weidian.com/item.html?itemID=7656828510",
+  "qc": "supreme-x-maison-margiela-tee"
 },
 {
   "name": "Maison Margiela 'Target' Tee",
   "price": 18.96,
   "category": "SHIRTS",
   "image": "products/maison-margiela-target-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7653838701"
+  "link": "https://weidian.com/item.html?itemID=7653838701",
+  "qc": "maison-margiela-target-tee"
 },
 {
   "name": "Balenciaga 'Be Kind' Tee",
@@ -236,7 +245,8 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/balenciaga-be-kind-tee.png",
-  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7653173716"
+  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7653173716",
+  "qc": "balenciaga-be-kind-tee"
 },
 {
   "name": "Number (N)ine Chains Tee",
@@ -245,14 +255,15 @@
   "badge": "BEST",
   "image": "products/number-nine-chains-tee.png",
   "link": "https://weidian.com/item.html?itemID=7656763378",
-  "qc": "products/qc/number-nine-chains-tee.png"
+  "qc": "number-nine-chains-tee"
 },
 {
   "name": "HBA Anonymous Club Hoodie",
   "price": 57.07,
   "category": "HOODIES",
   "image": "products/hba-anonymous-club-hoodie.png",
-  "link": "https://item.taobao.com/item.htm?id=828582071498"
+  "link": "https://item.taobao.com/item.htm?id=828582071498",
+  "qc": "hba-anonymous-club-hoodie"
 },
 {
   "name": "Balenciaga Tacky Zip Up",
@@ -260,7 +271,8 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/balenciaga-tacky-zip-up.png",
-  "link": "https://item.taobao.com/item.htm?id=974028037348"
+  "link": "https://item.taobao.com/item.htm?id=974028037348",
+  "qc": "balenciaga-tacky-zip-up"
 },
 {
   "name": "ERD Logo hoodie",
@@ -269,7 +281,7 @@
   "badge": "BEST",
   "image": "products/erd-logo-hoodie.png",
   "link": "https://weidian.com/item.html?itemID=7653893853",
-  "qc": "products/qc/erd-logo-hoodie.png"
+  "qc": "erd-logo-hoodie"
 },
 {
   "name": "ERD '777' Longsleeve",
