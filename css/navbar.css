@@ -160,15 +160,7 @@ transition: background 0.25s ease, color 0.25s ease;
      border-radius: 10px;
 }
 
-#qcModal {
-  position: fixed;
-  inset: 0;
-  display: none;
-  background: rgba(0,0,0,0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
+
 .fill-background {
   position: absolute;
   top: 0;

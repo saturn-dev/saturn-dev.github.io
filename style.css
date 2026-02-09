@@ -198,34 +198,192 @@ html, body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* ========================= */
 /* QC MODAL */
-/* ========================= */
+.qc-modal{
+  position:fixed;
+  inset:0;
+  backdrop-filter: blur(14px);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  animation:fadeBg .25s ease;
+}
 
-.qc-modal {
+@keyframes fadeBg{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+/* ===== MAIN CONTAINER ===== */
+.qc-carousel{
+  position:relative;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:60px;
+  box-sizing:border-box;
+}
+
+/* ===== IMAGE FRAME ===== */
+.qc-image-frame{
+  width: min(80vw, 1100px);
+  border-radius:18px;
+  overflow:hidden;               
+  background:var(--bg);           
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.06),
+    0 40px 120px rgba(0,0,0,.9);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+    animation:imgFade .35s ease;
+
+}
+
+/* ACTUAL IMAGE */
+#qcImage{
+  width:100%;
+  height:100%;
+}
+#qcModal {
   position: fixed;
   inset: 0;
-  background: var(--overlay);
   display: none;
-  align-items: center;
+  background: var(--overlay);
   justify-content: center;
-  z-index: 999;
+  align-items: center;
+  z-index: 9999;
 }
 
-.qc-modal img {
-  max-width: 90%;
-  max-height: 90%;
-  border: 1px solid var(--border);
-  border-radius: 10px;
+
+@keyframes imgFade{
+  from{opacity:0; transform:scale(.96)}
+  to{opacity:1; transform:scale(1)}
 }
 
-.qc-modal .close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  font-size: 36px;
-  cursor: pointer;
+/* ===== NAV ARROWS ===== */
+.qc-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  border:none;
+  font-size:26px;
+  color:var(--text);
+  cursor:pointer;
+  background:rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+  transition:.2s ease;
 }
+
+.qc-arrow:hover{
+  background:var(--accent);
+  color: var(--bg);
+}
+
+.qc-arrow.left{ left:30px; }
+.qc-arrow.right{ right:30px; }
+
+/* ===== CLOSE BUTTON ===== */
+.close{
+  position:absolute;
+  top:28px;
+  right:38px;
+  font-size:36px;
+  color:#fff;
+  cursor:pointer;
+  opacity:.7;
+  transition:.2s;
+  z-index: 10;
+}
+
+.close:hover{
+  opacity:1;
+  transform:scale(1.15);
+}
+
+/* ========================= */
+/* ===== TABLET FIXES ===== */
+/* ========================= */
+@media (max-width: 900px){
+
+  .qc-carousel{
+    padding:40px;
+  }
+
+  #qcImage{
+    width:92vw;
+    height:80vh;
+    border-radius:14px;
+  }
+
+  .qc-arrow{
+    width:48px;
+    height:48px;
+    font-size:22px;
+  }
+
+  .qc-arrow.left{ left:16px; }
+  .qc-arrow.right{ right:16px; }
+
+  .close{
+    top:18px;
+    right:22px;
+    font-size:32px;
+  }
+}
+
+/* ========================= */
+/* ===== MOBILE FIXES ===== */
+/* ========================= */
+@media (max-width: 600px){
+
+  .qc-carousel{
+    padding:20px;
+  }
+
+  #qcImage{
+    width:100%;
+    height:auto;
+    max-height:75vh;
+    border-radius:12px;
+  }
+
+  /* arrows become bottom buttons (thumb friendly) */
+  .qc-arrow{
+    top:auto;
+    bottom:18px;
+    transform:none;
+    width:54px;
+    height:54px;
+    font-size:24px;
+    background:rgba(255,255,255,.12);
+  }
+
+  .qc-arrow.left{
+    left:calc(50% - 80px);
+  }
+
+  .qc-arrow.right{
+    right:calc(50% - 80px);
+  }
+
+  .qc-arrow:hover{
+    transform:scale(1.1);
+  }
+
+  .close{
+    top:14px;
+    right:16px;
+    font-size:30px;
+  }
+}
+
 
 
 
@@ -489,30 +647,7 @@ input {
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-.qc-modal {
-  position: fixed;
-  inset: 0;
-  background: var(--overlay);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
 
-.qc-modal img {
-  max-width: 90%;
-  max-height: 90%;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-}
-
-.qc-modal .close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  font-size: 36px;
-  cursor: pointer;
-}
 
 @keyframes fadeIn {
   from {

@@ -5,6 +5,10 @@ let chunkSize = 0;
 let filteredProducts = [];
 let isLoading = false;
 let searchTimeout = null;
+let qcImages = [];
+let qcIndex = 0;
+let currentQcFolder = "";
+
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 function saveCart() {
@@ -19,6 +23,8 @@ const searchInput = document.getElementById("searchInput");
 const qcModal = document.getElementById("qcModal");
 const qcImage = document.getElementById("qcImage");
 const qcClose = document.getElementById("qcClose");
+const qcPrev = document.getElementById("qcPrev");
+const qcNext = document.getElementById("qcNext");
 
 fetch("/products.json")
   .then(res => res.json())
@@ -278,22 +284,36 @@ function renderCard(p) {
     addToCartBtn.style.cursor = "not-allowed";
   };
 
-    const qcBtn = card.querySelector(".qc-button");
-    qcBtn.onclick = () => {
-      if (p.qc) {
-     qcImage.src = "/products/qc/" + p.qc.split('/').pop();
-        qcModal.style.display = "flex";
-      } else {
-        showNotification(
-          'Error.',
-          'No available Quality Check',
-          4000,
-          '#e53535'
-        );
-      }
-    };
-qcClose.onclick = () => qcModal.style.display = "none";
-qcModal.onclick = e => e.target === qcModal && (qcModal.style.display = "none");
+
+const qcBtn = card.querySelector(".qc-button");
+
+qcBtn.onclick = async () => {
+  if (!p.qc) {
+    showNotification('Error.', 'No available Quality Check', 4000, '#e53535');
+    return;
+  }
+
+  try {
+    currentQcFolder = p.qc; 
+
+const res = await fetch(`/qc/${currentQcFolder}/index.json`);
+if (!res.ok) throw new Error("missing");
+
+qcImages = (await res.json()).images;
+qcImages.sort((a,b)=>parseInt(a)-parseInt(b));
+
+qcIndex = 0;
+qcImage.src = `/qc/${currentQcFolder}/${qcImages[0]}`;
+qcModal.style.display = "flex";
+
+  } catch (err) {
+    console.error(err);
+    showNotification('Error.', 'QC images missing', 4000, '#e53535');
+  }
+};
+
+
+
 
   card.querySelector(".raw-link").onclick = e => {
     e.preventDefault();
@@ -303,6 +323,33 @@ qcModal.onclick = e => e.target === qcModal && (qcModal.style.display = "none");
 
   grid.appendChild(card);
 }
+
+qcNext.onclick = () => {
+  if (!qcImages.length) return;
+  qcIndex = (qcIndex + 1) % qcImages.length;
+  qcImage.src = `/qc/${currentQcFolder}/${qcImages[qcIndex]}`;
+};
+
+qcPrev.onclick = () => {
+  if (!qcImages.length) return;
+  qcIndex = (qcIndex - 1 + qcImages.length) % qcImages.length;
+  qcImage.src = `/qc/${currentQcFolder}/${qcImages[qcIndex]}`;
+};
+
+qcClose.onclick = () => qcModal.style.display = "none";
+qcModal.addEventListener("click", (e) => {
+  if (e.target.id === "qcImage") return;
+  if (e.target.classList.contains("qc-arrow")) return;
+
+  qcModal.style.display = "none";
+});
+document.addEventListener("keydown", (e) => {
+  if (qcModal.style.display !== "flex") return;
+
+  if (e.key === "Escape") qcModal.style.display = "none";
+  if (e.key === "ArrowRight") qcNext.click();
+  if (e.key === "ArrowLeft") qcPrev.click();
+});
 
 
 // ------------------ SCROLL INFINITE ------------------
