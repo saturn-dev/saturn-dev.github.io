@@ -288,8 +288,7 @@
   "price": 26.97,
   "category": "SHIRTS",
   "image": "products/erd-777-longsleeve.png",
-  "link": "https://weidian.com/item.html?itemID=7656818822",
-  "qc": "products/qc/erd-777-longsleeve.png"
+  "link": "https://weidian.com/item.html?itemID=7656818822"
 },
 {
   "name": "Mowalola Grey Logo Hoodie",
@@ -298,7 +297,7 @@
   "badge": "1:1",
   "image": "products/mowalola-grey-logo-hoodie.png",
   "link": "https://weidian.com/item.html?itemID=7656848302",
-  "qc": "products/qc/mowalola-grey-logo-hoodie.png"
+  "qc": "mowalola-grey-logo-hoodie"
 },
 {
   "name": "Number (N)ine Double Skull Sweater",
@@ -307,7 +306,7 @@
   "badge": "BEST",
   "image": "products/number-nine-double-skull-sweater.png",
   "link": "https://weidian.com/item.html?itemID=7656866104",
-  "qc": "products/qc/number-nine-double-skull-sweater.png"
+  "qc": "number-nine-double-skull-sweater"
 },
 {
   "name": "ERD Pig Zip-up",
@@ -315,29 +314,31 @@
   "category": "HOODIES",
   "image": "products/erd-pig-zip-up.png",
   "link": "https://weidian.com/item.html?itemID=7653884181",
-  "qc": "products/qc/erd-pig-zip-up.png"
+  "qc": "erd-pig-zip-up"
 },
 {
   "name": "Hysteric Glamour Zip-up",
   "price": 46.03,
   "category": "HOODIES",
   "image": "products/hysteric-glamour-zip-up.png",
-  "link": "https://item.taobao.com/item.htm?id=970205481185"
+  "link": "https://item.taobao.com/item.htm?id=970205481185",
+  "qc": "hysteric-glamour-zip-up"
 },
 {
   "name": "Number (N)ine Lambretta Hoodie",
-  "price": 38.60,
+  "price": 51.13,
   "category": "HOODIES",
   "image": "products/number-nine-lambretta-hoodie.png",
-  "link": "https://item.taobao.com/item.htm?id=984697380403",
-  "qc": "products/qc/number-nine-lambretta-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7693665604",
+  "qc": "number-nine-lambretta-hoodie"
 },
 {
   "name": "Undercover 15Ss Tee",
   "price": 15.60,
   "category": "SHIRTS",
   "image": "products/undercover-15ss-tee.png",
-  "link": "https://item.taobao.com/item.htm?id=645671704610"
+  "link": "https://item.taobao.com/item.htm?id=645671704610",
+  "qc": "undercover-15ss-tee"
 },
 {
   "name": "Undercover 03Ss Scab Necklace Tee",
@@ -346,14 +347,15 @@
   "badge": "BEST",
   "image": "products/undercover-03ss-scab-necklace-tee.png",
   "link": "https://item.taobao.com/item.htm?id=706500494233",
-  "qc": "products/qc/undercover-03ss-scab-necklace-tee.png"
+  "qc": "undercover-03ss-scab-necklace-tee"
 },
 {
   "name": "Undercover Eva Unit Tee",
-  "price": 14.05,
+  "price": 18.44,
   "category": "SHIRTS",
   "image": "products/undercover-eva-unit-tee.png",
-  "link": "https://item.taobao.com/item.htm?id=834426605166"
+  "link": "https://weidian.com/item.html?itemID=7693655746",
+  "qc": "undercover-eva-unit-tee"
 },
 {
   "name": "Undercover 13Ss Tee",
@@ -361,7 +363,8 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/undercover-13ss-tee.png",
-  "link": "https://item.taobao.com/item.htm?id=721650917126"
+  "link": "https://item.taobao.com/item.htm?id=721650917126",
+  "qc": "undercover-13ss-tee"
 },
 {
   "name": "Undercover Scorpion 03Ss Tee",
@@ -369,7 +372,8 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/undercover-scorpion-03ss-tee.png",
-  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7650051233"
+  "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7650051233",
+  "qc": "undercover-scorpion-03ss-tee"
 },
 {
   "name": "Number (N)ine 03ss Grey Lion Hoodie",
@@ -378,7 +382,7 @@
   "badge": "BEST",
   "image": "products/number-nine-03ss-grey-lion-hoodie.png",
   "link": "https://shop1743677485.v.weidian.com/item.html?itemID=7653027358",
-  "qc": "products/qc/number-nine-03ss-grey-lion-hoodie.png"
+  "qc": "number-nine-03ss-grey-lion-hoodie"
 },
 {
   "name": "Balenciaga \"New York City\" Hoodie",
@@ -386,7 +390,8 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/balenciaga-new-york-city-hoodie.png",
-  "link": "https://detail.tmall.com/item.htm?id=850325222190"
+  "link": "https://detail.tmall.com/item.htm?id=850325222190",
+  "qc":"balenciaga-new-york-city-hoodie" 
 },
 {
   "name": "Satoshi Nakamoto Old Skool Vans",
@@ -394,15 +399,16 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/satoshi-nakamoto-old-skool-vans.png",
-  "link": "https://weidian.com/item.html?itemId=7670250870"
+  "link": "https://weidian.com/item.html?itemId=7670250870",
+  "qc": "satoshi-nakamoto-old-skool-vans"
 },
 {
   "name": "Balenciaga Birkenstock Mule",
-  "price": 61.47,
+  "price": 42.65,
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/balenciaga-birkenstock-mule.png",
-  "link": "https://weidian.com/item.html?itemId=7565972304&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemID=7690608687"
 },
 {
   "name": "ERD Vans",
@@ -410,7 +416,7 @@
   "category": "SHOES",
   "image": "products/erd-vans.png",
   "link": "https://item.taobao.com/item.htm?id=931681172842",
-  "qc": "products/qc/erd-vans.png"
+  "qc": "erd-vans"
 },
 {
   "name": "Balenciaga Arena",
@@ -419,7 +425,7 @@
   "badge": "BEST",
   "image": "products/balenciaga-arena.png",
   "link": "https://weidian.com/item.html?itemId=7641528710&vc_cps_track=1459920903_0_0",
-  "qc": "products/qc/balenciaga-arena.png"
+  "qc": "balenciaga-arena"
 },
 {
   "name": "Balenciaga Leather Strike Boots",
@@ -427,7 +433,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/balenciaga-leather-strike-boots.png",
-  "link": "https://item.taobao.com/item.htm?id=747378501044"
+  "link": "https://item.taobao.com/item.htm?id=747378501044",
+  "qc": "balenciaga-leather-strike-boots"
 },
 {
   "name": "ERD Vans",
@@ -436,7 +443,7 @@
   "badge": "BEST",
   "image": "products/erd-vans-2.png",
   "link": "https://item.taobao.com/item.htm?id=987817596507",
-  "qc": "products/qc/erd-vans-2.png"
+  "qc": "erd-vans-2"
 },
 {
   "name": "Rick Owens Snake Skin Geobasket",
@@ -444,14 +451,16 @@
   "category": "SHOES",
   "badge": "RARE",
   "image": "products/rick-owens-snake-skin-geobasket.png",
-  "link": "https://detail.tmall.com/item.htm?id=863545724001"
+  "link": "https://detail.tmall.com/item.htm?id=863545724001",
+  "qc": "rick-owens-snake-skin-geobasket"
 },
 {
   "name": "Number (N)ine Boots",
   "price": 67.29,
   "category": "SHOES",
   "image": "products/number-nine-boots.png",
-  "link": "https://detail.tmall.com/item.htm?id=600577481424"
+  "link": "https://detail.tmall.com/item.htm?id=600577481424",
+  "qc": "number-nine-boots"
 },
 {
   "name": "Raf Simons Ozweegos",
@@ -459,7 +468,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/raf-simons-ozweegos.png",
-  "link": "https://detail.tmall.com/item.htm?id=606693970670"
+  "link": "https://detail.tmall.com/item.htm?id=606693970670",
+  "qc": "raf-simons-ozweegos"
 },
 {
   "name": "Isabel Marants Sneaker",
@@ -473,14 +483,16 @@
   "price": 62.41,
   "category": "SHOES",
   "image": "products/saint-laurent-sl08.png",
-  "link": "https://detail.tmall.com/item.htm?id=41817833294"
+  "link": "https://detail.tmall.com/item.htm?id=41817833294",
+  "qc": "saint-laurent-sl08"
 },
 {
   "name": "Balenciaga Hamptons",
-  "price": 54.7,
+  "price": 73.11,
   "category": "SHOES",
   "image": "products/balenciaga-hamptons.png",
-  "link": "https://weidian.com/item.html?itemId=7511784602&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemId=7511784602&vc_cps_track=1459920903_0_0",
+  "qc": "balenciaga-hamptons"
 },
 {
   "name": "Heliot Emil Hiking Boots",
@@ -488,7 +500,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/heliot-emil-hiking-boots.png",
-  "link": "https://weidian.com/item.html?itemId=7448271026&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemId=7448271026&vc_cps_track=1459920903_0_0",
+  "qc": "heliot-emil-hiking-boots"
 },
 {
   "name": "Hood by Air Avalanche Boots",
@@ -496,7 +509,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/hood-by-air-avalanche-boots.png",
-  "link": "https://detail.tmall.com/item.htm?id=856812158364"
+  "link": "https://detail.tmall.com/item.htm?id=856812158364",
+  "qc": "hood-by-air-avalanche-boots"
 },
 {
   "name": "ALYX x Nike Air Force 1",
@@ -512,7 +526,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/chrome-hearts-ugg.png",
-  "link": "https://detail.tmall.com/item.htm?id=736394198003"
+  "link": "https://detail.tmall.com/item.htm?id=736394198003",
+  "qc": "chrome-hearts-ugg"
 },
 {
   "name": "Chrome Hearts Birkenstock",
@@ -520,7 +535,7 @@
   "category": "SHOES",
   "image": "products/chrome-hearts-birkenstock.png",
   "link": "https://weidian.com/item.html?itemID=7653065470",
-  "qc": "products/qc/chrome-hearts-birkenstock.png"
+  "qc": "chrome-hearts-birkenstock"
 },
 {
   "name": "Chrome Hearts Converse",
@@ -528,7 +543,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/chrome-hearts-converse.png",
-  "link": "https://item.taobao.com/item.htm?id=720566265791"
+  "link": "https://item.taobao.com/item.htm?id=720566265791",
+  "qc": "chrome-hearts-converse"
 },
 {
   "name": "Chrome Hearts \"Matty Boy\" Loafers",
@@ -537,7 +553,7 @@
   "badge": "BEST",
   "image": "products/chrome-hearts-matty-boy-loafers.png",
   "link": "https://detail.tmall.com/item.htm?id=855897650165",
-  "qc": "products/qc/chrome-hearts-matty-boy-loafers.png"
+  "qc": "chrome-hearts-matty-boy-loafers"
 },
 {
   "name": "LV Timbs",
@@ -545,7 +561,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/lv-timbs.png",
-  "link": "https://weidian.com/item.html?itemID=7670178804"
+  "link": "https://weidian.com/item.html?itemID=7670178804",
+  "qc": "lv-timbs"
 },
 {
   "name": "CDG Airforce 1",
@@ -554,7 +571,7 @@
   "badge": "BEST",
   "image": "products/cdg-airforce-1.png",
   "link": "https://weidian.com/item.html?itemID=7653069386",
-  "qc": "products/qc/cdg-airforce-1.png"
+  "qc": "cdg-airforce-1"
 },
 {
   "name": "Rick Owens Bogun Boots",
@@ -562,7 +579,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/rick-owens-bogun-boots.png",
-  "link": "https://item.taobao.com/item.htm?id=851542646439"
+  "link": "https://item.taobao.com/item.htm?id=851542646439",
+  "qc": "rick-owens-bogun-boots"
 },
 {
   "name": "ERL Vamps",
@@ -570,14 +588,16 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/erl-vamps.png",
-  "link": "https://item.taobao.com/item.htm?id=823099645862"
+  "link": "https://item.taobao.com/item.htm?id=823099645862",
+  "qc": "erl-vamps"
 },
 {
   "name": "Amiri Cowboy Canvas Boot",
   "price": 52.33,
   "category": "SHOES",
   "image": "products/amiri-cowboy-canvas-boot.png",
-  "link": "https://weidian.com/item.html?itemID=7653179872"
+  "link": "https://weidian.com/item.html?itemID=7653179872",
+  "qc": "amiri-cowboy-canvas-boot"
 },
 {
   "name": "Maison Margiela Tabi Low",
@@ -600,7 +620,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/maison-margiela-futures.png",
-  "link": "https://shop1648171445.v.weidian.com/item.html?itemId=7337653369&vc_cps_track=1459920903_0_0"
+  "link": "https://shop1648171445.v.weidian.com/item.html?itemId=7337653369&vc_cps_track=1459920903_0_0",
+  "qc": "maison-margiela-futures"
 },
 {
   "name": "Rick Owens Performa Tape Geobasket",
@@ -609,7 +630,7 @@
   "badge": "BEST",
   "image": "products/rick-owens-performa-tape-geobasket.png",
   "link": "https://detail.tmall.com/item.htm?id=907333245612",
-  "qc": "products/qc/rick-owens-performa-tape-geobasket.png"
+  "qc": "rick-owens-performa-tape-geobasket"
 },
 {
   "name": "Rick Owens Ramones",
@@ -617,7 +638,8 @@
   "category": "SHOES",
   "badge": "BEST",
   "image": "products/rick-owens-ramones.png",
-  "link": "https://weidian.com/item.html?itemID=7667379635"
+  "link": "https://weidian.com/item.html?itemID=7667379635",
+  "qc": "rick-owens-ramones"
 },
 {
   "name": "Rick Owens Vans",
@@ -626,7 +648,7 @@
   "badge": "BEST",
   "image": "products/rick-owens-vans.png",
   "link": "https://weidian.com/item.html?itemID=7667379635",
-  "qc": "products/qc/rick-owens-vans.png"
+  "qc": "rick-owens-vans"
 },
 {
   "name": "Rick Owens Geobasket",
