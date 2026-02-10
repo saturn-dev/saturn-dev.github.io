@@ -1480,10 +1480,11 @@
 },
 {
   "name": "Balenciaga Baggy Sweatpants",
-  "price": 45.96,
+  "price": 33.66,
   "category": "PANTS",
   "image": "products/balenciaga-baggy-sweatpants.png",
-  "link": "https://weidian.com/item.html?itemID=7655132391"
+  "link": "https://detail.tmall.com/item.htm?id=918014988178",
+  "qc": "balenciaga-baggy-sweatpants"
 },
 {
   "name": "Balenciaga Plaid Pyjamas",
@@ -1491,15 +1492,7 @@
   "category": "PANTS",
   "image": "products/balenciaga-plaid-pyjamas.png",
   "link": "https://detail.tmall.com/item.htm?id=901995000970",
-  "qc": "products/qc/balenciaga-plaid-pyjamas.png"
-},
-{
-  "name": "Balenciaga Baggy 2025 Denim",
-  "price": 61.04,
-  "category": "PANTS",
-  "badge": "BEST",
-  "image": "products/balenciaga-baggy-2025-denim.png",
-  "link": "https://detail.tmall.com/item.htm?id=924107925388"
+  "qc": "balenciaga-plaid-pyjamas"
 },
 {
   "name": "Balenciaga Skater Sweatpants",
@@ -1507,21 +1500,24 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/balenciaga-skater-sweatpants.png",
-  "link": "https://item.taobao.com/item.htm?id=788160382251"
+  "link": "https://item.taobao.com/item.htm?id=788160382251", 
+  "qc": "balenciaga-skater-sweatpants"
 },
 {
   "name": "Balenciaga Flared Jeans",
   "price": 42.16,
   "category": "PANTS",
   "image": "products/balenciaga-flared-jeans.png",
-  "link": "https://weidian.com/item.html?itemId=7409123644&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemId=7409123644",
+  "qc": "balenciaga-flared-jeans"
 },
 {
   "name": "Balenciaga Cargo Camo Pants",
   "price": 38.81,
   "category": "PANTS",
   "image": "products/balenciaga-cargo-camo-pants.png",
-  "link": "https://item.taobao.com/item.htm?id=892130883694"
+  "link": "https://item.taobao.com/item.htm?id=892130883694",
+  "qc": "balenciaga-cargo-camo-pants"
 },
 {
   "name": "Balenciaga Cut-up Jeans",
@@ -1529,14 +1525,16 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/balenciaga-cut-up-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=991471795146"
+  "link": "https://item.taobao.com/item.htm?id=991471795146",
+  "qc": "balenciaga-cut-up-jeans"
 },
 {
   "name": "Balenciaga Baggy Waxed Jeans",
   "price": 78.85,
   "category": "PANTS",
   "image": "products/balenciaga-baggy-waxed-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=695075035869"
+  "link": "https://item.taobao.com/item.htm?id=695075035869",
+  "qc": "balenciaga-baggy-waxed-jeans"
 },
 {
   "name": "Balenciaga Destroyed Mud Jeans",
@@ -1544,7 +1542,8 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/balenciaga-destroyed-mud-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=916268776650"
+  "link": "https://item.taobao.com/item.htm?id=916268776650",
+  "qc": "balenciaga-destroyed-mud-jeans"
 },
 {
   "name": "Balenciaga Lost Tapes",
@@ -1553,7 +1552,7 @@
   "badge": "BEST",
   "image": "products/balenciaga-lost-tapes.png",
   "link": "https://item.taobao.com/item.htm?id=906790679596",
-  "qc": "products/qc/balenciaga-lost-tapes.png"
+  "qc": "balenciaga-lost-tapes"
 },
 {
   "name": "Number (N)ine 02Ss Hipster Jeans",
@@ -1561,14 +1560,15 @@
   "category": "PANTS",
   "image": "products/number-nine-02ss-hipster-jeans.png",
   "link": "https://item.taobao.com/item.htm?id=954283095783",
-  "qc": "products/qc/number-nine-02ss-hipster-jeans.png"
+  "qc": "number-nine-02ss-hipster-jeans"
 },
 {
   "name": "Number (N)ine Shield Sweatpants",
   "price": 37.25,
   "category": "PANTS",
   "image": "products/number-nine-shield-sweatpants.png",
-  "link": "https://item.taobao.com/item.htm?id=982341517338"
+  "link": "https://item.taobao.com/item.htm?id=982341517338",
+  "qc": "number-nine-shield-sweatpants"
 },
 {
   "name": "Number (N)ine 04Ss Sweatpants",
@@ -1577,30 +1577,33 @@
   "badge": "BEST",
   "image": "products/number-nine-04ss-sweatpants.png",
   "link": "https://item.taobao.com/item.htm?id=979747400628",
-  "qc": "products/qc/number-nine-04ss-sweatpants.png"
+  "qc": "number-nine-04ss-sweatpants"
 },
 {
   "name": "Maison Margiela Washed Wide Jeans",
   "price": 50.4,
   "category": "PANTS",
   "image": "products/maison-margiela-washed-wide-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=748207399475"
+  "link": "https://item.taobao.com/item.htm?id=748207399475",
+  "qc": "maison-margiela-washed-wide-jeans"
 },
 {
   "name": "Maison Margiela Oil Wash Jeans",
-  "price": 74.12,
+  "price": 51.47,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/maison-margiela-oil-wash-jeans.png",
-  "link": "https://weidian.com/item.html?itemID=7653213726"
+  "link": "https://item.taobao.com/item.htm?id=899869422969",
+  "qc": "maison-margiela-oil-wash-jeans"
 },
 {
   "name": "Maison Margiela Flared Jeans",
-  "price": 64.97,
+  "price": 52.33,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/maison-margiela-flared-jeans.png",
-  "link": "https://weidian.com/item.html?itemID=7654800569"
+  "link": "https://weidian.com/item.html?itemID=7654800569",
+  "qc": "maison-margiela-flared-jeans"
 },
 {
   "name": "Undercover 10ss Red Yarn Jeans",
@@ -1608,7 +1611,7 @@
   "category": "PANTS",
   "image": "products/undercover-10ss-red-yarn-jeans.png",
   "link": "https://item.taobao.com/item.htm?id=972268656743",
-  "qc": "products/qc/undercover-10ss-red-yarn-jeans.png"
+  "qc": "undercover-10ss-red-yarn-jeans"
 },
 {
   "name": "Undercover 10ss Blue Yarn Jeans",
@@ -1617,16 +1620,16 @@
   "badge": "BEST",
   "image": "products/undercover-10ss-blue-yarn-jeans.png",
   "link": "https://item.taobao.com/item.htm?id=968509323403",
-  "qc": "products/qc/undercover-10ss-blue-yarn-jeans.png"
+  "qc": "undercover-10ss-blue-yarn-jeans"
 },
 {
   "name": "Undercover 05ss Heart Jeans",
-  "price": 48.59,
+  "price": 42.16,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/undercover-05ss-heart-jeans.png",
   "link": "https://weidian.com/item.html?itemID=7655007425",
-  "qc": "products/qc/undercover-05ss-heart-jeans.png"
+  "qc": "undercover-05ss-heart-jeans"
 },
 {
   "name": "Undercover 06ss Bug Denim",
@@ -1635,7 +1638,7 @@
   "badge": "BEST",
   "image": "products/undercover-06ss-bug-denim.png",
   "link": "https://item.taobao.com/item.htm?id=991666428473",
-  "qc": "products/qc/undercover-06ss-bug-denim.png"
+  "qc": "undercover-06ss-bug-denim"
 },
 {
   "name": "VETEMENTS Embroidered Jeans",
@@ -1643,7 +1646,8 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/vetements-embroidered-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=809980001702"
+  "link": "https://item.taobao.com/item.htm?id=809980001702",
+  "qc": "vetements-embroidered-jeans"
 },
 {
   "name": "VETEMENTS White Camo Pants",
@@ -1652,7 +1656,7 @@
   "badge": "BEST",
   "image": "products/vetements-white-camo-pants.png",
   "link": "https://item.taobao.com/item.htm?id=767783359608",
-  "qc": "products/qc/vetements-white-camo-pants.png"
+  "qc": "vetements-white-camo-pants"
 },
 {
   "name": "VETEMENTS Camo Cargo Pants",
@@ -1660,7 +1664,8 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/vetements-camo-cargo-pants.png",
-  "link": "https://item.taobao.com/item.htm?id=756289633735"
+  "link": "https://item.taobao.com/item.htm?id=756289633735",
+  "qc": "vetements-camo-cargo-pants"
 },
 {
   "name": "VETEMENTS Baggy Ripped Jeans",
@@ -1668,7 +1673,8 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/vetements-baggy-ripped-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=809675105447"
+  "link": "https://item.taobao.com/item.htm?id=809675105447",
+  "qc": "vetements-baggy-ripped-jeans"
 },
 {
   "name": "Balenciaga Tribal Jeans",
@@ -1676,7 +1682,8 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/balenciaga-tribal-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=993528896025"
+  "link": "https://item.taobao.com/item.htm?id=993528896025",
+  "qc": "balenciaga-tribal-jeans"
 },
 {
   "name": "Balenciaga Ebay Sweatpants",
@@ -1684,22 +1691,25 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/balenciaga-ebay-sweatpants.png",
-  "link": "https://weidian.com/item.html?itemId=7282059605&vc_cps_track=1459920903_0_0"
+  "link": "https://weidian.com/item.html?itemId=7282059605",
+  "qc": "balenciaga-ebay-sweatpants"
 },
 {
   "name": "Balenciaga 25Ss Bootcut Jeans",
   "price": 38.98,
   "category": "PANTS",
   "image": "products/balenciaga-25ss-bootcut-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=896880038863"
+  "link": "https://item.taobao.com/item.htm?id=896880038863",
+  "qc": "balenciaga-25ss-bootcut-jeans"
 },
 {
   "name": "Acne Studios 2023M Scribble Jeans",
-  "price": 55.72,
+  "price": 43.38,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/acne-studios-2023m-scribble-jeans.png",
-  "link": "https://weidian.com/item.html?itemId=7669842026"
+  "link": "https://item.taobao.com/item.htm?id=893645001152",
+  "qc": "acne-studios-2023m-scribble-jeans"
 },
 {
   "name": "Acne Studios 2021M Penicillin Jeans",
@@ -1707,23 +1717,25 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/acne-studios-2021m-penicillin-jeans.png",
-  "link": "https://item.taobao.com/item.htm?id=876474890181"
+  "link": "https://item.taobao.com/item.htm?id=876474890181",
+  "qc": "acne-studios-2021m-penicillin-jeans"
 },
 {
   "name": "Acne Studios 2021M Raw Denim Jeans",
   "price": 41.63,
   "category": "PANTS",
   "image": "products/acne-studios-2021m-raw-denim-jeans.png",
-  "link": "https://weidian.com/item.html?itemId=7666773197"
+  "link": "https://weidian.com/item.html?itemId=7666773197",
+  "qc": "acne-studios-2021m-raw-denim-jeans"
 },
 {
   "name": "Acne 1981M Oil Spill Jeans",
-  "price": 63.22,
+  "price": 50.17,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/acne-1981m-ink-splashed-jeans.png",
-  "link": "https://weidian.com/item.html?itemId=7669843682",
-  "qc": "products/qc/acne-1981m-ink-splashed-jeans.png"
+  "link": "https://item.taobao.com/item.htm?id=799544942560",
+  "qc": "acne-1981m-ink-splashed-jeans"
 },
 {
   "name": "Acne Studios 2021M Jeans",
@@ -1731,21 +1743,24 @@
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/acne-studios-2021m-jeans.png",
-  "link": "https://detail.tmall.com/item.htm?id=979217474468"
+  "link": "https://detail.tmall.com/item.htm?id=979217474468",
+  "qc": "acne-studios-2021m-jeans"
 },
 {
   "name": "Acne Studios 1981M Jeans",
   "price": 52.09,
   "category": "PANTS",
   "image": "products/acne-studios-1981m-jeans.png",
-  "link": "https://detail.tmall.com/item.htm?id=979217474468"
+  "link": "https://detail.tmall.com/item.htm?id=979217474468",
+  "qc": "acne-studios-1981m-jeans"
 },
 {
   "name": "Acne 1981 Gray Paint Denim",
   "price": 52.09,
   "category": "PANTS",
   "image": "products/acne-1981-gray-paint-denim.png",
-  "link": "https://detail.tmall.com/item.htm?id=979217474468"
+  "link": "https://detail.tmall.com/item.htm?id=979217474468",
+  "qc": "acne-1981-gray-paint-denim"
 },
 {
   "name": "Acne Studios \"2010M\" Regular Fit Jeans",
@@ -1757,12 +1772,12 @@
 },
 {
   "name": "Black Anonymous Club Sweats",
-  "price": 51.01,
+  "price": 44,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/black-anonymous-club-sweats.png",
-  "link": "https://weidian.com/item.html?itemID=7670167020",
-  "qc": "products/qc/black-anonymous-club-sweats.png"
+  "link": "https://item.taobao.com/item.htm?id=853042180310",
+  "qc": "black-anonymous-club-sweats"
 },
 {
   "name": "Purple Anonymous Club Sweats",
@@ -1771,90 +1786,90 @@
   "badge": "BEST",
   "image": "products/purple-anonymous-club-sweats.png",
   "link": "https://detail.tmall.com/item.htm?id=828582071498",
-  "qc": "products/qc/purple-anonymous-club-sweats.png"
+  "qc": "purple-anonymous-club-sweats"
 },
 {
   "name": "Rick Owens Flared Bias Cut Denim",
   "price": 46.04,
   "category": "PANTS",
   "image": "products/rick-owens-flared-bias-cut-denim.png",
-  "link": "https://detail.tmall.com/item.htm?id=857532037058"
+  "link": "https://detail.tmall.com/item.htm?id=857532037058",
+  "qc": "rick-owens-flared-bias-cut-denim"
 },
 {
-  "name": "Balenciaga x Adidas Jeans",
-  "price": 44.15,
-  "category": "PANTS",
-  "badge": "BEST",
-  "image": "products/balenciaga-x-adidas-jeans.png",
-  "link": "https://weidian.com/item.html?itemID=7653174314"
-},
-{
-  "name": "ERD 'Memory' Hoodie",
-  "price": 33.77,
+  "name": "ERD 'Sandwhich' Hoodie",
+  "price": 21.28,
   "category": "HOODIES",
-  "image": "products/erd-memory-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7650087331"
+  "image": "products/erd-sandwhich-hoodie.png",
+  "link": "https://detail.1688.com/offer/838575037851.html",
+  "qc": "erd-sandwhich-hoodie"
 },
 {
   "name": "Maison Margiela Numbers Carpet",
-  "price": 11.85,
+  "price": 9.36,
   "category": "MISC",
   "image": "products/maison-margiela-numbers-carpet.png",
-  "link": "https://weidian.com/item.html?itemID=7653175896"
+  "link": "https://detail.1688.com/offer/990292508679.html",
+  "qc": "maison-margiela-numbers-carpet"
 },
 {
   "name": "Hysteric Glamour Carpet",
-  "price": 26.99,
+  "price": 21.99,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/hysteric-glamour-carpet.png",
-  "link": "https://weidian.com/item.html?itemID=7650102961"
+  "link": "https://weidian.com/item.html?itemID=7282846292"
 },
 {
   "name": "Mastermind Japan Carpet",
-  "price": 18.31,
+  "price": 17.36,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/mastermind-japan-carpet.png",
-  "link": "https://weidian.com/item.html?itemID=7650102961"
+  "link": "https://weidian.com/item.html?itemID=7650102961",
+  "qc": "mastermind-japan-carpet"
 },
 {
   "name": "Chrome Hearts Playing Cards",
   "price": 1.61,
   "category": "MISC",
   "image": "products/chrome-hearts-playing-cards.png",
-  "link": "https://weidian.com/item.html?itemID=7653184264"
+  "link": "https://weidian.com/item.html?itemID=7653184264",
+  "qc": "chrome-hearts-playing-cards"
 },
 {
   "name": "ERD Realtree Backpack",
-  "price": 64.44,
+  "price": 51.9,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/erd-realtree-backpack.png",
-  "link": "https://weidian.com/item.html?itemID=7653166632"
+  "link": "https://item.taobao.com/item.htm?id=846616242614",
+  "qc": "erd-realtree-backpack"
 },
 {
   "name": "Supreme Glamour Backpack",
-  "price": 64.44,
+  "price": 30.33,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/supreme-glamour-backpack.png",
-  "link": "https://weidian.com/item.html?itemID=7650117521"
+  "link": "https://item.taobao.com/item.htm?id=981788046593",
+  "qc": "supreme-glamour-backpack"
 },
 {
   "name": "Givenchy Stars Shirt",
-  "price": 15.8,
+  "price": 12.49,
   "category": "SHIRTS",
   "image": "products/givenchy-stars-shirt.png",
-  "link": "https://weidian.com/item.html?itemID=7650107595"
+  "link": "https://item.taobao.com/item.htm?id=803346454328",
+  "qc": "givenchy-stars-shirt"
 },
 {
   "name": "CDG Shirt",
-  "price": 23.13,
+  "price": 14.32,
   "category": "SHIRTS",
   "image": "products/cdg-shirt.png",
-  "link": "https://weidian.com/item.html?itemID=7653166544",
-  "qc": "products/qc/cdg-shirt.png"
+  "link": "https://item.taobao.com/item.htm?id=875547693079",
+  "qc": "cdg-shirt"
 },
 {
   "name": "Chrome Hearts Longsleeve Polo",
