@@ -2186,7 +2186,8 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/raf-simons-brain-calvin-shirt.png",
-  "link": "https://item.taobao.com/item.htm?id=1008595875031"
+  "link": "https://item.taobao.com/item.htm?id=1008595875031",
+  "qc": "raf-simons-brain-calvin-shirt"
 },
 {
   "name": "Designer Books",
@@ -2195,7 +2196,7 @@
   "badge": "BEST",
   "image": "products/desinger-books.png",
   "link": "https://item.taobao.com/item.htm?id=642768295879",
-  "qc": "products/qc/desinger-books.png"
+  "qc": "desinger-books"
 },
 {
   "name": "Chrome Hearts Stools",
@@ -2204,7 +2205,7 @@
   "badge": "BEST",
   "image": "products/chrome-hearts-stools.png",
   "link": "https://detail.1688.com/offer/915678458986.html",
-  "qc": "products/qc/chrome-hearts-stools.png"
+  "qc": "chrome-hearts-stools"
 },
 {
   "name": "Chrome Hearts Ski Goggles (real 925 silver)",
@@ -2213,21 +2214,22 @@
   "badge": "BEST",
   "image": "products/chrome-hearts-ski-goggles-real-925-silver.png",
   "link": "https://item.taobao.com/item.htm?id=765024105695",
-  "qc": "products/qc/chrome-hearts-ski-goggles-real-925-silver.png"
+  "qc": "chrome-hearts-ski-goggles-real-925-silver"
 },
 {
   "name": "ERD Patchwork Backpack",
-  "price": 10.49,
+  "price": 7.39,
   "category": "MISC",
   "image": "products/erd-patchwork-backpack.png",
-  "link": "https://weidian.com/item.html?itemID=7650100831"
+  "link": "https://item.taobao.com/item.htm?id=906890501791",
+  "qc": "erd-patchwork-backpack"
 },
 {
   "name": "Balenciaga Patch Logo Backpack",
-  "price": 19.81,
+  "price": 11.32,
   "category": "MISC",
   "image": "products/balenciaga-patch-logo-backpack.png",
-  "link": "https://weidian.com/item.html?itemID=7653095568"
+  "link": "https://item.taobao.com/item.htm?id=810019657004"
 },
 {
   "name": "Raf Simons 'Brian Calvin' Shirt",
@@ -2235,7 +2237,8 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/raf-simons-brain-calvin-shirt-2.png",
-  "link": "https://item.taobao.com/item.htm?id=1010060309986"
+  "link": "https://item.taobao.com/item.htm?id=1010060309986",
+  "qc": "raf-simons-brain-calvin-shirt-2"
 },
 {
   "name": "Dior Hedi Luster Jeans",
@@ -2244,7 +2247,7 @@
   "badge": "BEST",
   "image": "products/dior-hedi-luster-jeans.png",
   "link": "https://item.taobao.com/item.htm?id=684355858158",
-  "qc": "products/qc/dior-hedi-luster-jeans.png"
+  "qc": "dior-hedi-luster-jeans"
 },
 {
   "name": "Balenciaga Rhinestone Hoodie",
@@ -2253,7 +2256,7 @@
   "badge": "BEST",
   "image": "products/balenciaga-rhinestone-hoodie.png",
   "link": "https://weidian.com/item.html?itemID=7613099362",
-  "qc": "products/qc/balenciaga-rhinestone-hoodie.png"
+  "qc": "balenciaga-rhinestone-hoodie"
 },
 {
   "name": "Raf Simons Virginia Creeper 'Baseball' Shirt",
@@ -2261,7 +2264,8 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/raf-simons-virginia-creeper-baseball-shirt.png",
-  "link": "https://item.taobao.com/item.htm?id=1010070845194"
+  "link": "https://item.taobao.com/item.htm?id=1010070845194",
+  "qc": "raf-simons-virginia-creeper-baseball-shirt"
 },
 {
   "name": "Goyard Card Holder",
@@ -2269,73 +2273,77 @@
   "category": "MISC",
   "badge": "BEST",
   "image": "products/goyard-card-holder.png",
-  "link": "https://weidian.com/item.html?itemID=7653112268"
+  "link": "https://item.taobao.com/item.htm?id=692340754630",
+  "qc": "goyard-card-holder"
 },
 {
   "name": "Supreme FW20 Backpack",
-  "price": 59.86,
+  "price": 47.7,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/supreme-fw20-backpack.png",
-  "link": "https://weidian.com/item.html?itemID=7666911088",
-  "qc": "products/qc/supreme-fw20-backpack.png"
+  "link": "https://item.taobao.com/item.htm?id=860719900256",
+  "qc": "supreme-fw20-backpack"
 },
 {
   "name": "Vivienne Westwood Card Holder",
-  "price": 9.48,
+  "price": 8.88,
   "category": "MISC",
   "image": "products/vivienne-westwood-card-holder.png",
-  "link": "https://weidian.com/item.html?itemID=7661578902",
-  "qc": "products/qc/vivienne-westwood-card-holder.png"
+  "link": "https://item.taobao.com/item.htm?id=930474158953",
+  "qc": "vivienne-westwood-card-holder"
 },
 {
   "name": "Comme Des Garcons Bag",
-  "price": 20.57,
+  "price": 17.52,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/comme-des-garcons-bag.png",
-  "link": "https://weidian.com/item.html?itemID=7661537446",
-  "qc": "products/qc/comme-des-garcons-bag.png"
+  "link": "https://item.taobao.com/item.htm?id=818065523065",
+  "qc": "comme-des-garcons-bag"
 },
 {
   "name": "Vivienne Westwood Belt",
-  "price": 18.8,
+  "price": 4.68,
   "category": "ACCESSORIES",
   "image": "products/vivienne-westwood-belt.png",
   "link": "https://weidian.com/item.html?itemID=7661570932",
-  "qc": "products/qc/vivienne-westwood-belt.png"
+  "qc": "vivienne-westwood-belt"
 },
 {
   "name": "Balenciaga BB Belt",
   "price": 20.4,
   "category": "ACCESSORIES",
   "image": "products/balenciaga-bb-belt.png",
-  "link": "https://weidian.com/item.html?itemID=7658610819"
+  "link": "https://weidian.com/item.html?itemID=7658610819",
+  "qc": "balenciaga-bb-belt"
 },
 {
   "name": "Acne Studios Wool Scarf",
-  "price": 45.49,
+  "price": 38.6,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/acne-studios-wool-scarf.png",
-  "link": "https://weidian.com/item.html?itemID=7658545563",
-  "qc": "products/qc/acne-studios-wool-scarf.png"
+  "link": "https://item.taobao.com/item.htm?id=982932127042",
+  "qc": "acne-studios-wool-scarf"
 },
 {
   "name": "Supreme Last Supper Belt",
-  "price": 32.04,
+  "price": 21.14,
   "category": "ACCESSORIES",
   "badge": "BEST",
   "image": "products/supreme-last-supper-belt.png",
-  "link": "https://weidian.com/item.html?itemID=7661624120"
+  "link": "https://item.taobao.com/item.htm?id=981664707121",
+  "qc": "supreme-last-supper-belt"
 },
 {
   "name": "Chrome Hearts Boxers",
-  "price": 9.24,
+  "price": 7.07,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/chrome-hearts-boxers.png",
-  "link": "https://weidian.com/item.html?itemID=7658679619"
+  "link": "https://weidian.com/item.html?itemID=7449088244",
+  "qc": "chrome-hearts-boxers"
 },
 {
   "name": "Supreme Stickers",
@@ -2343,38 +2351,41 @@
   "category": "MISC",
   "badge": "BEST",
   "image": "products/supreme-stickers.png",
-  "link": "https://weidian.com/item.html?itemID=7666987352",
-  "qc": "products/qc/supreme-stickers.png"
+  "link": "https://weidian.com/item.html?itemID=7666987352"
 },
 {
   "name": "ERD Rapper Belt",
-  "price": 16.25,
+  "price": 3.84,
   "category": "ACCESSORIES",
   "image": "products/erd-rapper-belt.png",
-  "link": "https://weidian.com/item.html?itemID=7661628126"
+  "link": "https://item.taobao.com/item.htm?id=959439692513",
+  "pw": "erd-rapper-belt"
 },
 {
   "name": "Chrome Hearts Wallet Chains",
-  "price": 23.08,
+  "price": 19.58,
   "category": "ACCESSORIES",
   "image": "products/chrome-hearts-wallet-chains.png",
-  "link": "https://weidian.com/item.html?itemID=7658557495"
+  "link": "https://detail.1688.com/offer/717180499467.html",
+  "qc": "chrome-hearts-wallet-chains"
 },
 {
   "name": "Supreme Skateboard Decks",
-  "price": 23.23,
+  "price": 10.5,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/supreme-skateboard-decks.png",
-  "link": "https://weidian.com/item.html?itemID=7661565114"
+  "link": "https://item.taobao.com/item.htm?id=674989602030",
+  "qc": "supreme-skateboard-decks"
 },
 {
   "name": "Chrome Hearts Pen",
-  "price": 16.62,
+  "price": 14.92,
   "category": "MISC",
   "badge": "BEST",
   "image": "products/chrome-hearts-pen.png",
-  "link": "https://weidian.com/item.html?itemID=7661636030"
+  "link": "https://detail.1688.com/offer/847969611528.html",
+  "qc": "chrome-hearts-pen"
 },
 {
   "name": "Takashi Murakami Pillows",
@@ -2386,21 +2397,21 @@
 },
 {
   "name": "Chrome Hearts Stay Fast Longsleeve",
-  "price": 29.17,
+  "price": 24.17,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/chrome-hearts-stay-fast-longsleeve.png",
-  "link": "https://weidian.com/item.html?itemID=7661580952",
-  "qc": "products/qc/chrome-hearts-stay-fast-longsleeve.png"
+  "link": "https://weidian.com/item.html?itemId=7512937577",
+  "qc": "chrome-hearts-stay-fast-longsleeve"
 },
 {
   "name": "Chrome Hearts Love You Longsleeve",
-  "price": 56.57,
+  "price": 43.96,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/chrome-hearts-love-you-longsleeve.png",
-  "link": "https://weidian.com/item.html?itemID=7664752607",
-  "qc": "products/qc/chrome-hearts-love-you-longsleeve.png"
+  "link": "https://weidian.com/item.html?itemID=7629333871",
+  "qc": "chrome-hearts-love-you-longsleeve"
 },
 {
   "name": "Givenchy Tysons",
@@ -2411,57 +2422,63 @@
 },
 {
   "name": "ERD Don Van Vliet Longsleeve",
-  "price": 33.43,
+  "price": 28.11,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/erd-don-van-vliet-longsleeve.png",
-  "link": "https://weidian.com/item.html?itemID=7670139508"
+  "link": "https://weidian.com/item.html?itemID=7234491140",
+  "qc": "erd-don-van-vliet-longsleeve"
 },
 {
   "name": "ERD Teen just wanted love Longsleeve",
-  "price": 32.74,
+  "price": 27.38,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/erd-teen-just-wanted-love-longsleeve.png",
-  "link": "https://weidian.com/item.html?itemID=7667159513"
+  "link": "https://item.taobao.com/item.htm?id=855096912800",
+  "qc": "erd-teen-just-wanted-love-longsleeve"
 },
 {
   "name": "ERD Thrilling Raglan Sweater",
   "price": 26.82,
   "category": "SHIRTS",
   "image": "products/erd-thrilling-raglan-longsleeve.png",
-  "link": "https://weidian.com/item.html?itemID=7670137530"
+  "link": "https://item.taobao.com/item.htm?id=984065105013",
+  "qc": "erd-thrilling-raglan-longsleeve"
 },
 {
   "name": "Telfar Longsleeve",
-  "price": 22.92,
+  "price": 18.85,
   "category": "SHIRTS",
   "image": "products/telfar-longsleeve.png",
-  "link": "https://weidian.com/item.html?itemID=7667218695"
+  "link": "https://item.taobao.com/item.htm?id=996532157433"
 },
 {
   "name": "ERD Reminiscing Sweater",
-  "price": 52.28,
+  "price": 43.29,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/erd-reminiscing-sweater.png",
-  "link": "https://weidian.com/item.html?itemID=7667244339"
+  "link": "https://item.taobao.com/item.htm?id=993398857974",
+  "qc": "erd-reminiscing-sweater"
 },
 {
   "name": "Vetements Antwerpen Reconstructed Hoodie",
-  "price": 69.09,
+  "price": 57.29,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/vetements-antwerpen-reconstructed-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7670210540"
+  "link": "https://item.taobao.com/item.htm?id=988865970969",
+  "qc": "vetements-antwerpen-reconstructed-hoodie"
 },
 {
   "name": "Balenciaga Half Leopard-print Shirt",
-  "price": 47.9,
+  "price": 37.28,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/balenciaga-half-leopard-print-shirt.png",
-  "link": "https://weidian.com/item.html?itemID=7667265543"
+  "link": "https://item.taobao.com/item.htm?id=976368830709",
+  "qc": "balenciaga-half-leopard-print-shirt"
 },
 {
   "name": "Ne-net Scarf",
@@ -2469,24 +2486,26 @@
   "category": "MISC",
   "badge": "BEST",
   "image": "products/ne-net-scarf.png",
-  "link": "https://item.taobao.com/item.htm?id=869262432351"
+  "link": "https://item.taobao.com/item.htm?id=869262432351",
+  "qc": "ne-net-scarf"
 },
 {
   "name": "Number Nine 01SS Hoodie",
-  "price": 47.61,
+  "price": 39.87,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/number-nine-01ss-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7680900759"
+  "link": "https://item.taobao.com/item.htm?id=1017388726264",
+  "qc": "number-nine-01ss-hoodie"
 },
 {
   "name": "Forgetraven Longsleeve",
-  "price": 10.34,
+  "price": 8.34,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/forget-raven-longsleeve.png",
-  "link": "https://weidian.com/item.html?itemID=7683516704",
-  "qc": "products/qc/forget-raven-longsleeve.png"
+  "link": "https://item.taobao.com/item.htm?id=999329740560",
+  "qc": "forget-raven-longsleeve"
 },
 {
   "name": "Peaceinwar x ihatestars Hoodie",
@@ -2494,53 +2513,51 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/peaceinwar-x-ihatestars-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7680548757",
-  "qc": "products/qc/peaceinwar-x-ihatestars-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7633602044"
 },
 {
   "name": "Peaceinwar Soldier Hoodie",
-  "price": 42.16,
+  "price": 32.58,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/peaceinwar-soldier-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7683523012",
-  "qc": "products/qc/peaceinwar-soldier-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7650756049",
+  "qc": "peaceinwar-soldier-hoodie"
 },
 {
   "name": "Peaceinwar Winter War Hoodie",
-  "price": 42.16,
+  "price": 34.16,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/peaceinwar-winter-war-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7680610229",
-  "qc": "products/qc/peaceinwar-winter-war-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7644491945"
 },
 {
   "name": "Peaceinwar EU Sweats",
-  "price": 43.58,
+  "price": 35.58,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/peaceinwar-eu-sweats.png",
-  "link": "https://weidian.com/item.html?itemID=7680533323",
-  "qc": "products/qc/peaceinwar-eu-sweats.png"
+  "link": "https://weidian.com/item.html?itemID=7653929908",
+  "qc": "peaceinwar-eu-sweats"
 },
 {
   "name": "Forgetraven Tee",
-  "price": 5.27,
+  "price": 4.09,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/forget-raven-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7683539124",
-  "qc": "products/qc/forget-raven-tee.png"
+  "link": "https://detail.1688.com/offer/948603919720.html",
+  "qc": "forget-raven-tee"
 },
 {
   "name": "Peaceinwar Cherry Blossom Hoodie",
-  "price": 40.13,
+  "price": 31.13,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/peaceinwar-cherry-blossom-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7683567004",
-  "qc": "products/qc/peaceinwar-cherry-blossom-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7630589589",
+  "qc": "peaceinwar-cherry-blossom-hoodie"
 },
 {
   "name": "Peaceinwar War Peace Hoodie",
@@ -2548,80 +2565,70 @@
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/peaceinwar-war-peace-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7683614410",
-  "qc": "products/qc/peaceinwar-war-peace-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7633091801",
+  "qc": "peaceinwar-war-peace-hoodie"
 },
 {
   "name": "Peaceinwar Skull Sweats",
-  "price": 44.39,
+  "price": 36.39,
   "category": "PANTS",
   "badge": "BEST",
   "image": "products/peaceinwar-skull-sweats.png",
-  "link": "https://weidian.com/item.html?itemID=7683549454",
-  "qc": "products/qc/peaceinwar-skull-sweats.png"
+  "link": "https://weidian.com/item.html?itemID=7635947538"
 },
 {
   "name": "Peaceinwar yin yang Hoodie",
-  "price": 40.13,
+  "price": 31.13,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/peaceinwar-yin-yang-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7680687677",
-  "qc": "products/qc/peaceinwar-yin-yang-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7621923643",
+  "qc": "peaceinwar-yin-yang-hoodie"
 },
 {
   "name": "Peaceinwar Patriot Hoodie",
-  "price": 40.13,
+  "price": 31.13,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/peaceinwar-patriot-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7680660185",
-  "qc": "products/qc/peaceinwar-patriot-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7624819348",
+  "qc": "peaceinwar-patriot-hoodie"
 },
 {
   "name": "Peaceinwar Sweden Hoodie",
-  "price": 40.13,
+  "price": 31.13,
   "category": "HOODIES",
   "badge": "BEST",
   "image": "products/peaceinwar-sweden-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7680579589",
-  "qc": "products/qc/peaceinwar-sweden-hoodie.png"
-},
-{
-  "name": "Droland Miller Ken Carson Tour Hoodie",
-  "price": 35.25,
-  "category": "HOODIES",
-  "badge": "BEST",
-  "image": "products/droland-miller-ken-carson-tour-hoodie.png",
-  "link": "https://weidian.com/item.html?itemID=7680689937",
-  "qc": "products/qc/droland-miller-ken-carson-tour-hoodie.png"
+  "link": "https://weidian.com/item.html?itemID=7567731360",
+  "qc": "peaceinwar-sweden-hoodie"
 },
 {
   "name": "Chrome Hearts USA Tee",
-  "price": 30.41,
+  "price": 23.55,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/chrome-hearts-usa-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7683707688",
-  "qc": "products/qc/chrome-hearts-usa-tee.png"
+  "link": "https://detail.1688.com/offer/983984838943.html",
+  "qc": "chrome-hearts-usa-tee"
 },
 {
   "name": "ERD Tee",
-  "price": 24.28,
+  "price": 18.28,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/erd-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7680692177",
-  "qc": "products/qc/erd-tee.png"
+  "link": "https://item.taobao.com/item.htm?id=891648608382",
+  "qc": "erd-tee"
 },
 {
   "name": "Burberry London Tee",
-  "price": 42.36,
+  "price": 32.82,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/burberry-london-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7680735737",
-  "qc": "products/qc/burberry-london-tee.png"
+  "link": "https://weidian.com/item.html?itemID=6404464137",
+  "qc": "burberry-london-tee"
 },
 {
   "name": "Balenciaga Britney Tee",
@@ -2629,7 +2636,8 @@
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/balenciaga-britney-tee.png",
-  "link": "https://item.taobao.com/item.htm?id=1014393085438"
+  "link": "https://item.taobao.com/item.htm?id=1014393085438",
+  "qc": "balenciaga-britney-tee"
 },
 {
   "name": "Typography Tee",
@@ -2638,87 +2646,88 @@
   "badge": "BEST",
   "image": "products/typography-tee.png",
   "link": "https://item.taobao.com/item.htm?id=1009176473934",
-  "qc": "products/qc/typography-tee.png"
+  "qc": "typography-tee"
 },
 {
   "name": "ERD El Pico Tee",
-  "price": 26.44,
+  "price": 21.44,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/erd-el-pico-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7680649429",
-  "qc": "products/qc/erd-el-pico-tee.png"
+  "link": "https://item.taobao.com/item.htm?id=877924003607",
+  "qc": "erd-el-pico-tee"
 },
 {
   "name": "ERD Self Termination Tee",
-  "price": 21.89,
+  "price": 17.89,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/erd-self-termination-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7680387871",
-  "qc": "products/qc/erd-self-termination-tee.png"
+  "link": "https://weidian.com/item.html?itemID=7576520956",
+  "qc": "erd-self-termination-tee"
 },
 {
   "name": "Soloist Tee",
-  "price": 12.5,
+  "price": 10.5,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/soloist-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7680728327",
-  "qc": "products/qc/soloist-tee.png"
+  "link": "https://item.taobao.com/item.htm?id=806232780363",
+  "qc": "soloist-tee"
 },
 {
   "name": "Vivienne Westwood Tee",
-  "price": 12.5,
+  "price": 29.99,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/vivienne-westwood-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7683696586",
-  "qc": "products/qc/vivienne-westwood-tee.png"
+  "link": "https://item.taobao.com/item.htm?id=935459089993",
+  "qc": "vivienne-westwood-tee"
 },
 {
   "name": "Supreme x Coogi Tee",
-  "price": 36.49,
+  "price": 28.49,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/supreme-x-coogi-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7683663194",
-  "qc": "products/qc/supreme-x-coogi-tee.png"
+  "link": "https://weidian.com/item.html?itemID=7504470908",
+  "qc": "supreme-x-coogi-tee"
 },
 {
   "name": "CDG Logo Tee",
-  "price": 15.21,
+  "price": 11.21,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/cdg-logo-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7683734248",
-  "qc": "products/qc/cdg-logo-tee.png"
+  "link": "https://weidian.com/item.html?itemID=7585170867",
+  "qc": "cdg-logo-tee"
 },
 {
   "name": "Givenchy Tees",
-  "price": 16.05,
+  "price": 12.05,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/givenchy-tees.png",
-  "link": "https://weidian.com/item.html?itemID=7680387901",
-  "qc": "products/qc/givenchy-tees.png"
+  "link": "https://item.taobao.com/item.htm?id=783902767333",
+  "qc": "givenchy-tees"
 },
 {
   "name": "Tears of Dreams Ketamine Jersey",
-  "price": 34.78,
+  "price": 27.04,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/tears-of-dreams-ketamine-jersey.png",
-  "link": "https://weidian.com/item.html?itemID=7683661294"
+  "link": "https://item.taobao.com/item.htm?id=991905213307",
+  "qc": "tears-of-dreams-ketamine-jersey"
 },
 {
   "name": "ERD 25SS Tee",
-  "price": 28.9,
+  "price": 22.32,
   "category": "SHIRTS",
   "badge": "BEST",
   "image": "products/erd-25ss-tee.png",
-  "link": "https://weidian.com/item.html?itemID=7683659572",
-  "qc": "products/qc/erd-25ss-tee.png"
+  "link": "https://item.taobao.com/item.htm?id=943455239874",
+  "qc": "erd-25ss-tee"
 },
 {
   "name": "Acne Studios 1996 Tee",
