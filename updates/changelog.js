@@ -1,6 +1,19 @@
 const timeline = document.getElementById("timeline");
 
 const releases = [
+    {
+    title: "v0.8 QC Update",
+    tags: ["NEWEST"],
+    date: "2026-2-15",
+    changes: [
+      "Updated all the QCs, most products now have QCs!",
+      "Changed every link in the website to the best batch!",
+      "Added a few new products",
+      "New QC system, use the arrows to flip through the images!",
+      "Optimized the QCs",
+      "Update your cart to have the new links!"
+    ]
+  },
    {
     title: "v0.7 Valentines",
     tags: ["NEWEST"],
