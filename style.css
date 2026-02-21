@@ -5,46 +5,31 @@
 html, body {
   touch-action: manipulation;
 }
+
 :root {
-  --bg: #14090d;           
-  --panel: #1f1016;     
-  --panel-2: #2a141d;    
-  --border: #30161f;         
-  --accentdark: #dd467d;
-  --accent: #ff4d8d;         
-  --accent-soft: #ff8fb6;
-  --accentrgb: rgb(255, 77, 141, 0.932);
-  --text: #ffe9f1;            
-  --text-secondary: #f5c6d6;
-  --muted: #b07a8c;           
-  --pillbackground: rgba(255, 77, 141, 0.1);
-  --pillborder: rgba(255, 77, 141, 0.35);
-  --accentdarker: #ff4d8e07;
-  --overlay: rgba(20, 0, 10, 0.78);
+  --bg: #0f1712;      
+  --panel: #16221a;         
+  --panel-2: #1c2b22;     
+  --border: #2e4436;
+
+  --accent: #6ddc8c;          
+  --accentdark: #4fbf70;    
+  --accent-soft: #bff5cf;     
+  --accentrgb: rgba(109,220,140,0.9);
+  --accentdarker: #6ddc8c18;
+
+  --text: #f2fff6;           
+  --text-secondary: #cfe8d7;
+  --muted: #8fb6a0;
+
+  --pillbackground: rgba(109,220,140,0.12);
+  --pillborder: rgba(109,220,140,0.35);
+  --overlay: rgba(10, 20, 15, 0.85);
 }
 
-/* brown milk tea color 
-:root {
-  --bg: #15120f;
-  --panel: #1e1915;
-  --panel-2: #26201a;
-  --border: #3a3026;
 
-  --accent: #d8a47f;
-  --accentdark: #c08d6a;
-  --accent-soft: #f0cfb4;
-  --accentrgb: rgba(216,164,127,0.9);
-  --accentdarker: #d8a47f12;
 
-  --text: #fff7f1;
-  --text-secondary: #f2dfd1;
-  --muted: #c2a895;
 
-  --pillbackground: rgba(216,164,127,0.12);
-  --pillborder: rgba(216,164,127,0.35);
-  --overlay: rgba(20,15,12,0.85);
-}
-*/
 
 
     @keyframes shrink {

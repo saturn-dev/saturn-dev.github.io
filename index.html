@@ -37,7 +37,7 @@
      <span></span>
       <span>CHINESE NEW YEAR FEB 14–21</span>
       <span>•</span>
-      <span>ORDER NOW TO AVOID SHIPPING DELAYS</span>
+      <span>ORDER NOW! DELAYS GONE!</span>
       <span>•</span>
     </div>
   </div>
@@ -48,14 +48,12 @@ window.addEventListener("load", () => {
   const group = document.getElementById("announcementGroup");
 
   function fillBanner() {
-    // reset track to original group
     track.innerHTML = "";
     track.appendChild(group);
 
     const groupWidth = group.offsetWidth;
     const screenWidth = window.innerWidth;
 
-    // how many copies we need to fill screen * 2 for seamless loop
     const copiesNeeded = Math.ceil((screenWidth * 2) / groupWidth);
 
     for (let i = 0; i < copiesNeeded; i++) {
@@ -448,7 +446,7 @@ LATER.addEventListener("click", () => {
     </h1>
 
     <p class="hero-description">
-      All the best reps from Balenciaga, Rick Owens, Chrome Hearts,
+      All the best reps from Balenciaga, Rick Owens, Chrome Hearts, ERD,
       plus archive pieces from Raf Simons and Number (N)ine.
     </p>
 
@@ -480,21 +478,16 @@ function initProductsHorizontal(products) {
 
   const shuffled = [...products].sort(() => Math.random() - 0.5);
 
-  // Split into rows of 3
   const rows = [];
   for (let i = 0; i < shuffled.length; i += 3) {
     const row = shuffled.slice(i, i + 3);
     if (row.length === 3) rows.push(row);
   }
-
-  // Fill columns horizontally
   rows.forEach(row => {
     leftCol.appendChild(createCardHorizontal(row[0]));
     midCol.appendChild(createCardHorizontal(row[1]));
     rightCol.appendChild(createCardHorizontal(row[2]));
   });
-
-  // Duplicate content for infinite horizontal scroll
   leftCol.innerHTML += leftCol.innerHTML;
   midCol.innerHTML += midCol.innerHTML;
   rightCol.innerHTML += rightCol.innerHTML;
