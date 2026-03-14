@@ -226,7 +226,7 @@
 }
 
 .hidden {
-  display: none;
+  display: none;                  
 }
 
 @keyframes spin {
@@ -238,17 +238,17 @@
 
 
   <!-- Tabs -->
-  <div class="tabs" id="tabs"></div>
 
   <!-- Search -->
-  <div class="controls">
-    <input id="searchInput" placeholder="Search products..." />
-    <select id="sortSelect">
-      <option value="default">Sort by: Default</option>
-      <option value="low">Price: Low → High</option>
-      <option value="high">Price: High → Low</option>
-    </select>
-  </div>
+ <div class="controls">
+  <input id="searchInput" placeholder="Search products..." />
+
+  <button id="openFilters" class="filters-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-funnel-icon lucide-funnel"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/></svg>
+    Filters
+  </button>
+</div>
+  <div class="tabs" id="tabs"></div>
 
   <!-- Products -->
   <div class="grid" id="productGrid"></div>
@@ -256,18 +256,133 @@
 
 <!-- QC -->
 <div id="qcModal" class="qc-modal">
-  <span id="qcClose" class="close">&times;</span>
+<!-- QC CONTROLS -->
 
-  <div class="qc-carousel">
-    <button id="qcPrev" class="qc-arrow left">‹</button>
-<div class="qc-image-frame">
-  <img id="qcImage">
+
+<div class="qc-controls">
+  <button id="qcZoomIn" class="qc-control" data-tip="Zoom In"></button>
+  <button id="qcZoomOut" class="qc-control" data-tip="Zoom Out"></button>
+  <button id="qcRotate" class="qc-control" data-tip="Rotate 90°"></button>
+  <button id="qcReset" class="qc-control" data-tip="Reset"></button>
+  <button id="qcSave" class="qc-control" data-tip="Save"></button>
+  <button id="qcCloseBtn" class="qc-control danger" data-tip="Close"></button>
 </div>
-    <button id="qcNext" class="qc-arrow right">›</button>
+  <div class="qc-carousel">
+    <button id="qcPrev" class="qc-arrow left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg></button>
+
+    <div class="qc-image-frame">
+      <div class="qc-skeleton" id="qcSkeleton"></div>
+      <img id="qcImage" >
+    </div>
+
+    <button id="qcNext" class="qc-arrow right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div>
+
+  <div class="qc-thumbnails" id="qcThumbs"></div>
+</div>
+
+
+<!-- PRODUCT VIEW MODAL -->
+<div id="productModal" class="product-modal">
+  <div class="product-container">
+
+    <button class="product-close" id="productClose"></button>
+
+    <div class="product-left">
+      <img id="productMainImage" class="product-main-img" />
+      <div id="productSales" class="product-sales"></div>
+        <div class="section-title">PRODUCT GALLERY</div>
+
+      <div class="product-gallery" id="productGallery"></div>
+
+      <button class="gallery-qc-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+    <path d="M360-400h400L622-580l-92 120-62-80-108 140Zm-40 160q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Z"/>
+  </svg>
+  View QC Photos
+</button>
+    </div>
+
+    <div class="product-right">
+      <div class="product-category" id="productCategory"></div>
+
+      <div class="seller-row">
+        <img id="sellerLogo" class="seller-logo">
+        <a  id="sellerName"  target="_blank"></a>
+      </div>
+
+      <h1 id="productTitle"></h1>
+      <div class="product-price" id="productPrice"></div>
+
+      <div class="product-buttons">
+        <a id="gotoProduct" target="_blank" class="goto-btn">
+          <img src="/img/kb.png">
+          Go to product
+        </a>
+
+        <button id="copyRawBtn" class="copy-btn"></button>
+      </div>
+
+      <div class="size-section">
+        <div class="section-title">AVAILABLE SIZES</div>
+        <div id="sizeContainer" class="size-container"></div>
+      </div>
+
+ <div id="colorSection">
+  <div class="section-title">VERSIONS / COLORS</div>
+  <div id="colorContainer"></div>
+</div>
+</div>
+</div>
+
   </div>
 </div>
+<div id="filterModal" class="filter-modal">
+  <div class="filter-panel">
 
+    <div class="filter-header">
+      <h2>Filters</h2>
+      <button id="closeFilters" class="filter-close">
+        <svg viewBox="0 0 24 24">
+          <line x1="6" y1="6" x2="18" y2="18"
+            stroke="currentColor" stroke-width="2"/>
+          <line x1="18" y1="6" x2="6" y2="18"
+            stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+    <div class="filter-section">
+      <div class="section-title">PRICE RANGE</div>
 
+      <div class="range-wrapper">
+        <input type="range" id="minPrice">
+        <input type="range" id="maxPrice">
+      </div>
+
+      <div class="range-values">
+        <span id="minPriceLabel">$0</span>
+        <span id="maxPriceLabel">$0</span>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <div class="section-title">SORT BY</div>
+
+      <div class="sort-grid">
+        <button class="sort-btn" data-sort="new"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-icon lucide-clock"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Newest</button>
+        <button class="sort-btn" data-sort="old"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-icon lucide-clock"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Oldest</button>
+        <button class="sort-btn" data-sort="low"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down-icon lucide-trending-down"><path d="M16 17h6v-6"/><path d="m22 17-8.5-8.5-5 5L2 7"/></svg> Price (Low → High)</button>
+        <button class="sort-btn" data-sort="high"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up-icon lucide-trending-up"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg> Price (High → Low)</button>
+      </div>
+    </div>
+
+    <div class="filter-actions">
+      <button id="clearFilters" class="clear-btn">Clear all filters</button>
+      <button id="applyFilters" class="apply-btn">Show results</button>
+    </div>
+
+  </div>
+</div>
   <script src="/script.js"></script>
   <script>
 let cart = JSON.parse(localStorage.getItem("cart")) || [];

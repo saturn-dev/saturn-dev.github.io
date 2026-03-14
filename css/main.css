@@ -3,16 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-select:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 255, 160, 0.35);
-}
-
-input:focus-visible,
-select:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px var(--pillborder);
-}
 
 ::selection {
   background: var(--accent);
@@ -26,6 +16,9 @@ select:focus-visible {
 
 
 
+input:focus {
+  outline: none;
+}
 
 
 a {

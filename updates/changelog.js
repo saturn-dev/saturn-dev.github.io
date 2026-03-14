@@ -1,9 +1,31 @@
 const timeline = document.getElementById("timeline");
 
 const releases = [
+  {
+    title: "v0.9 Spreadsheet Update",
+    tags: ["NEWEST"],
+    date: "2026-3-13",
+    changes: [
+"Added over 80 new products to the spreadsheet",  
+"Updated the website theme for a new look",  
+"Redesigned the spreadsheet layout for easier use",  
+"New product detail system with images and sizes",  
+"Added seller names and sales info to products",  
+"Improved QC viewing for better inspections",  
+"Added more tabs for easier navigation",  
+"Introduced filters for easier product searching",  
+"New skeleton loading for faster page loads",  
+"Reworked cart system",  
+"Reworked the JavaScript to reduce bugs",  
+"Optimized site performance across all pages",  
+"Improved mobile responsiveness and layout",  
+"Added quick access buttons for common actions", 
+"Minor bug fixes and UI throughout"
+    ]
+  },
     {
     title: "v0.8 QC Update",
-    tags: ["NEWEST"],
+    tags: [],
     date: "2026-2-15",
     changes: [
       "Updated all the QCs, most products now have QCs!",
@@ -16,7 +38,7 @@ const releases = [
   },
    {
     title: "v0.7 Valentines",
-    tags: ["NEWEST"],
+    tags: [],
     date: "2026-2-5",
     changes: [
       "Updated the sites colors",

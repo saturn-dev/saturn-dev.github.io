@@ -8,12 +8,11 @@ function initProducts(products) {
   const rightCol = document.querySelector(".column.right");
 
   const shuffled = [...products].sort(() => Math.random() - 0.5);
-
-  const random50 = shuffled.slice(0, 40);
+  const random40 = shuffled.slice(0, 40);
 
   const rows = [];
-  for (let i = 0; i < random50.length; i += 3) {
-    const row = random50.slice(i, i + 3);
+  for (let i = 0; i < random40.length; i += 3) {
+    const row = random40.slice(i, i + 3);
     if (row.length === 3) rows.push(row);
   }
 
@@ -32,17 +31,29 @@ function kakobuyLink(raw) {
   return `https://www.kakobuy.com/item/details?url=${encodeURIComponent(raw)}&affcode=deepinmycloset`;
 }
 
+function slugify(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
+
 function createCard(product) {
   if (!product) return document.createElement("div");
 
-  const card = document.createElement("a"); 
+  const slug = slugify(product.name || "product");
+  const imgPath = `/products/${slug}.png`;
+
+  const card = document.createElement("a");
   card.className = "product-card";
   card.href = kakobuyLink(product.link);
   card.target = "_blank";
   card.rel = "noopener noreferrer";
 
   card.innerHTML = `
-    <img src="${product.image}" alt="${product.name || 'Product'}">
+    <img src="${imgPath}" alt="${product.name || 'Product'}">
     <div class="product-name">${product.name || "Unnamed Product"}</div>
     <div class="product-price">${product.price ? `$${product.price}` : "Price N/A"}</div>
   `;

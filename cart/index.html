@@ -198,8 +198,11 @@
     </a>
 </nav>
   <script src="/script.js"></script>
-<style>
+    <script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+</script>
+<style>
 
 * { box-sizing: border-box; }
 
@@ -273,7 +276,7 @@ h1 {
 }
 
 .buy-btn {
-  background: linear-gradient(135deg, var(--accent), var(--accent));
+  background: linear-gradient(135deg, var(--theme), var(--themedark));
   color: #000;
   padding: .55rem 1rem;
   border-radius: 10px;
@@ -284,7 +287,7 @@ h1 {
 }
 
 .buy-btn:hover {
-  transform: translateY(-2px);
+  transform: scale(1.04);
   box-shadow: 0 12px 35px var(--pillborder);
 }
 
@@ -374,6 +377,7 @@ h1 {
   <div class="total-label">Cart Total:</div>
   <div class="total-value" id="cartTotal">$0.00</div>
 </div>
+
 <script>
 const container = document.getElementById("cartContainer");
 const totalEl = document.getElementById("cartTotal");
@@ -412,7 +416,17 @@ function animateNumber(element, start, end, duration = 500) {
 
   requestAnimationFrame(step);
 }
+function getProductImage(item) {
+  if (item.image) return item.image;
 
+  return `/products/${
+    item.name
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-")
+  }.png`;
+}
 function renderCart() {
   const cart = getCart(); 
   container.innerHTML = "";
@@ -424,7 +438,7 @@ function renderCart() {
     const el = document.createElement("div");
     el.className = "cart-item";
     el.innerHTML = `
-      <img src="/${item.image}">
+<img src="${getProductImage(item)}">
       <div class="cart-info">
         <div class="cart-name">${item.name}</div>
         <div class="cart-price">$${item.price.toFixed(2)}</div>

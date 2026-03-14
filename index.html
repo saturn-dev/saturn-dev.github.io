@@ -30,7 +30,7 @@
 
 
 <div id="notification-container"></div>
-
+<!--
 <div class="announcement-bar">
   <div class="announcement-track" id="announcementTrack">
     <div class="announcement-group" id="announcementGroup">
@@ -42,6 +42,7 @@
     </div>
   </div>
 </div>
+-->
 <script>
 window.addEventListener("load", () => {
   const track = document.getElementById("announcementTrack");
@@ -243,7 +244,7 @@ window.addEventListener("load", () => {
 <div class="offer-overlay" id="offerOverlay">
   <div class="offer-popup">
     <span class="offer-badge">SPECIAL OFFER</span>
-    <h2>You’ve got a deal waiting 👀</h2>
+    <h2>Welcome 👋</h2>
     <p>
       Use code <span class="offer-code">DEEPINMYCLOSET</span> on
       <strong>KakoBuy</strong> and get <strong>FREE $15 off</strong>
@@ -510,6 +511,9 @@ function createCardHorizontal(product) {
 
   return card;
 }
+
+
+
 </script>
 
 <div class="product-showcase-horizontal">
@@ -520,10 +524,7 @@ function createCardHorizontal(product) {
 
 
   <script src="script.js"></script>
-<script>
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-</script>
 
 <div class="faq-overlay" id="faq"></div>
 <div class="faq">
@@ -615,7 +616,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
   </div>
 
   <p class="description">
-    Full KakoBuy tutorial <a href="/tutorial/" style="color: var(--accent);">here.</a>
+    Full KakoBuy tutorial <a href="/tutorial/" style="color: var(--theme);">here.</a>
   </p>
 </div>
 
@@ -669,7 +670,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
   <div class="right-card">
     <svg width="60px" height="60px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
       <g>
-          <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="var(--accent)" fill-rule="nonzero"></path>
+          <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="var(--theme)" fill-rule="nonzero"></path>
       </g>
   </svg>     
     <h3>24/7 Support</h3>
@@ -774,17 +775,26 @@ promoFrames.forEach(frame => observer.observe(frame));
   const timeline = document.getElementById("timeline");
 
 const releases = [
-{
-    title: "v0.8 QC Update",
+  {
+    title: "v0.9 Spreadsheet Update",
     tags: ["NEWEST"],
-    date: "2026-2-15",
+    date: "2026-3-13",
     changes: [
-      "Updated all the QCs, most products now have QCs!",
-      "Changed every link in the website to the best batch!",
-      "Added a few new products",
-      "New QC system, use the arrows to flip through the images!",
-      "Optimized the QCs",
-      "Update your cart to have the new links!"
+"Added over 80 new products to the spreadsheet",  
+"Updated the website theme for a new look",  
+"Redesigned the spreadsheet layout for easier use",  
+"New product detail system with images and sizes",  
+"Added seller names and sales info to products",  
+"Improved QC viewing for better inspections",  
+"Added more tabs for easier navigation",  
+"Introduced filters for easier product searching",  
+"New skeleton loading for faster page loads",  
+"Reworked cart system",  
+"Reworked the JavaScript to reduce bugs",  
+"Optimized site performance across all pages",  
+"Improved mobile responsiveness and layout",  
+"Added quick access buttons for common actions", 
+"Minor bug fixes and UI throughout"
     ]
   }
 ];

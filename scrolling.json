@@ -1,31 +1,7 @@
 {
-  "categories": ["ALL", "SHOES", "SHIRTS", "HOODIES", "PANTS", "ACCESSORIES", "MISC"],
+  "categories": ["ALL", "SHOES", "SHIRTS", "HOODIES", "PANTS", "ACCESSORIES", "BELTS", "MISC"],
   "products": [
-    {
-      "name": "ERD 'War' Hoodie",
-      "price": 67.27,
-      "category": "HOODIES",
-      "badge": "BEST",
-      "image": "products/warerdhoodie.png",
-      "link": "https://shop1865721389.v.weidian.com/item.html?itemID=7650020513",
-      "qc": "products/qc/erdwarhoodie.png"
-    },
-    {
-      "name": "Number (N)ine Tribal",
-      "price": 40,
-      "category": "HOODIES",
-      "badge": "BEST",
-      "image": "products/nntribal.png",
-      "link": "https://item.taobao.com/item.htm?id=963595648417"
-    },
-    {
-      "name": "Raf Simons aw00 'Confusion' Hoodie",
-      "price": 76.5,
-      "category": "HOODIES",
-      "badge": "BEST",
-      "image": "products/rafconfusion.png",
-      "link": "https://item.taobao.com/item.htm?id=1007958282281"
-    },
+
 {
   "name": "Balenciaga Be Kind Hoodie",
   "price": 52.28,

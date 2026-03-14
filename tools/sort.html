@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON Category Converter</title>
+
+<style>
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0f0f0f;
+  color:white;
+  padding:40px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+h1{
+  margin-bottom:20px;
+}
+
+textarea{
+  width:100%;
+  height:250px;
+  background:#151515;
+  border:1px solid #333;
+  border-radius:10px;
+  padding:15px;
+  color:white;
+  font-family:monospace;
+  font-size:14px;
+  resize:vertical;
+  white-space:pre;
+  overflow:auto;
+}
+
+button{
+  margin:20px 0;
+  padding:12px 20px;
+  background:#1e1e1e;
+  border:1px solid #444;
+  border-radius:10px;
+  color:white;
+  cursor:pointer;
+  font-size:14px;
+  transition:.2s;
+}
+
+button:hover{
+  background:#2a2a2a;
+}
+
+.row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.label{
+  margin-bottom:8px;
+  font-weight:bold;
+  opacity:.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>JSON Category Converter</h1>
+
+<div class="row">
+
+<div>
+<div class="label">Input JSON</div>
+<textarea id="input" wrap="off"></textarea>
+</div>
+
+<div>
+<div class="label">Output JSON</div>
+<textarea id="output" readonly wrap="off"></textarea>
+</div>
+
+</div>
+
+<button onclick="convert()">Convert & Beautify</button>
+
+</div>
+
+<script>
+function detectCategory(name){
+
+  const n = name.toLowerCase()
+
+  const match = (words) => words.some(w => new RegExp(`\\b${w}\\b`).test(n))
+
+
+  // BAGS
+  if(match(["bag","bags","backpack"]))
+    return "BAGS"
+
+
+  // BELTS
+  if(match(["belt","belts"]))
+    return "BELTS"
+
+
+  // ZIP UPS
+  if(n.includes("zip"))
+    return "ZIP-UPS"
+
+
+  // PANTS
+  if(match([
+    "jeans",
+    "pants",
+    "trousers",
+    "shorts",
+    "sweatpants",
+    "sweats",
+    "pajamas",
+    "pyjamas"
+  ]))
+    return "PANTS"
+
+
+  // LONG SLEEVES / SWEATERS
+  if(match([
+    "sweater",
+    "sweatshirt",
+    "crewneck",
+    "cardigan",
+    "thermal",
+    "knit",
+    "hoodie"
+  ]) || n.includes("long sleeve"))
+    return "LONGSLEEVES"
+
+
+  // SHIRTS
+  if(match([
+    "tee",
+    "tees",
+    "tshirt",
+    "t-shirt",
+    "shirt",
+    "vest"
+  ]))
+    return "SHIRTS"
+
+
+  return null
+}
+
+
+function processItem(item){
+
+  const detected = detectCategory(item.name)
+
+  if(detected)
+    item.category = detected
+
+  return item
+}
+
+function compressArrays(jsonStr){
+
+  const keys = ["size","color","gallery"]
+
+  keys.forEach(key=>{
+    const regex = new RegExp(`"${key}": \\[(.*?)\\]`, "gs")
+
+    jsonStr = jsonStr.replace(regex,(match,content)=>{
+
+      const cleaned = content
+        .replace(/\s+/g," ")
+        .replace(/\s*,\s*/g,", ")
+        .trim()
+
+      return `"${key}": [${cleaned}]`
+    })
+  })
+
+  return jsonStr
+}
+
+function convert(){
+
+  const input = document.getElementById("input").value
+
+  try{
+
+    let json = JSON.parse(input)
+
+    if(Array.isArray(json)){
+      json = json.map(processItem)
+    }else{
+      json = processItem(json)
+    }
+
+    let beautified = JSON.stringify(json,null,2)
+
+    beautified = compressArrays(beautified)
+
+    document.getElementById("output").value = beautified
+
+  }catch(err){
+
+    alert("Invalid JSON")
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>

@@ -243,10 +243,10 @@ body {
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
-  background: linear-gradient(135deg, var(--accent), var(--accentdark));
+  background: linear-gradient(135deg, var(--theme), var(--themedark));
   color: var(--bg);
   box-shadow:
-    0 0 140px var(--accentrgb);
+    0 0 140px var(--themergb);
       position: relative;
   overflow: hidden;
   transition: transform .25s ease, box-shadow .25s ease;
@@ -255,9 +255,6 @@ body {
   
 .btn-spreadsheet:hover {
   transform: scale(1.07);
-  box-shadow: 
-    0 0 180px var(--accentrgb),
-    0 10px 40px rgba(0,0,0,.35);
 }
 
 .btn-spreadsheet::before {
@@ -551,7 +548,7 @@ body {
   height: 420px;
   margin: 60px auto;
   padding: 60px;
-  background: radial-gradient(circle at top, var(--accent) -300%, var(--panel) 70%);
+  background: radial-gradient(circle at top, var(--theme) -350%, var(--panel) 70%);
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -579,7 +576,7 @@ body {
 }
 
 .promo-content h1 {
-  color: var(--accent);
+  color: var(--theme);
   font-size: 3.2rem;
   line-height: 1.05;
   font-weight: 900;
@@ -590,7 +587,7 @@ body {
 .promo-btn {
   display: inline-block;
   padding: 14px 34px;
-  background: var(--accent);
+  background: var(--theme);
   color: #000;
   font-weight: 700;
   text-decoration: none;
@@ -610,6 +607,17 @@ body {
   transform: translateZ(120px);
   filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.9));
   animation: floatBox 3s ease-in-out infinite;
+    transition:opacity .8s ease, transform .8s ease;
+}
+
+.promo-box.fade-out{
+  opacity:0;
+  transform:scale(.9);
+}
+
+.promo-box.fade-in{
+  opacity:1;
+  transform:scale(1);
 }
 @keyframes floatBox {
   0%   { transform: translateZ(120px) translateY(0); }
@@ -807,7 +815,7 @@ body {
   content: "";
   width: 12px;
   height: 12px;
-  background: var(--accent);
+  background: var(--theme);
   border-radius: 50%;
   z-index: 2;
 }
@@ -829,8 +837,8 @@ body {
   font-size: 11px;
   padding: 4px 10px;
   border-radius: 999px;
-  background: var(--panel-2);
-  border: 1px solid var(--border);
+  background: var(--accentdarker);
+  border: 1px solid var(--themedark);
   color: var(--accent);
   font-weight: 600;
 }
@@ -1038,7 +1046,7 @@ body {
 }
 
 .join-btn {
-  background-color: var(--accent);
+  background-color: var(--theme);
   padding: 10px 16px;
   height: 40px;
   display: flex;
@@ -1079,7 +1087,7 @@ body {
 
 .help-section {
   position: relative;
-  height: 500px;
+  height: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1167,6 +1175,7 @@ body {
   align-items: center;     
   justify-content: center; 
   text-align: center;     
+  width: 100%;
 }
 
 
@@ -1282,14 +1291,14 @@ body {
 }
 
 .offer-btn.primary {
-  background: var(--accent);
+  background: var(--theme);
   color: #000;
   text-decoration: none;
 }
 
 .offer-btn.primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 0 20px var(--accent);
+  box-shadow: 0 0 20px var(--themedark);
 }
 
 .offer-btn.secondary {
@@ -1403,7 +1412,7 @@ body {
 
 .product-card:hover {
   transform: translateY(-10px) scale(1.025);
-  border-color: var(--pillborder);
+  border-color: var(--theme);
   box-shadow:
     0 30px 70px rgba(0, 0, 0, 0.7),
     0 0 0 1px var(--pillborder),
@@ -1937,9 +1946,9 @@ display: flex;
 .glow {
   background: linear-gradient(
     90deg,
-    var(--accent),
-    var(--accentdark),
-    var(--accent)
+    var(--theme),
+    var(--themedark),
+    var(--theme)
   );
   background-size: 200% 200%;
 
@@ -1948,7 +1957,7 @@ display: flex;
   color: transparent;
 
   text-shadow:
-    0 0 100px var(--accentrgb);
+    0 0 100px var(--themergb);
 font-weight: 800;
 }
 

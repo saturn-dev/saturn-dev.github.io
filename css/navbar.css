@@ -204,7 +204,7 @@ transition: background 0.25s ease, color 0.25s ease;
   margin: 0 auto;
   margin-top: 10px;
 
-  background: linear-gradient(180deg, var(--accent), var(--accentdark));
+  background: linear-gradient(180deg, var(--theme), var(--themedark));
   border-radius: 10px;
 
   color: var(--panel);
