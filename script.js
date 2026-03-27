@@ -42,7 +42,7 @@ const qcRotate = document.getElementById("qcRotate");
 const qcReset = document.getElementById("qcReset");
 const qcSave = document.getElementById("qcSave");
 const qcCloseBtn = document.getElementById("qcCloseBtn");
-const proxyBase = "https://imgproxy-diob.onrender.com/proxy-image?url=";
+const proxyBase = "https://imgproxy-vb4m.onrender.com/proxy-image?url=";
 
 // ------------------ CART FUNCTIONS ------------------
 function addToCart(product) {
