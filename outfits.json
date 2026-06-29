@@ -1,0 +1,111 @@
+{
+  "outfits": [
+    {
+      "id": "outfit-1",
+      "title": "Osamason Tour Outfit",
+      "creator": "Osamason",
+      "image": "files/1/1.png",
+      "products": [
+        { "name": "ERD 25Ss ‘Young Republicans Club’ Sweatshirt", "pin": [60, 25] },
+        { "name": "Undercover 85s Black",  "pin": [46, 53] },
+        { "name": "Chrome Hearts Converse",         "pin": [36, 82] }
+
+      ]
+    },
+    {
+      "id": "outfit-2",
+      "title": "Osamason Outfit",
+      "creator": "Osamason",
+      "image": "files/2/2.png",
+      "products": [
+        { "name": "ERD Forgot To Answer Hoodie", "pin": [60, 27] },
+        { "name": "Chrome Hearts Strap Bracelets (real 925 silver)", "pin": [76, 30] },
+        { "name": "Rick Owens Waxed Detroit Jeans", "pin": [46, 39] },
+        { "name": "Vans Old Skool 36 Souvenir", "pin": [54, 87] }
+      ]
+    },
+    {
+      "id": "outfit-3",
+      "title": "Undercover 85s Outfit",
+      "creator": "dylanjtnorth",
+      "image": "files/3/3.png",
+      "products": [
+        { "name": "ERD Katholisches Toothbrush Tee", "pin": [45, 32] },
+        { "name": "ERD Bat Belt", "pin": [55, 40] },
+        { "name": "Undercover 85s Black", "pin": [67, 60] },
+        { "name": "Chrome Hearts Ugg", "pin": [39, 87] }
+      ]
+    },
+    {
+      "id": "outfit-4",
+      "title": "Strike Boot Outfit",
+      "creator": "oksaturn",
+      "image": "files/4/4.png",
+      "products": [
+        { "name": "ERD Fw24 Wool Flannel", "pin": [40, 22] },
+        { "name": "Number (N)ine Logo Shirt", "pin": [52, 35] },
+        { "name": "Rick Owens Drkshdw Raw Denim Jeans", "pin": [60, 60] },
+        { "name": "Balenciaga Klub Pants Chain", "pin": [45, 72] },
+        { "name": "Balenciaga Strike Boots", "pin": [60, 82] }
+      ]
+    },
+    {
+      "id": "outfit-5",
+      "title": "Osamason Outfit",
+      "creator": "Osamason",
+      "image": "files/5/5.png",
+      "products": [
+        { "name": "ERD Thrilling Raglan Sweater", "pin": [55, 40] },
+        { "name": "MollyLand Bracelets (12 pieces)", "pin": [60, 50] },
+        { "name": "Undercover 85s", "pin": [30, 60] },
+        { "name": "CDG Airforce 1", "pin": [25, 85] }
+      ]
+    },
+    {
+      "id": "outfit-6",
+      "title": "1oneam Outfit",
+      "creator": "1oneam",
+      "image": "files/6/6.png",
+      "products": [
+        { "name": "Chrome Hearts Knit Beanies [925 Silver]", "pin": [55, 10] },
+        { "name": "ERD Incandescent Raglan Sweater", "pin": [52, 40] },
+        { "name": "Rick Owens Waxed Detroit Jeans", "pin": [60, 60] },
+        { "name": "CCP Tornado Zip Boots", "pin": [45, 85] }
+      ]
+    },
+    {
+      "id": "outfit-7",
+      "title": "Nettspend Japan Outfit",
+      "creator": "nettspend",
+      "image": "files/7/7.png",
+      "products": [
+        { "name": "Balenciaga Half Leopard-print Shirt", "pin": [55, 50] },
+        { "name": "Chrome Hearts Strap Bracelets (real 925 silver)", "pin": [42, 60] },
+        { "name": "Balenciaga 25Ss Bootcut Jeans", "pin": [41, 85] }
+      ]
+    },
+    {
+      "id": "outfit-8",
+      "title": "Nettspend Concert 2024 Outfit",
+      "creator": "nettspend",
+      "image": "files/8/8.png",
+      "products": [
+        { "name": "Balenciaga Bebe Tee", "pin": [33, 50] },
+        { "name": "Balenciaga Grey Skater Sweatpants", "pin": [30, 70] },
+        { "name": "LV Timbs", "pin": [39, 97] }
+      ]
+    },
+    {
+      "id": "outfit-9",
+      "title": "ERD Raw Denim Outfit",
+      "creator": "oksaturn",
+      "image": "files/9/9.png",
+      "products": [
+        { "name": "ERD 25SS Tee", "pin": [53, 40] },
+        { "name": "ERL Stud Belt", "pin": [50, 53] },
+        { "name": "Rick Owens Drkshdw Raw Denim Jeans", "pin": [54, 67] },
+        { "name": "Chrome Hearts Converse", "pin": [36, 94] }
+      ]
+    }
+  ]
+}

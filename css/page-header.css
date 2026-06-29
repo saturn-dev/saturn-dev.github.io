@@ -1,0 +1,50 @@
+/* ================================================================
+   SHARED PAGE HERO — Outfits / Videos / Shipping Calculator
+   Keeps these three secondary pages visually flush with one another.
+   ================================================================ */
+
+.page-hero {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 56px 16px 32px;
+  animation: pageHeroIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes pageHeroIn {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-eyebrow {
+  display: inline-block;
+  font-family: 'Barlow', Inter, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--theme);
+  margin-bottom: 14px;
+}
+
+.page-title {
+  font-family: 'Barlow', Inter, system-ui, sans-serif;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: var(--text);
+  margin: 0 0 14px;
+}
+
+.page-subtitle {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .page-hero { padding: 40px 16px 24px; }
+}

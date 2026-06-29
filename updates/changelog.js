@@ -1,9 +1,32 @@
 const timeline = document.getElementById("timeline");
 
-const releases = [
+const releases = [{
+    title: "v1 Website Update",
+    tags: ["NEWEST", "MAJOR"],
+    date: "2026-6-29",
+    changes: [
+"Redesigned the spreadsheet for a cleaner experience + theme",
+"Added over 170 new products",
+"Completely reworked the cart system",
+"Improved QC viewing",
+"Added skeleton loading across the website",
+"Reworked the website for faster performance and fewer bugs",
+"Improved mobile support across all devices",
+"Revamped product cards with interactive 3D effects",
+"Added quick access buttons",
+"Revamped the filters",
+"Added a arrow to browse through the tags",
+"Added image blur effect",
+"Improved the tutorial page",
+"Added Videos tab",
+"Added Outfits tab",
+"Added Shipping Calc tab",
+"Minor UI improvements and bug fixes throughout"
+    ]
+  },
   {
     title: "v0.9 Spreadsheet Update",
-    tags: ["NEWEST"],
+    tags: [],
     date: "2026-3-13",
     changes: [
 "Added over 80 new products to the spreadsheet",  

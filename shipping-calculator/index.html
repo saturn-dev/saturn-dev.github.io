@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>deepinmycloset | Shipping Calculator</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="deepinmycloset - Shipping Calculator">
+  <meta property="og:description" content="Estimate KakoBuy shipping costs from China — DHL, FedEx, UPS, EMS Economy.">
+  <meta property="og:image" content="/banner.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="/icons.png"/>
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="/css/page-header.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WN7F6ZJ3Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-5WN7F6ZJ3Z');
+  </script>
+</head>
+
+<body>
+
+<div id="notification-container"></div>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+
+    <a href="/" class="logo-img" aria-label="deepinmycloset home">
+      <img src="/logo_no_background.png" alt="deepinmycloset">
+    </a>
+
+    <ul class="nav-links center">
+      <li>
+        <a href="/spreadsheet" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path d="M200-120h107v-187H120v107q0 33 23.5 56.5T200-120Zm187 0h186v-187H387v187Zm266 0h107q33 0 56.5-23.5T840-200v-107H653v187ZM120-387h187v-186H120v186Zm267 0h186v-186H387v186Zm266 0h187v-186H653v186ZM120-653h187v-187H200q-33 0-56.5 23.5T120-760v107Zm267 0h186v-187H387v187Zm266 0h187v-107q0-33-23.5-56.5T760-840H653v187Z"/>
+          </svg>
+          <span>Spreadsheet</span>
+        </a>
+      </li>
+      <li>
+        <a href="/tutorial" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path d="M560-360q17 0 29.5-12.5T602-402q0-17-12.5-29.5T560-444q-17 0-29.5 12.5T518-402q0 17 12.5 29.5T560-360Zm-30-128h60q0-29 6-42.5t28-35.5q30-30 40-48.5t10-43.5q0-45-31.5-73.5T560-760q-41 0-71.5 23T446-676l54 22q9-25 24.5-37.5T560-704q24 0 39 13.5t15 36.5q0 14-8 26.5T578-596q-33 29-40.5 45.5T530-488ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Z"/>
+          </svg>
+          <span>Tutorial</span>
+        </a>
+      </li>
+      <li>
+        <a href="/updates" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 960 960" fill="currentColor">
+            <path d="M180 120H780Q840 120 840 180V780Q840 840 780 840H180Q120 840 120 780V180Q120 120 180 120Z"/>
+            <path d="m482 760 114-113-114-113-42 42 43 43q-28 1-54.5-9T381 579q-20-20-30.5-46T340 481q0-17 4.5-34t12.5-33l-44-44q-17 25-25 53t-8 57q0 38 15 75t44 66q29 29 65 43.5T478 705l-38 38 42 42Zm165-170q17-25 25-53t8-57q0-38-14.5-75.5T622 338q-29-29-65.5-43T482 281l38-39-42-42-114 113 114 113 42-42-44-44q27 0 55 10.5t48 30.5q20 20 30.5 46t10.5 52q0 17-4.5 34T603 546l44 44Z" fill="var(--bg)"/>
+          </svg>
+          <span>Updates</span>
+        </a>
+      </li>
+      <li class="nav-dropdown">
+        <button type="button" class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>
+          </svg>
+          <span>Other</span>
+          <svg class="nav-dropdown-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="/videos" class="nav-dropdown-item">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v124q18 7 29 22t11 34v80q0 19-11 34t-29 22v404q0 33-23.5 56.5T680-40H280Zm120-120h160q17 0 28.5-11.5T600-200q0-17-11.5-28.5T560-240H400q-17 0-28.5 11.5T360-200q0 17 11.5 28.5T400-160Z"/></svg>
+            <span>Videos</span>
+          </a>
+          <a href="/outfits" class="nav-dropdown-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+            <span>Outfits</span>
+          </a>
+          <a href="/shipping-calculator" class="nav-dropdown-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10.189V14"/><path d="M12 2v3"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 2.81 7.76"/><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+            <span>Shipping Calc</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+
+      <a href="https://discord.gg/KKTNRQbKDE" target="_blank" rel="noopener" class="icon-btn" aria-label="Join our Discord">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 640 512" aria-hidden="true">
+          <path fill="currentColor" d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/>
+        </svg>
+      </a>
+
+      <a href="/cart" class="cart-button" aria-label="Cart, 0 dollars">
+        <span class="cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M2.2 2.9a1 1 0 0 1 1.295-.269l.105.07 1.708 1.28a2 2 0 0 1 .653.848l.06.171h12.846a2 2 0 0 1 1.998 2.1l-.013.148-.457 3.655a5 5 0 0 1-4.32 4.34l-.226.023-7.313.61.26 1.124H17.5a1 1 0 0 1 .117 1.993L17.5 19H8.796a2 2 0 0 1-1.906-1.393l-.043-.157-2.74-11.87L2.4 4.3a1 1 0 0 1-.2-1.4Z"/>
+            <circle cx="9"  cy="21" r="1.25" fill="currentColor"/>
+            <circle cx="16" cy="21" r="1.25" fill="currentColor"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </span>
+        <span class="cart-price" id="cartPrice">$0.00</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">
+        <span class="menu-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<nav class="drawer" id="drawer" aria-label="Mobile menu">
+
+  <div class="drawer-handle" id="drawerHandle">
+    <span></span>
+  </div>
+
+  <div class="drawer-scroll">
+    <div class="drawer-content">
+      <p class="drawer-title">Quick Access</p>
+
+      <ul class="drawer-list">
+        <li>
+          <a href="/spreadsheet/">
+            <span class="drawer-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="currentColor">
+                <path d="M200-120h107v-187H120v107q0 33 23.5 56.5T200-120Zm187 0h186v-187H387v187Zm266 0h107q33 0 56.5-23.5T840-200v-107H653v187ZM120-387h187v-186H120v186Zm267 0h186v-186H387v186Zm266 0h187v-186H653v186ZM120-653h187v-187H200q-33 0-56.5 23.5T120-760v107Zm267 0h186v-187H387v187Zm266 0h187v-107q0-33-23.5-56.5T760-840H653v187Z"/>
+              </svg>
+            </span>
+            <span class="drawer-label">Spreadsheet</span>
+            <svg class="drawer-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="/tutorial/">
+            <span class="drawer-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="currentColor">
+                <path d="M560-360q17 0 29.5-12.5T602-402q0-17-12.5-29.5T560-444q-17 0-29.5 12.5T518-402q0 17 12.5 29.5T560-360Zm-30-128h60q0-29 6-42.5t28-35.5q30-30 40-48.5t10-43.5q0-45-31.5-73.5T560-760q-41 0-71.5 23T446-676l54 22q9-25 24.5-37.5T560-704q24 0 39 13.5t15 36.5q0 14-8 26.5T578-596q-33 29-40.5 45.5T530-488ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Z"/>
+              </svg>
+            </span>
+            <span class="drawer-label">Tutorial</span>
+            <svg class="drawer-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="/updates/">
+            <span class="drawer-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 960 960" fill="currentColor">
+                <path d="M180 120H780Q840 120 840 180V780Q840 840 780 840H180Q120 840 120 780V180Q120 120 180 120Z"/>
+                <path d="m482 760 114-113-114-113-42 42 43 43q-28 1-54.5-9T381 579q-20-20-30.5-46T340 481q0-17 4.5-34t12.5-33l-44-44q-17 25-25 53t-8 57q0 38 15 75t44 66q29 29 65 43.5T478 705l-38 38 42 42Zm165-170q17-25 25-53t8-57q0-38-14.5-75.5T622 338q-29-29-65.5-43T482 281l38-39-42-42-114 113 114 113 42-42-44-44q27 0 55 10.5t48 30.5q20 20 30.5 46t10.5 52q0 17-4.5 34T603 546l44 44Z" fill="var(--panel)"/>
+              </svg>
+            </span>
+            <span class="drawer-label">Updates</span>
+            <svg class="drawer-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </li>
+
+        <li class="drawer-accordion">
+          <button type="button" class="drawer-accordion-trigger" aria-expanded="false">
+            <span class="drawer-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </span>
+            <span class="drawer-label">Other</span>
+            <svg class="drawer-chev drawer-accordion-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <ul class="drawer-sublist">
+            <li>
+              <a href="/videos/">
+                <span class="drawer-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="currentColor">
+                    <path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v124q18 7 29 22t11 34v80q0 19-11 34t-29 22v404q0 33-23.5 56.5T680-40H280Zm120-120h160q17 0 28.5-11.5T600-200q0-17-11.5-28.5T560-240H400q-17 0-28.5 11.5T360-200q0 17 11.5 28.5T400-160Z"/>
+                  </svg>
+                </span>
+                <span class="drawer-label">Videos</span>
+              </a>
+            </li>
+            <li>
+              <a href="/outfits/">
+                <span class="drawer-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                </span>
+                <span class="drawer-label">Outfits</span>
+              </a>
+            </li>
+            <li>
+              <a href="/shipping-calculator/">
+                <span class="drawer-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10.189V14"/><path d="M12 2v3"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 2.81 7.76"/><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+                </span>
+                <span class="drawer-label">Shipping Calc</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="https://discord.gg/KKTNRQbKDE" target="_blank" rel="noopener" class="discord-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 640 512" aria-hidden="true">
+          <path fill="currentColor" d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/>
+        </svg>
+        <span>Join our Discord</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<style>
+  .calc-page { max-width: 1100px; margin: 0 auto; padding: 0 24px 120px; }
+
+  .calc-shell { background: var(--panel); border: 1px solid var(--border); border-radius: 20px; padding: 24px; animation: shellIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both; }
+  @keyframes shellIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+  .calc-card { position: relative; background: var(--panel-2); border: 1px solid var(--border); border-radius: 16px; padding: 22px 24px; margin-bottom: 16px; transition: border-color 0.25s ease, transform 0.25s ease; }
+  .calc-card:last-child { margin-bottom: 0; }
+
+  .calc-label { display: block; font-family: 'Barlow', Inter, system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--theme); margin-bottom: 14px; }
+
+  .calc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+
+  .country-select { position: relative; }
+  .country-select select { width: 100%; height: 48px; padding: 0 44px 0 16px; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-family: inherit; font-size: 14px; font-weight: 500; cursor: pointer; appearance: none; -webkit-appearance: none; transition: border-color 0.2s ease, background 0.2s ease; }
+  .country-select select:hover { border-color: var(--themedark); }
+  .country-select select:focus { outline: none; border-color: var(--theme); }
+  .country-select::after { content: ""; position: absolute; top: 50%; right: 16px; width: 8px; height: 8px; margin-top: -6px; border-right: 2px solid var(--text-secondary); border-bottom: 2px solid var(--text-secondary); transform: rotate(45deg); pointer-events: none; transition: border-color 0.2s ease; }
+  .country-select:hover::after { border-color: var(--theme); }
+
+  .calc-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .calc-card-head .calc-label { margin-bottom: 0; }
+
+  .seg-control { display: inline-flex; background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 4px; }
+  .seg-control button { height: 32px; padding: 0 18px; background: transparent; color: var(--text-secondary); border: 0; border-radius: 8px; font-family: inherit; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: color 0.2s ease, background 0.2s ease; }
+  .seg-control button:hover { color: var(--text); }
+  .seg-control button.active { background: var(--theme); color: var(--bg); }
+
+  .preset-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .preset-card { position: relative; padding: 18px 16px; background: var(--panel); border: 1px solid var(--border); border-radius: 14px; text-align: left; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; }
+  .preset-card:hover { border-color: var(--text-secondary); }
+  .preset-card.active { border-color: var(--theme); background: var(--panel-2); }
+  .preset-icon { width: 36px; height: 36px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; background: var(--pillbackground); border-radius: 10px; color: var(--theme); }
+  .preset-card.active .preset-icon { background: var(--theme); color: var(--bg); }
+  .preset-name { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .preset-meta { font-size: 12px; color: var(--muted); }
+
+  .custom-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .field { position: relative; }
+  .field label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .field input { width: 100%; height: 46px; padding: 0 14px; margin: 0; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-family: inherit; font-size: 16px; font-weight: 600; transition: border-color 0.2s ease, background 0.2s ease; }
+  .field input:hover { border-color: var(--themedark); }
+  .field input:focus { outline: none; border-color: var(--theme); background: var(--panel-2); }
+  .field input::-webkit-outer-spin-button, .field input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .field input[type=number] { -moz-appearance: textfield; }
+
+  .weight-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
+  .weight-pill { padding: 14px 16px; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; transition: border-color 0.2s ease; }
+  .weight-pill.is-charged { border-color: var(--theme); background: var(--panel-2); }
+  .weight-pill .label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .weight-pill.is-charged .label { color: var(--theme); }
+  .weight-pill .value { font-family: 'Barlow', Inter, system-ui, sans-serif; font-size: 18px; font-weight: 800; color: var(--text); }
+
+  .promo-card { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: var(--panel-2); border: 1px solid var(--border); border-radius: 14px; margin-bottom: 16px; position: relative; transition: border-color 0.2s ease; }
+  .promo-card.active { border-color: var(--theme); }
+  .promo-text { flex: 1; position: relative; min-width: 0; }
+  .promo-title { font-family: 'Barlow', Inter, system-ui, sans-serif; font-size: 15px; font-weight: 800; color: var(--text); margin-bottom: 4px; letter-spacing: -0.01em; }
+  .promo-title code { display: inline-block; padding: 2px 8px; background: var(--theme); color: var(--bg); border-radius: 6px; font-family: inherit; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; margin: 0 4px; vertical-align: 1px; }
+  .promo-desc { font-size: 12px; color: var(--text-secondary); }
+
+  .switch { position: relative; width: 48px; height: 28px; flex-shrink: 0; }
+  .switch input { opacity: 0; width: 0; height: 0; }
+  .switch-track { position: absolute; inset: 0; background: var(--panel); border: 1px solid var(--border); border-radius: 999px; cursor: pointer; transition: background 0.2s ease, border-color 0.2s ease; }
+  .switch-track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: var(--text-secondary); border-radius: 50%; transition: left 0.2s ease, background 0.2s ease; }
+  .switch input:checked + .switch-track { background: var(--theme); border-color: var(--theme); }
+  .switch input:checked + .switch-track::after { left: 23px; background: var(--bg); }
+
+  .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .price-card { position: relative; padding: 20px; background: var(--panel); border: 1px solid var(--border); border-radius: 14px; transition: border-color 0.2s ease; animation: priceIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  @keyframes priceIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .price-card:hover { border-color: var(--text-secondary); }
+  .price-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+  .price-name { font-family: 'Barlow', Inter, system-ui, sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; color: var(--text); }
+  .price-tag { padding: 3px 10px; border-radius: 6px; font-size: 10px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+  .price-tag.fastest { background: var(--pillbackground); color: var(--theme); border: 1px solid var(--border); }
+  .price-tag.cheapest { background: rgba(74, 222, 128, 0.12); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.35); }
+  .price-amount { font-family: 'Barlow', Inter, system-ui, sans-serif; font-size: 36px; font-weight: 900; color: var(--text); line-height: 1; margin: 4px 0 12px; letter-spacing: -0.02em; }
+  .price-card.is-cheapest .price-amount { color: #4ade80; }
+  .price-meta { font-size: 12px; color: var(--text-secondary); margin-bottom: 4px; line-height: 1.5; }
+  .price-meta strong { color: var(--text); font-weight: 600; }
+  .price-eta { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
+  .price-cta { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; height: 42px; padding: 0 16px; background: var(--theme); color: var(--bg); border: 1px solid var(--theme); border-radius: 10px; font-family: inherit; font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background 0.2s ease, border-color 0.2s ease; }
+  .price-cta:hover { background: var(--themedark); border-color: var(--themedark); }
+  .price-cta svg { transition: transform 0.2s ease; }
+  .price-cta:hover svg { transform: translateX(3px); }
+  .promo-strike { color: var(--muted); text-decoration: line-through; font-size: 18px; font-weight: 600; margin-right: 8px; opacity: 0; transform: translateY(2px); transition: opacity 0.3s ease, transform 0.3s ease; }
+  .price-card.has-promo .promo-strike { opacity: 1; transform: translateY(0); }
+
+  .calc-disclaimer { text-align: center; margin-top: 28px; font-size: 12px; color: var(--muted); line-height: 1.6; }
+
+  @media (max-width: 760px) {
+    .calc-page   { padding: 0 16px 80px; }
+    .calc-shell  { padding: 16px; }
+    .calc-card   { padding: 18px 16px; }
+    .preset-grid { grid-template-columns: 1fr; }
+    .custom-grid { grid-template-columns: 1fr 1fr; }
+    .weight-summary { grid-template-columns: 1fr; }
+    .price-grid  { grid-template-columns: 1fr; }
+    .calc-card-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .promo-card { flex-direction: row; gap: 14px; padding: 16px; }
+  }
+</style>
+
+
+<main class="calc-page">
+
+  <header class="page-hero">
+    <span class="page-eyebrow">Cost Estimator</span>
+    <h1 class="page-title">Shipping Calculator</h1>
+    <p class="page-subtitle">Compare KakoBuy shipping rates instantly based on weight, destination, and parcel size. All estimates from China.</p>
+  </header>
+
+  <div class="calc-shell">
+
+    <div class="calc-card">
+      <span class="calc-label">Destination Country</span>
+      <div class="country-select">
+        <select id="destSelect">
+          <option value="US">🇺🇸 United States</option>
+          <option value="CA">🇨🇦 Canada</option>
+          <option value="UK">🇬🇧 United Kingdom</option>
+          <option value="AU">🇦🇺 Australia</option>
+          <option value="DE">🇩🇪 Germany</option>
+          <option value="FR">🇫🇷 France</option>
+          <option value="JP">🇯🇵 Japan</option>
+          <option value="MX">🇲🇽 Mexico</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="calc-card">
+      <div class="calc-card-head">
+        <span class="calc-label">Parcel Size</span>
+        <div class="seg-control" id="modeToggle">
+          <button data-mode="preset" class="active">Preset</button>
+          <button data-mode="custom">Custom</button>
+        </div>
+      </div>
+
+      <div class="preset-grid" id="presetGrid">
+        <button class="preset-card active" data-preset="small" data-l="20" data-w="15" data-h="10" data-weight="0.5">
+          <div class="preset-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 16-9 5-9-5V8l9-5 9 5z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+          </div>
+          <div class="preset-name">Small Packet</div>
+          <div class="preset-meta">Up to 0.5kg</div>
+        </button>
+
+        <button class="preset-card" data-preset="medium" data-l="30" data-w="25" data-h="20" data-weight="2">
+          <div class="preset-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/></svg>
+          </div>
+          <div class="preset-name">Medium Box</div>
+          <div class="preset-meta">Up to 2kg</div>
+        </button>
+
+        <button class="preset-card" data-preset="large" data-l="45" data-w="35" data-h="30" data-weight="5">
+          <div class="preset-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/><path d="m7.5 4.27 9 5.15"/></svg>
+          </div>
+          <div class="preset-name">Large Box</div>
+          <div class="preset-meta">Up to 5kg</div>
+        </button>
+      </div>
+
+      <div class="custom-grid" id="customGrid" style="display: none;">
+        <div class="field"><label for="dimL">L (cm)</label><input id="dimL" type="number" min="1" value="50" inputmode="numeric"></div>
+        <div class="field"><label for="dimW">W (cm)</label><input id="dimW" type="number" min="1" value="43" inputmode="numeric"></div>
+        <div class="field"><label for="dimH">H (cm)</label><input id="dimH" type="number" min="1" value="40" inputmode="numeric"></div>
+        <div class="field"><label for="dimWt">Weight (kg)</label><input id="dimWt" type="number" min="0.1" step="0.1" value="9.7" inputmode="decimal"></div>
+      </div>
+
+      <div class="weight-summary" id="weightSummary" style="display: none;">
+        <div class="weight-pill"><div class="label">Actual Weight</div><div class="value" id="actualWeight">9.70kg</div></div>
+        <div class="weight-pill"><div class="label">Volumetric</div><div class="value" id="volumetricWeight">17.20kg</div></div>
+        <div class="weight-pill is-charged"><div class="label">Used For Pricing</div><div class="value" id="chargeableWeight">17.20kg</div></div>
+      </div>
+    </div>
+
+    <div class="promo-card" id="promoCard">
+      <div class="promo-text">
+        <div class="promo-title">Use code <code>DEEPINMYCLOSET</code></div>
+        <div class="promo-desc">Save $15 on your first KakoBuy haul.</div>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="promoToggle">
+        <span class="switch-track"></span>
+      </label>
+    </div>
+
+    <div class="calc-card">
+      <span class="calc-label">Shipping Prices</span>
+      <div class="price-grid" id="priceGrid"></div>
+    </div>
+
+    <p class="calc-disclaimer">*Prices are estimates based on average KakoBuy rates. Actual cost may vary slightly depending on packaging, route, and value-added services.</p>
+  </div>
+</main>
+
+
+<script src="/script.js"></script>
+<script src="/js/navbar.js"></script>
+<script src="/js/shipping-calculator.js"></script>
+
+</body>
+</html>

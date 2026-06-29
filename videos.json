@@ -1,0 +1,60 @@
+{
+  "videos": [
+    {
+      "id": "video-1",
+      "video": "files/1/ssstik.io_@_deepinmycloset_1775524631315.mp4",
+      "thumbnail": "files/1/1.png",
+      "products": [
+        "Raf Simons 'Virginia Creeper' Sweatshirt",
+        "Gucci Demna Horsebit Jeans 2",
+        "Balenciaga Black Skater Zip-up",
+        "ERD 'War' Hoodie",
+        "Balenciaga Grey Skater Sweatpants",
+        "ERD 25Ss ‘Young Republicans Club’ Sweatshirt",
+        "ERD Nun Sweater",
+        "Balenciaga Strike Boots"
+      ]
+    },
+    {
+      "id": "video-2",
+      "video": "files/2/ssstik.io_@_deepinmycloset_1775525559701.mp4",
+      "thumbnail": "files/2/2.png",
+      "products": [
+        "ERD 25Ss ‘Young Republicans Club’ Sweatshirt",
+        "ERD Le Rosey Sweater",
+        "ERD Well Of Loneliness Hoodie",
+        "ERD 'Sandwhich' Hoodie",
+        "Raf Simons 'Virginia Creeper' Sweatshirt",
+        "Raf Simons 'Virginia Creeper' Sweatshirt 2",
+        "ERD Sleep Sound Sweater",
+        "ERD Dream Sweater",
+        "ERD Safety Pin Hoodie",
+        "ERD Don Van Vliet Longsleeve"
+      ]
+    },
+    {
+      "id": "video-3",
+      "video": "files/3/ssstik.io_@_deepinmycloset_1775527365880.mp4",
+      "thumbnail": "files/3/3.png",
+      "products": [
+        "Raf Simons 'Virginia Creeper' Sweatshirt",
+        "Chrome Hearts Silicon Cross Necklace",
+        "Balenciaga Lost Tapes",
+        "CDG Airforce 1"
+      ]
+    },
+    {
+      "id": "video-4",
+      "video": "files/4/ssstik.io_@_deepinmycloset_1775527456617.mp4",
+      "thumbnail": "files/4/4.png",
+      "products": [
+        "Balenciaga Paris Tourist Hoodie",
+        "Chrome Hearts Silicon Cross Necklace",
+        "Balenciaga Lost Tapes",
+        "Undercover AW06 Crocodile Belt",
+        "Balenciaga Strike Boots",
+        "Undercover Bracelet"
+      ]
+    }
+  ]
+}
