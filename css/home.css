@@ -1684,7 +1684,6 @@ body::before {
 .faq-card-body-content{
   font-size: 14px;
     font-weight: 400;
-    height: fit-content;
 }
 
 .navbar {

@@ -5,6 +5,7 @@
   <title>deepinmycloset | Landing</title>
   <link rel="icon" type="image/png" href="icons.png"/>
   <link rel="stylesheet" href="css/home.css"/>
+  <link rel="stylesheet" href="/css/tiktok-browser.css"/>
   <meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta property="og:title" content="deepinmycloset - Kakobuy Rep Spreadsheet">
@@ -30,6 +31,40 @@
 
 
 <div id="notification-container"></div>
+
+<div class="ttb-arrow" id="ttbArrow">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5"/><path d="m5 12 7-7 7 7"/>
+  </svg>
+  <span>Tap here</span>
+</div>
+
+<div class="ttb-overlay" id="ttbOverlay">
+  <div class="ttb-card">
+    <img src="/icons.png" alt="deepinmycloset" class="ttb-logo">
+
+    <h2>Open this in your browser</h2>
+    <p>TikTok's built-in browser blocks some pages from loading properly. Open deepinmycloset in Safari or Chrome to use it without issues.</p>
+
+    <div class="ttb-steps">
+      <div class="ttb-step">
+        <span class="ttb-step-num">1</span>
+        <span class="ttb-step-text">Tap the <strong>•••</strong> menu in the top right corner</span>
+      </div>
+      <div class="ttb-step">
+        <span class="ttb-step-num">2</span>
+        <span class="ttb-step-text">Select <strong>Open in Browser</strong></span>
+      </div>
+    </div>
+
+    <div class="ttb-actions">
+      <button class="ttb-copy-btn" id="ttbCopyBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        Copy link to paste in browser
+      </button>
+    </div>
+  </div>
+</div>
 <!--
 <div class="announcement-bar">
   <div class="announcement-track" id="announcementTrack">
@@ -779,6 +814,7 @@ scene.addEventListener("mouseleave", () => {
 
 </script>
 
+<script src="/js/tiktok-browser.js"></script>
 
 </body>
 </html>

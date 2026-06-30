@@ -1008,8 +1008,11 @@ function openProductModal(p) {
       return;
     }
 
+    const imageColorCount = hasColors ? p.color.filter(c => c.startsWith("http")).length : 0;
+    const onlyOneImageColor = imageColorCount === 1;
+
     let cartImage = mainImage;
-    if (selectedColor && selectedColor.startsWith("http")) {
+    if (selectedColor && selectedColor.startsWith("http") && !onlyOneImageColor) {
       cartImage = proxyBase + encodeURIComponent(selectedColor);
     }
 
