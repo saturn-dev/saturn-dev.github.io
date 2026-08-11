@@ -55,7 +55,7 @@ const qcReset    = document.getElementById("qcReset");
 const qcSave     = document.getElementById("qcSave");
 const qcCloseBtn = document.getElementById("qcCloseBtn");
 
-const proxyBase = "https://imgproxy-vb4m.onrender.com/proxy-image?url=";
+const proxyBase = "https://imgproxy-psi.vercel.app//proxy-image?url=";
 
 
 // ============================================================
