@@ -473,15 +473,9 @@ function renderProducts(reset = true) {
   const loader      = document.getElementById("infiniteLoader");
   const isSearching = searchInput.value.trim().length > 0;
 
-  // Optional pinned cards at the top of the default view (see /js/ads.js).
-  // No-op when that file isn't loaded.
-  if (reset && currentCategory === "ALL" && !isSearching) {
-    window.renderPinnedCards?.();
-  }
-
   if (currentCategory !== "ALL" || isSearching) {
     loader.classList.add("hidden");
-    filteredProducts.forEach(p => renderCard(p));
+    filteredProducts.forEach(renderCard);
     visibleCount = filteredProducts.length;
     return;
   }
@@ -498,7 +492,7 @@ function loadMoreProducts() {
 
   setTimeout(() => {
     const nextBatch = filteredProducts.slice(visibleCount, visibleCount + chunkSize);
-    nextBatch.forEach(p => renderCard(p));
+    nextBatch.forEach(renderCard);
     visibleCount += nextBatch.length;
     isLoading = false;
 
@@ -508,14 +502,13 @@ function loadMoreProducts() {
   }, 500);
 }
 
-// opts: { className, onClick } — lets other scripts reuse the card markup
-function renderCard(p, opts = {}) {
+function renderCard(p) {
   const imageSrc = p.image || `/products/${
     p.name.toLowerCase().replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-")
   }.png`;
 
   const card = document.createElement("div");
-  card.className = "card" + (opts.className ? ` ${opts.className}` : "");
+  card.className = "card";
 
   card.innerHTML = `
     <div class="card-tilt">
@@ -534,8 +527,7 @@ function renderCard(p, opts = {}) {
     </div>
   `;
 
-  card.addEventListener("click", opts.onClick || (() => openProductModal(p)));
-
+  card.addEventListener("click", () => openProductModal(p));
   attachCardTilt(card);
   attachCardLoadState(card);
   grid.appendChild(card);
