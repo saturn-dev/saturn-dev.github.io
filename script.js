@@ -55,7 +55,7 @@ const qcReset    = document.getElementById("qcReset");
 const qcSave     = document.getElementById("qcSave");
 const qcCloseBtn = document.getElementById("qcCloseBtn");
 
-const proxyBase = "https://imgproxy-psi.vercel.app//proxy-image?url=";
+const proxyBase = "https://imgproxy-psi.vercel.app/proxy-image?url=";
 
 
 // ============================================================
@@ -473,9 +473,15 @@ function renderProducts(reset = true) {
   const loader      = document.getElementById("infiniteLoader");
   const isSearching = searchInput.value.trim().length > 0;
 
+  // Optional pinned cards at the top of the default view (see /js/ads.js).
+  // No-op when that file isn't loaded.
+  if (reset && currentCategory === "ALL" && !isSearching) {
+    window.renderPinnedCards?.();
+  }
+
   if (currentCategory !== "ALL" || isSearching) {
     loader.classList.add("hidden");
-    filteredProducts.forEach(renderCard);
+    filteredProducts.forEach(p => renderCard(p));
     visibleCount = filteredProducts.length;
     return;
   }
@@ -492,7 +498,7 @@ function loadMoreProducts() {
 
   setTimeout(() => {
     const nextBatch = filteredProducts.slice(visibleCount, visibleCount + chunkSize);
-    nextBatch.forEach(renderCard);
+    nextBatch.forEach(p => renderCard(p));
     visibleCount += nextBatch.length;
     isLoading = false;
 
@@ -502,13 +508,14 @@ function loadMoreProducts() {
   }, 500);
 }
 
-function renderCard(p) {
+// opts: { className, onClick } — lets other scripts reuse the card markup
+function renderCard(p, opts = {}) {
   const imageSrc = p.image || `/products/${
     p.name.toLowerCase().replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-")
   }.png`;
 
   const card = document.createElement("div");
-  card.className = "card";
+  card.className = "card" + (opts.className ? ` ${opts.className}` : "");
 
   card.innerHTML = `
     <div class="card-tilt">
@@ -527,7 +534,8 @@ function renderCard(p) {
     </div>
   `;
 
-  card.addEventListener("click", () => openProductModal(p));
+  card.addEventListener("click", opts.onClick || (() => openProductModal(p)));
+
   attachCardTilt(card);
   attachCardLoadState(card);
   grid.appendChild(card);
