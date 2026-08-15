@@ -447,6 +447,7 @@ function renderProducts(reset = true) {
   if (reset) {
     grid.innerHTML = "";
     visibleCount = 0;
+    window.renderPinnedCards?.(); // optional: /js/ads.js
   }
 
   filteredProducts = data.products.filter(p =>
@@ -475,7 +476,7 @@ function renderProducts(reset = true) {
 
   if (currentCategory !== "ALL" || isSearching) {
     loader.classList.add("hidden");
-    filteredProducts.forEach(renderCard);
+    filteredProducts.forEach(p => renderCard(p));
     visibleCount = filteredProducts.length;
     return;
   }
@@ -492,7 +493,7 @@ function loadMoreProducts() {
 
   setTimeout(() => {
     const nextBatch = filteredProducts.slice(visibleCount, visibleCount + chunkSize);
-    nextBatch.forEach(renderCard);
+    nextBatch.forEach(p => renderCard(p));
     visibleCount += nextBatch.length;
     isLoading = false;
 
@@ -502,13 +503,13 @@ function loadMoreProducts() {
   }, 500);
 }
 
-function renderCard(p) {
+function renderCard(p, opts = {}) {
   const imageSrc = p.image || `/products/${
     p.name.toLowerCase().replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-")
   }.png`;
 
   const card = document.createElement("div");
-  card.className = "card";
+  card.className = opts.className || "card";
 
   card.innerHTML = `
     <div class="card-tilt">
@@ -521,13 +522,13 @@ function renderCard(p) {
         <div class="card-gradient"></div>
         <div class="card-content">
           <div class="title">${p.name}</div>
-          <div class="category">${p.category}</div>
+          ${p.category ? `<div class="category">${p.category}</div>` : ""}
         </div>
       </div>
     </div>
   `;
 
-  card.addEventListener("click", () => openProductModal(p));
+  card.addEventListener("click", opts.onClick || (() => openProductModal(p)));
   attachCardTilt(card);
   attachCardLoadState(card);
   grid.appendChild(card);

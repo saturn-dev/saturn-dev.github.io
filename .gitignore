@@ -1,2 +1,3 @@
 tools/kakobuy_session.json
-.claude
+.claude__pycache__/
+weidian_ad_scraper.py
